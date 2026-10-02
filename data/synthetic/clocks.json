@@ -1,0 +1,53 @@
+{
+  "events": [
+    {
+      "bound_s": 4.0,
+      "interval_s": [
+        96.0,
+        104.0
+      ],
+      "name": "sensor",
+      "observed_s": 100.0,
+      "true_s": 102.0
+    },
+    {
+      "bound_s": 6.0,
+      "interval_s": [
+        97.0,
+        109.0
+      ],
+      "name": "gateway",
+      "observed_s": 103.0,
+      "true_s": 101.0
+    },
+    {
+      "bound_s": 2.0,
+      "interval_s": [
+        118.0,
+        122.0
+      ],
+      "name": "archive",
+      "observed_s": 120.0,
+      "true_s": 119.0
+    }
+  ],
+  "evidence_class": "Derived from Synthetic",
+  "limitations": "Bounds assumed and contain fixture truth; intervals establish temporal precedence only. No causal attribution or clock-security proof.",
+  "pairs": [
+    {
+      "a": "sensor",
+      "b": "gateway",
+      "relation": "indeterminate"
+    },
+    {
+      "a": "sensor",
+      "b": "archive",
+      "relation": "before"
+    },
+    {
+      "a": "gateway",
+      "b": "archive",
+      "relation": "before"
+    }
+  ]
+}

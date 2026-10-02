@@ -1,0 +1,48 @@
+{
+  "evidence_class": "Derived analytic relationship on Synthetic assumptions",
+  "limitations": "Unit contribution-bound pure epsilon-DP count mechanism. Basic sequential composition only. Formula study, not a production privacy mechanism; no protected data, clipping implementation, cryptographic RNG or release accounting.",
+  "rows": [
+    {
+      "composed_epsilon_12_releases": 1.2000000000000002,
+      "epsilon": 0.1,
+      "expected_absolute_error_count": 10.0,
+      "laplace_scale_count": 10.0,
+      "sensitivity_count": 1
+    },
+    {
+      "composed_epsilon_12_releases": 3.0,
+      "epsilon": 0.25,
+      "expected_absolute_error_count": 4.0,
+      "laplace_scale_count": 4.0,
+      "sensitivity_count": 1
+    },
+    {
+      "composed_epsilon_12_releases": 6.0,
+      "epsilon": 0.5,
+      "expected_absolute_error_count": 2.0,
+      "laplace_scale_count": 2.0,
+      "sensitivity_count": 1
+    },
+    {
+      "composed_epsilon_12_releases": 12.0,
+      "epsilon": 1.0,
+      "expected_absolute_error_count": 1.0,
+      "laplace_scale_count": 1.0,
+      "sensitivity_count": 1
+    },
+    {
+      "composed_epsilon_12_releases": 24.0,
+      "epsilon": 2.0,
+      "expected_absolute_error_count": 0.5,
+      "laplace_scale_count": 0.5,
+      "sensitivity_count": 1
+    },
+    {
+      "composed_epsilon_12_releases": 48.0,
+      "epsilon": 4.0,
+      "expected_absolute_error_count": 0.25,
+      "laplace_scale_count": 0.25,
+      "sensitivity_count": 1
+    }
+  ]
+}

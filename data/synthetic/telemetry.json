@@ -1,0 +1,60 @@
+{
+  "evidence_class": "Derived from Synthetic",
+  "limitations": "One fixture, correlated samples, supervised validation-label filtering, deliberate test mean shift. Intervals are resampling diagnostics, not external validity or general performance guarantees.",
+  "methods": {
+    "mean_std": {
+      "center": 10.028691868687803,
+      "event_delays_s": [
+        0,
+        0,
+        0
+      ],
+      "event_recall": 1.0,
+      "false_alerts_per_observed_hour": 10.583333333333334,
+      "fn": 0,
+      "fp": 127,
+      "fpr": 0.09338235294117647,
+      "observed": 1440,
+      "observed_hours": 12.0,
+      "precision": 0.3864734299516908,
+      "precision_block_bootstrap_95_interval": [
+        0.0,
+        0.618395796404153
+      ],
+      "recall": 1.0,
+      "scale": 0.9470803062766885,
+      "threshold": 2.658316995509745,
+      "tn": 1233,
+      "tp": 80,
+      "unconditional_timestamp_recall": 1.0
+    },
+    "robust": {
+      "center": 10.034127057946979,
+      "event_delays_s": [
+        0,
+        0,
+        0
+      ],
+      "event_recall": 1.0,
+      "false_alerts_per_observed_hour": 10.583333333333334,
+      "fn": 0,
+      "fp": 127,
+      "fpr": 0.09338235294117647,
+      "observed": 1440,
+      "observed_hours": 12.0,
+      "precision": 0.3864734299516908,
+      "precision_block_bootstrap_95_interval": [
+        0.0,
+        0.618395796404153
+      ],
+      "recall": 1.0,
+      "scale": 0.9237644295379481,
+      "threshold": 2.7195293569436134,
+      "tn": 1233,
+      "tp": 80,
+      "unconditional_timestamp_recall": 1.0
+    }
+  },
+  "sample_period_s": 30,
+  "seed": 20261002
+}

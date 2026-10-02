@@ -1,0 +1,93 @@
+[
+  {
+    "slug": "nightmare-eclipse",
+    "display_name": "Nightmare-Eclipse",
+    "entity_type": "Public research persona",
+    "claim_ids": [
+      "CL01",
+      "CL02",
+      "CL04",
+      "CL05"
+    ],
+    "uncertainty": "Keep publication authorship, vulnerability record and observed tool adoption as separate entities. Identity and intrusion attribution remain unresolved.",
+    "assessment_question": "Evidence-preserving endpoint-health review, privileged-operation audit coverage, source chronology and patch applicability in an owned inventory.",
+    "status": "Source-bounded public information; not a personal investigation"
+  },
+  {
+    "slug": "church-of-malware",
+    "display_name": "Church of Malware",
+    "entity_type": "Self-described research community",
+    "claim_ids": [
+      "CL03"
+    ],
+    "uncertainty": "Do not classify an entire community as a threat actor from branding or hosted content. Nonprofit registration and membership were not verified.",
+    "assessment_question": "Document publication provenance, distinguish claims from observed capability, and review disclosure effects without executing hosted tools.",
+    "status": "Source-bounded public information; not a personal investigation"
+  },
+  {
+    "slug": "scattered-spider",
+    "display_name": "Scattered Spider",
+    "entity_type": "Government-described cybercriminal cluster",
+    "claim_ids": [
+      "CL06"
+    ],
+    "uncertainty": "Use the dated advisory characterization; shared legitimate software alone does not establish compromise or membership.",
+    "assessment_question": "Consented help-desk verification tabletop, phishing-resistant authentication policy review, task-minimal access and tested offline restores.",
+    "status": "Source-bounded public information; not a personal investigation"
+  },
+  {
+    "slug": "tradertraitor",
+    "display_name": "TraderTraitor",
+    "entity_type": "Government-attributed activity label",
+    "claim_ids": [
+      "CL07"
+    ],
+    "uncertainty": "The FBI statement supplies attribution, not this repository. Do not equate every regional or technical association with the named activity.",
+    "assessment_question": "Transaction approval integrity, artifact provenance, trusted-device state and independent verification in a synthetic financial workflow.",
+    "status": "Source-bounded public information; not a personal investigation"
+  },
+  {
+    "slug": "ek0mssavi0r",
+    "display_name": "ek0mssavi0r",
+    "entity_type": "Public homepage byline",
+    "claim_ids": [
+      "CL08"
+    ],
+    "uncertainty": "Only the observed byline is retained. No real name, contact details, external profile correlation or offense allegation.",
+    "assessment_question": "Study self-published source quality and byline provenance as an information-quality exercise.",
+    "status": "Source-bounded public information; not a personal investigation"
+  },
+  {
+    "slug": "leviathan",
+    "display_name": "leviathan",
+    "entity_type": "Public homepage byline",
+    "claim_ids": [
+      "CL09"
+    ],
+    "uncertainty": "Only the observed handle and homepage association are retained; common handles have collision risk.",
+    "assessment_question": "Evaluate alias collision and source independence using fabricated comparison records.",
+    "status": "Source-bounded public information; not a personal investigation"
+  },
+  {
+    "slug": "trilltechnician",
+    "display_name": "Trilltechnician",
+    "entity_type": "Public homepage byline",
+    "claim_ids": [
+      "CL10"
+    ],
+    "uncertainty": "Only the observed handle and homepage association are retained; no account linkage is inferred.",
+    "assessment_question": "Review the difference between a project description and an independently evaluated capability.",
+    "status": "Source-bounded public information; not a personal investigation"
+  },
+  {
+    "slug": "n0mad1k",
+    "display_name": "n0mad1k",
+    "entity_type": "Public homepage attribution",
+    "claim_ids": [
+      "CL11"
+    ],
+    "uncertainty": "The homepage role statement is self-published and does not verify identity or employment.",
+    "assessment_question": "Compare publication, retrieval and claim-review dates in a source-freshness notebook.",
+    "status": "Source-bounded public information; not a personal investigation"
+  }
+]

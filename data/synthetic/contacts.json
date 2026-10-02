@@ -1,0 +1,1211 @@
+{
+  "age_p95_s": 2942.999999999999,
+  "always_attempts": 240,
+  "contact_only_attempts": 32,
+  "evidence_class": "Derived from Synthetic",
+  "limitations": "Perfect verification and receipt on every modeled contact, constant 60 s time step. Attempt count is an energy proxy, not measured joules. No queue, spacecraft link, RF transmission or signing implementation.",
+  "max_age_s": 3120,
+  "rows": [
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 0
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 1
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 2
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 3
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 4
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 5
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 6
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 7
+    },
+    {
+      "age_s": 60,
+      "contact": false,
+      "time_min": 8
+    },
+    {
+      "age_s": 120,
+      "contact": false,
+      "time_min": 9
+    },
+    {
+      "age_s": 180,
+      "contact": false,
+      "time_min": 10
+    },
+    {
+      "age_s": 240,
+      "contact": false,
+      "time_min": 11
+    },
+    {
+      "age_s": 300,
+      "contact": false,
+      "time_min": 12
+    },
+    {
+      "age_s": 360,
+      "contact": false,
+      "time_min": 13
+    },
+    {
+      "age_s": 420,
+      "contact": false,
+      "time_min": 14
+    },
+    {
+      "age_s": 480,
+      "contact": false,
+      "time_min": 15
+    },
+    {
+      "age_s": 540,
+      "contact": false,
+      "time_min": 16
+    },
+    {
+      "age_s": 600,
+      "contact": false,
+      "time_min": 17
+    },
+    {
+      "age_s": 660,
+      "contact": false,
+      "time_min": 18
+    },
+    {
+      "age_s": 720,
+      "contact": false,
+      "time_min": 19
+    },
+    {
+      "age_s": 780,
+      "contact": false,
+      "time_min": 20
+    },
+    {
+      "age_s": 840,
+      "contact": false,
+      "time_min": 21
+    },
+    {
+      "age_s": 900,
+      "contact": false,
+      "time_min": 22
+    },
+    {
+      "age_s": 960,
+      "contact": false,
+      "time_min": 23
+    },
+    {
+      "age_s": 1020,
+      "contact": false,
+      "time_min": 24
+    },
+    {
+      "age_s": 1080,
+      "contact": false,
+      "time_min": 25
+    },
+    {
+      "age_s": 1140,
+      "contact": false,
+      "time_min": 26
+    },
+    {
+      "age_s": 1200,
+      "contact": false,
+      "time_min": 27
+    },
+    {
+      "age_s": 1260,
+      "contact": false,
+      "time_min": 28
+    },
+    {
+      "age_s": 1320,
+      "contact": false,
+      "time_min": 29
+    },
+    {
+      "age_s": 1380,
+      "contact": false,
+      "time_min": 30
+    },
+    {
+      "age_s": 1440,
+      "contact": false,
+      "time_min": 31
+    },
+    {
+      "age_s": 1500,
+      "contact": false,
+      "time_min": 32
+    },
+    {
+      "age_s": 1560,
+      "contact": false,
+      "time_min": 33
+    },
+    {
+      "age_s": 1620,
+      "contact": false,
+      "time_min": 34
+    },
+    {
+      "age_s": 1680,
+      "contact": false,
+      "time_min": 35
+    },
+    {
+      "age_s": 1740,
+      "contact": false,
+      "time_min": 36
+    },
+    {
+      "age_s": 1800,
+      "contact": false,
+      "time_min": 37
+    },
+    {
+      "age_s": 1860,
+      "contact": false,
+      "time_min": 38
+    },
+    {
+      "age_s": 1920,
+      "contact": false,
+      "time_min": 39
+    },
+    {
+      "age_s": 1980,
+      "contact": false,
+      "time_min": 40
+    },
+    {
+      "age_s": 2040,
+      "contact": false,
+      "time_min": 41
+    },
+    {
+      "age_s": 2100,
+      "contact": false,
+      "time_min": 42
+    },
+    {
+      "age_s": 2160,
+      "contact": false,
+      "time_min": 43
+    },
+    {
+      "age_s": 2220,
+      "contact": false,
+      "time_min": 44
+    },
+    {
+      "age_s": 2280,
+      "contact": false,
+      "time_min": 45
+    },
+    {
+      "age_s": 2340,
+      "contact": false,
+      "time_min": 46
+    },
+    {
+      "age_s": 2400,
+      "contact": false,
+      "time_min": 47
+    },
+    {
+      "age_s": 2460,
+      "contact": false,
+      "time_min": 48
+    },
+    {
+      "age_s": 2520,
+      "contact": false,
+      "time_min": 49
+    },
+    {
+      "age_s": 2580,
+      "contact": false,
+      "time_min": 50
+    },
+    {
+      "age_s": 2640,
+      "contact": false,
+      "time_min": 51
+    },
+    {
+      "age_s": 2700,
+      "contact": false,
+      "time_min": 52
+    },
+    {
+      "age_s": 2760,
+      "contact": false,
+      "time_min": 53
+    },
+    {
+      "age_s": 2820,
+      "contact": false,
+      "time_min": 54
+    },
+    {
+      "age_s": 2880,
+      "contact": false,
+      "time_min": 55
+    },
+    {
+      "age_s": 2940,
+      "contact": false,
+      "time_min": 56
+    },
+    {
+      "age_s": 3000,
+      "contact": false,
+      "time_min": 57
+    },
+    {
+      "age_s": 3060,
+      "contact": false,
+      "time_min": 58
+    },
+    {
+      "age_s": 3120,
+      "contact": false,
+      "time_min": 59
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 60
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 61
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 62
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 63
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 64
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 65
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 66
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 67
+    },
+    {
+      "age_s": 60,
+      "contact": false,
+      "time_min": 68
+    },
+    {
+      "age_s": 120,
+      "contact": false,
+      "time_min": 69
+    },
+    {
+      "age_s": 180,
+      "contact": false,
+      "time_min": 70
+    },
+    {
+      "age_s": 240,
+      "contact": false,
+      "time_min": 71
+    },
+    {
+      "age_s": 300,
+      "contact": false,
+      "time_min": 72
+    },
+    {
+      "age_s": 360,
+      "contact": false,
+      "time_min": 73
+    },
+    {
+      "age_s": 420,
+      "contact": false,
+      "time_min": 74
+    },
+    {
+      "age_s": 480,
+      "contact": false,
+      "time_min": 75
+    },
+    {
+      "age_s": 540,
+      "contact": false,
+      "time_min": 76
+    },
+    {
+      "age_s": 600,
+      "contact": false,
+      "time_min": 77
+    },
+    {
+      "age_s": 660,
+      "contact": false,
+      "time_min": 78
+    },
+    {
+      "age_s": 720,
+      "contact": false,
+      "time_min": 79
+    },
+    {
+      "age_s": 780,
+      "contact": false,
+      "time_min": 80
+    },
+    {
+      "age_s": 840,
+      "contact": false,
+      "time_min": 81
+    },
+    {
+      "age_s": 900,
+      "contact": false,
+      "time_min": 82
+    },
+    {
+      "age_s": 960,
+      "contact": false,
+      "time_min": 83
+    },
+    {
+      "age_s": 1020,
+      "contact": false,
+      "time_min": 84
+    },
+    {
+      "age_s": 1080,
+      "contact": false,
+      "time_min": 85
+    },
+    {
+      "age_s": 1140,
+      "contact": false,
+      "time_min": 86
+    },
+    {
+      "age_s": 1200,
+      "contact": false,
+      "time_min": 87
+    },
+    {
+      "age_s": 1260,
+      "contact": false,
+      "time_min": 88
+    },
+    {
+      "age_s": 1320,
+      "contact": false,
+      "time_min": 89
+    },
+    {
+      "age_s": 1380,
+      "contact": false,
+      "time_min": 90
+    },
+    {
+      "age_s": 1440,
+      "contact": false,
+      "time_min": 91
+    },
+    {
+      "age_s": 1500,
+      "contact": false,
+      "time_min": 92
+    },
+    {
+      "age_s": 1560,
+      "contact": false,
+      "time_min": 93
+    },
+    {
+      "age_s": 1620,
+      "contact": false,
+      "time_min": 94
+    },
+    {
+      "age_s": 1680,
+      "contact": false,
+      "time_min": 95
+    },
+    {
+      "age_s": 1740,
+      "contact": false,
+      "time_min": 96
+    },
+    {
+      "age_s": 1800,
+      "contact": false,
+      "time_min": 97
+    },
+    {
+      "age_s": 1860,
+      "contact": false,
+      "time_min": 98
+    },
+    {
+      "age_s": 1920,
+      "contact": false,
+      "time_min": 99
+    },
+    {
+      "age_s": 1980,
+      "contact": false,
+      "time_min": 100
+    },
+    {
+      "age_s": 2040,
+      "contact": false,
+      "time_min": 101
+    },
+    {
+      "age_s": 2100,
+      "contact": false,
+      "time_min": 102
+    },
+    {
+      "age_s": 2160,
+      "contact": false,
+      "time_min": 103
+    },
+    {
+      "age_s": 2220,
+      "contact": false,
+      "time_min": 104
+    },
+    {
+      "age_s": 2280,
+      "contact": false,
+      "time_min": 105
+    },
+    {
+      "age_s": 2340,
+      "contact": false,
+      "time_min": 106
+    },
+    {
+      "age_s": 2400,
+      "contact": false,
+      "time_min": 107
+    },
+    {
+      "age_s": 2460,
+      "contact": false,
+      "time_min": 108
+    },
+    {
+      "age_s": 2520,
+      "contact": false,
+      "time_min": 109
+    },
+    {
+      "age_s": 2580,
+      "contact": false,
+      "time_min": 110
+    },
+    {
+      "age_s": 2640,
+      "contact": false,
+      "time_min": 111
+    },
+    {
+      "age_s": 2700,
+      "contact": false,
+      "time_min": 112
+    },
+    {
+      "age_s": 2760,
+      "contact": false,
+      "time_min": 113
+    },
+    {
+      "age_s": 2820,
+      "contact": false,
+      "time_min": 114
+    },
+    {
+      "age_s": 2880,
+      "contact": false,
+      "time_min": 115
+    },
+    {
+      "age_s": 2940,
+      "contact": false,
+      "time_min": 116
+    },
+    {
+      "age_s": 3000,
+      "contact": false,
+      "time_min": 117
+    },
+    {
+      "age_s": 3060,
+      "contact": false,
+      "time_min": 118
+    },
+    {
+      "age_s": 3120,
+      "contact": false,
+      "time_min": 119
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 120
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 121
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 122
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 123
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 124
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 125
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 126
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 127
+    },
+    {
+      "age_s": 60,
+      "contact": false,
+      "time_min": 128
+    },
+    {
+      "age_s": 120,
+      "contact": false,
+      "time_min": 129
+    },
+    {
+      "age_s": 180,
+      "contact": false,
+      "time_min": 130
+    },
+    {
+      "age_s": 240,
+      "contact": false,
+      "time_min": 131
+    },
+    {
+      "age_s": 300,
+      "contact": false,
+      "time_min": 132
+    },
+    {
+      "age_s": 360,
+      "contact": false,
+      "time_min": 133
+    },
+    {
+      "age_s": 420,
+      "contact": false,
+      "time_min": 134
+    },
+    {
+      "age_s": 480,
+      "contact": false,
+      "time_min": 135
+    },
+    {
+      "age_s": 540,
+      "contact": false,
+      "time_min": 136
+    },
+    {
+      "age_s": 600,
+      "contact": false,
+      "time_min": 137
+    },
+    {
+      "age_s": 660,
+      "contact": false,
+      "time_min": 138
+    },
+    {
+      "age_s": 720,
+      "contact": false,
+      "time_min": 139
+    },
+    {
+      "age_s": 780,
+      "contact": false,
+      "time_min": 140
+    },
+    {
+      "age_s": 840,
+      "contact": false,
+      "time_min": 141
+    },
+    {
+      "age_s": 900,
+      "contact": false,
+      "time_min": 142
+    },
+    {
+      "age_s": 960,
+      "contact": false,
+      "time_min": 143
+    },
+    {
+      "age_s": 1020,
+      "contact": false,
+      "time_min": 144
+    },
+    {
+      "age_s": 1080,
+      "contact": false,
+      "time_min": 145
+    },
+    {
+      "age_s": 1140,
+      "contact": false,
+      "time_min": 146
+    },
+    {
+      "age_s": 1200,
+      "contact": false,
+      "time_min": 147
+    },
+    {
+      "age_s": 1260,
+      "contact": false,
+      "time_min": 148
+    },
+    {
+      "age_s": 1320,
+      "contact": false,
+      "time_min": 149
+    },
+    {
+      "age_s": 1380,
+      "contact": false,
+      "time_min": 150
+    },
+    {
+      "age_s": 1440,
+      "contact": false,
+      "time_min": 151
+    },
+    {
+      "age_s": 1500,
+      "contact": false,
+      "time_min": 152
+    },
+    {
+      "age_s": 1560,
+      "contact": false,
+      "time_min": 153
+    },
+    {
+      "age_s": 1620,
+      "contact": false,
+      "time_min": 154
+    },
+    {
+      "age_s": 1680,
+      "contact": false,
+      "time_min": 155
+    },
+    {
+      "age_s": 1740,
+      "contact": false,
+      "time_min": 156
+    },
+    {
+      "age_s": 1800,
+      "contact": false,
+      "time_min": 157
+    },
+    {
+      "age_s": 1860,
+      "contact": false,
+      "time_min": 158
+    },
+    {
+      "age_s": 1920,
+      "contact": false,
+      "time_min": 159
+    },
+    {
+      "age_s": 1980,
+      "contact": false,
+      "time_min": 160
+    },
+    {
+      "age_s": 2040,
+      "contact": false,
+      "time_min": 161
+    },
+    {
+      "age_s": 2100,
+      "contact": false,
+      "time_min": 162
+    },
+    {
+      "age_s": 2160,
+      "contact": false,
+      "time_min": 163
+    },
+    {
+      "age_s": 2220,
+      "contact": false,
+      "time_min": 164
+    },
+    {
+      "age_s": 2280,
+      "contact": false,
+      "time_min": 165
+    },
+    {
+      "age_s": 2340,
+      "contact": false,
+      "time_min": 166
+    },
+    {
+      "age_s": 2400,
+      "contact": false,
+      "time_min": 167
+    },
+    {
+      "age_s": 2460,
+      "contact": false,
+      "time_min": 168
+    },
+    {
+      "age_s": 2520,
+      "contact": false,
+      "time_min": 169
+    },
+    {
+      "age_s": 2580,
+      "contact": false,
+      "time_min": 170
+    },
+    {
+      "age_s": 2640,
+      "contact": false,
+      "time_min": 171
+    },
+    {
+      "age_s": 2700,
+      "contact": false,
+      "time_min": 172
+    },
+    {
+      "age_s": 2760,
+      "contact": false,
+      "time_min": 173
+    },
+    {
+      "age_s": 2820,
+      "contact": false,
+      "time_min": 174
+    },
+    {
+      "age_s": 2880,
+      "contact": false,
+      "time_min": 175
+    },
+    {
+      "age_s": 2940,
+      "contact": false,
+      "time_min": 176
+    },
+    {
+      "age_s": 3000,
+      "contact": false,
+      "time_min": 177
+    },
+    {
+      "age_s": 3060,
+      "contact": false,
+      "time_min": 178
+    },
+    {
+      "age_s": 3120,
+      "contact": false,
+      "time_min": 179
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 180
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 181
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 182
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 183
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 184
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 185
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 186
+    },
+    {
+      "age_s": 0,
+      "contact": true,
+      "time_min": 187
+    },
+    {
+      "age_s": 60,
+      "contact": false,
+      "time_min": 188
+    },
+    {
+      "age_s": 120,
+      "contact": false,
+      "time_min": 189
+    },
+    {
+      "age_s": 180,
+      "contact": false,
+      "time_min": 190
+    },
+    {
+      "age_s": 240,
+      "contact": false,
+      "time_min": 191
+    },
+    {
+      "age_s": 300,
+      "contact": false,
+      "time_min": 192
+    },
+    {
+      "age_s": 360,
+      "contact": false,
+      "time_min": 193
+    },
+    {
+      "age_s": 420,
+      "contact": false,
+      "time_min": 194
+    },
+    {
+      "age_s": 480,
+      "contact": false,
+      "time_min": 195
+    },
+    {
+      "age_s": 540,
+      "contact": false,
+      "time_min": 196
+    },
+    {
+      "age_s": 600,
+      "contact": false,
+      "time_min": 197
+    },
+    {
+      "age_s": 660,
+      "contact": false,
+      "time_min": 198
+    },
+    {
+      "age_s": 720,
+      "contact": false,
+      "time_min": 199
+    },
+    {
+      "age_s": 780,
+      "contact": false,
+      "time_min": 200
+    },
+    {
+      "age_s": 840,
+      "contact": false,
+      "time_min": 201
+    },
+    {
+      "age_s": 900,
+      "contact": false,
+      "time_min": 202
+    },
+    {
+      "age_s": 960,
+      "contact": false,
+      "time_min": 203
+    },
+    {
+      "age_s": 1020,
+      "contact": false,
+      "time_min": 204
+    },
+    {
+      "age_s": 1080,
+      "contact": false,
+      "time_min": 205
+    },
+    {
+      "age_s": 1140,
+      "contact": false,
+      "time_min": 206
+    },
+    {
+      "age_s": 1200,
+      "contact": false,
+      "time_min": 207
+    },
+    {
+      "age_s": 1260,
+      "contact": false,
+      "time_min": 208
+    },
+    {
+      "age_s": 1320,
+      "contact": false,
+      "time_min": 209
+    },
+    {
+      "age_s": 1380,
+      "contact": false,
+      "time_min": 210
+    },
+    {
+      "age_s": 1440,
+      "contact": false,
+      "time_min": 211
+    },
+    {
+      "age_s": 1500,
+      "contact": false,
+      "time_min": 212
+    },
+    {
+      "age_s": 1560,
+      "contact": false,
+      "time_min": 213
+    },
+    {
+      "age_s": 1620,
+      "contact": false,
+      "time_min": 214
+    },
+    {
+      "age_s": 1680,
+      "contact": false,
+      "time_min": 215
+    },
+    {
+      "age_s": 1740,
+      "contact": false,
+      "time_min": 216
+    },
+    {
+      "age_s": 1800,
+      "contact": false,
+      "time_min": 217
+    },
+    {
+      "age_s": 1860,
+      "contact": false,
+      "time_min": 218
+    },
+    {
+      "age_s": 1920,
+      "contact": false,
+      "time_min": 219
+    },
+    {
+      "age_s": 1980,
+      "contact": false,
+      "time_min": 220
+    },
+    {
+      "age_s": 2040,
+      "contact": false,
+      "time_min": 221
+    },
+    {
+      "age_s": 2100,
+      "contact": false,
+      "time_min": 222
+    },
+    {
+      "age_s": 2160,
+      "contact": false,
+      "time_min": 223
+    },
+    {
+      "age_s": 2220,
+      "contact": false,
+      "time_min": 224
+    },
+    {
+      "age_s": 2280,
+      "contact": false,
+      "time_min": 225
+    },
+    {
+      "age_s": 2340,
+      "contact": false,
+      "time_min": 226
+    },
+    {
+      "age_s": 2400,
+      "contact": false,
+      "time_min": 227
+    },
+    {
+      "age_s": 2460,
+      "contact": false,
+      "time_min": 228
+    },
+    {
+      "age_s": 2520,
+      "contact": false,
+      "time_min": 229
+    },
+    {
+      "age_s": 2580,
+      "contact": false,
+      "time_min": 230
+    },
+    {
+      "age_s": 2640,
+      "contact": false,
+      "time_min": 231
+    },
+    {
+      "age_s": 2700,
+      "contact": false,
+      "time_min": 232
+    },
+    {
+      "age_s": 2760,
+      "contact": false,
+      "time_min": 233
+    },
+    {
+      "age_s": 2820,
+      "contact": false,
+      "time_min": 234
+    },
+    {
+      "age_s": 2880,
+      "contact": false,
+      "time_min": 235
+    },
+    {
+      "age_s": 2940,
+      "contact": false,
+      "time_min": 236
+    },
+    {
+      "age_s": 3000,
+      "contact": false,
+      "time_min": 237
+    },
+    {
+      "age_s": 3060,
+      "contact": false,
+      "time_min": 238
+    },
+    {
+      "age_s": 3120,
+      "contact": false,
+      "time_min": 239
+    }
+  ],
+  "verified_receipts": 32
+}

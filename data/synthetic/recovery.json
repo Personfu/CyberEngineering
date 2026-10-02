@@ -1,0 +1,182 @@
+{
+  "comparisons": [
+    {
+      "loss_service_min": 10.6,
+      "method": "mission_weight_greedy",
+      "order": [
+        "identity",
+        "storage",
+        "ground_link",
+        "payload",
+        "archive",
+        "console"
+      ],
+      "trace": [
+        {
+          "completion_min": 3.0,
+          "job": "identity",
+          "weight": 0.22
+        },
+        {
+          "completion_min": 8.0,
+          "job": "storage",
+          "weight": 0.25
+        },
+        {
+          "completion_min": 10.0,
+          "job": "ground_link",
+          "weight": 0.16
+        },
+        {
+          "completion_min": 14.0,
+          "job": "payload",
+          "weight": 0.19
+        },
+        {
+          "completion_min": 20.0,
+          "job": "archive",
+          "weight": 0.1
+        },
+        {
+          "completion_min": 21.0,
+          "job": "console",
+          "weight": 0.08
+        }
+      ]
+    },
+    {
+      "loss_service_min": 9.639999999999999,
+      "method": "shortest_ready_first",
+      "order": [
+        "identity",
+        "console",
+        "ground_link",
+        "storage",
+        "payload",
+        "archive"
+      ],
+      "trace": [
+        {
+          "completion_min": 3.0,
+          "job": "identity",
+          "weight": 0.22
+        },
+        {
+          "completion_min": 4.0,
+          "job": "console",
+          "weight": 0.08
+        },
+        {
+          "completion_min": 6.0,
+          "job": "ground_link",
+          "weight": 0.16
+        },
+        {
+          "completion_min": 11.0,
+          "job": "storage",
+          "weight": 0.25
+        },
+        {
+          "completion_min": 15.0,
+          "job": "payload",
+          "weight": 0.19
+        },
+        {
+          "completion_min": 21.0,
+          "job": "archive",
+          "weight": 0.1
+        }
+      ]
+    },
+    {
+      "loss_service_min": 9.639999999999999,
+      "method": "enumerated_optimum",
+      "order": [
+        "identity",
+        "console",
+        "ground_link",
+        "storage",
+        "payload",
+        "archive"
+      ],
+      "trace": [
+        {
+          "completion_min": 3.0,
+          "job": "identity",
+          "weight": 0.22
+        },
+        {
+          "completion_min": 4.0,
+          "job": "console",
+          "weight": 0.08
+        },
+        {
+          "completion_min": 6.0,
+          "job": "ground_link",
+          "weight": 0.16
+        },
+        {
+          "completion_min": 11.0,
+          "job": "storage",
+          "weight": 0.25
+        },
+        {
+          "completion_min": 15.0,
+          "job": "payload",
+          "weight": 0.19
+        },
+        {
+          "completion_min": 21.0,
+          "job": "archive",
+          "weight": 0.1
+        }
+      ]
+    }
+  ],
+  "evidence_class": "Derived from Synthetic",
+  "feasible_orders": 25,
+  "jobs": {
+    "archive": [
+      6.0,
+      0.1,
+      [
+        "storage"
+      ]
+    ],
+    "console": [
+      1.0,
+      0.08,
+      [
+        "identity"
+      ]
+    ],
+    "ground_link": [
+      2.0,
+      0.16,
+      [
+        "identity"
+      ]
+    ],
+    "identity": [
+      3.0,
+      0.22,
+      []
+    ],
+    "payload": [
+      4.0,
+      0.19,
+      [
+        "storage",
+        "ground_link"
+      ]
+    ],
+    "storage": [
+      5.0,
+      0.25,
+      [
+        "identity"
+      ]
+    ]
+  },
+  "limitations": "Six assumed jobs; serial single-crew restores; each function becomes available at completion. No stochastic duration, partial service, production intervention or real incident claim."
+}

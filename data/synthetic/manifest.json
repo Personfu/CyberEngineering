@@ -1,0 +1,35 @@
+{
+  "evidence_class": "Synthetic; derived results only",
+  "files": {
+    "clocks.json": {
+      "bytes": 1000,
+      "sha256": "db191a620919773d90956d3c86694fb1a43896226c49b28a3492fae6d6ef2788"
+    },
+    "contacts.json": {
+      "bytes": 19327,
+      "sha256": "70907c6e82ed9ceee881ebe0c0f0454e51c56544e5dc7ed8b2b625778f497004"
+    },
+    "firmware.json": {
+      "bytes": 1265,
+      "sha256": "7956afb775d11ef03897fa1ac476be1426b814d37505dc17aedff82ab3ac9dad"
+    },
+    "privacy.json": {
+      "bytes": 1478,
+      "sha256": "bd44d3fa57134dc344349a9a3303f357564286d8e89fd55a315de2c7895609df"
+    },
+    "recovery.json": {
+      "bytes": 3539,
+      "sha256": "3d4ecc3e70773b2e084d8ee5cd4cb47c802e07a6affb775401a792ac80ac9936"
+    },
+    "telemetry.csv": {
+      "bytes": 540957,
+      "sha256": "a360b18158e5120f2c0211a20a2a8e0e009b9a7c53fad9ee03ff3b04620dbccd"
+    },
+    "telemetry.json": {
+      "bytes": 1613,
+      "sha256": "2e601210c5a3005298c2f2b882d1437ec6febe479f3410e3f642458d220489ae"
+    }
+  },
+  "generator": "experiments/benchmark.py",
+  "seed": 20261002
+}

@@ -1,0 +1,56 @@
+{
+  "atomic": [
+    {
+      "active_before_recovery": "old",
+      "cut": 0,
+      "safe": true,
+      "selected": "old"
+    },
+    {
+      "active_before_recovery": "old",
+      "cut": 1,
+      "safe": true,
+      "selected": "old"
+    },
+    {
+      "active_before_recovery": "old",
+      "cut": 2,
+      "safe": true,
+      "selected": "new"
+    },
+    {
+      "active_before_recovery": "new",
+      "cut": 3,
+      "safe": true,
+      "selected": "new"
+    }
+  ],
+  "evidence_class": "Derived from Synthetic",
+  "limitations": "Abstract three-operation storage model, complete-operation interruption boundaries only. Assumes atomic individual writes, reliable verification and two independent available slots. Does not test torn writes, corrupt metadata, boot trust, flash or cryptography.",
+  "single_slot": [
+    {
+      "active_before_recovery": "old",
+      "cut": 0,
+      "safe": true,
+      "selected": "old"
+    },
+    {
+      "active_before_recovery": null,
+      "cut": 1,
+      "safe": false,
+      "selected": null
+    },
+    {
+      "active_before_recovery": null,
+      "cut": 2,
+      "safe": false,
+      "selected": null
+    },
+    {
+      "active_before_recovery": null,
+      "cut": 3,
+      "safe": true,
+      "selected": "new"
+    }
+  ]
+}

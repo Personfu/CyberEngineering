@@ -2,7 +2,9 @@
 
 # Project HELIOS · Cyber Mission Atlas
 
-**150 distinct, testable cyberengineering research missions across 15 domains.** This is a GitHub-native engineering atlas: detailed proposals, models, evaluation criteria, visuals, and primary-source references. It is a research portfolio, not a deployed defense product. Every mission is written for owned, synthetic, or explicitly authorized systems.
+**150 distinct, testable cyberengineering research missions across 15 domains.**
+
+**Graduate research extension: 180 total missions.** All 150 originals are preserved, with 30 new NASA-inspired proposals, 15 domain models, 45 graduate challenges, 11 applicable resource contracts, six executable reference experiments, seven data figures and a pinned CISA metadata snapshot. Start in the [Research Flightbook](research/README.md). These remain proposals and bounded reference mechanics; field effectiveness has not been established. This is a GitHub-native engineering atlas: detailed proposals, models, evaluation criteria, visuals, and primary-source references. It is a research portfolio, not a deployed defense product. Every mission is written for owned, synthetic, or explicitly authorized systems.
 
 | Portfolio | Evidence | Delivery |
 | :--- | :--- | :--- |
@@ -77,3 +79,9 @@ python scripts/build_atlas.py --check
 ```
 
 To propose a new mission or strengthen an existing one, follow [CONTRIBUTING.md](CONTRIBUTING.md). The atlas is independent research documentation and does not claim NASA, NIST, CISA, or other agency endorsement.
+
+## Red-team assessment and public intelligence
+
+The [150-module Assessment Flightbook](assessment/README.md) progresses from basic cybersecurity to authorized assessment engineering, adversary-informed detection, mission exercises and graduate research. It connects to the preserved mission dossiers and offline models rather than adding disconnected products. Modules are proposals; they do not add another 150 implemented tools.
+
+The [Public Intelligence desk](intelligence/README.md) documents Nightmare-Eclipse, Church of Malware, two government-described activity clusters and four public homepage bylines through a six-source, eleven-claim ledger. It distinguishes research personas, communities, bylines and intrusion attribution. No real identities or criminal roles are inferred from handles.

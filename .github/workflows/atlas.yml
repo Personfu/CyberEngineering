@@ -19,3 +19,11 @@ jobs:
           python-version: '3.12'
       - name: Check 150 missions, citations, catalog, and visuals
         run: python scripts/build_atlas.py --check
+
+      - name: Check graduate research extension and deterministic experiments
+        run: |
+          python scripts/build_research.py --check
+          python scripts/build_assessment.py --check
+          python -m experiments.benchmark --check
+          python scripts/build_research_visuals.py --check
+          python -m unittest discover -s tests -v

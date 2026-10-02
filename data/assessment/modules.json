@@ -1,0 +1,1537 @@
+{
+  "count": 150,
+  "phases": [
+    {
+      "number": 1,
+      "orbit": "MERCURY",
+      "title": "Security foundations"
+    },
+    {
+      "number": 2,
+      "orbit": "GEMINI",
+      "title": "Authorized assessment engineering"
+    },
+    {
+      "number": 3,
+      "orbit": "ARTEMIS",
+      "title": "Identity, application and cloud lab assessment"
+    },
+    {
+      "number": 4,
+      "orbit": "KEPLER",
+      "title": "Adversary-informed detection and intelligence"
+    },
+    {
+      "number": 5,
+      "orbit": "PIONEER",
+      "title": "Mission-scale red-blue tabletop research"
+    },
+    {
+      "number": 6,
+      "orbit": "JAMES WEBB",
+      "title": "Graduate red-team measurement and assurance"
+    }
+  ],
+  "modules": [
+    {
+      "id": "RT001",
+      "phase": 1,
+      "orbit": "MERCURY",
+      "title": "MERCURY · Trust Boundary Sketch",
+      "artifact": "A labeled drawing of a fictional workstation, identity service and backup",
+      "question": "Which crossing requires a separately authorized decision?",
+      "related_mission": "005",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT002",
+      "phase": 1,
+      "orbit": "MERCURY",
+      "title": "MERCURY · Credential Custody Notebook",
+      "artifact": "Synthetic accounts and an ownership/expiry table",
+      "question": "Can a reviewer identify every legitimate custodian without retaining a secret?",
+      "related_mission": "073",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT003",
+      "phase": 1,
+      "orbit": "MERCURY",
+      "title": "MERCURY · MFA Assurance Review",
+      "artifact": "A paper authentication decision table",
+      "question": "Which fallback removes the intended assurance property?",
+      "related_mission": "067",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT004",
+      "phase": 1,
+      "orbit": "MERCURY",
+      "title": "MERCURY · Patch State Receipt",
+      "artifact": "Synthetic version records and dated vendor references",
+      "question": "Can installed, applicable and verified-fixed states be distinguished?",
+      "related_mission": "135",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT005",
+      "phase": 1,
+      "orbit": "MERCURY",
+      "title": "MERCURY · Backup Restore Baseline",
+      "artifact": "An offline fictional restore record",
+      "question": "Does a successful backup imply a working restored service?",
+      "related_mission": "122",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT006",
+      "phase": 1,
+      "orbit": "MERCURY",
+      "title": "MERCURY · Endpoint Health Evidence",
+      "artifact": "Invented sensor-health events with missing intervals",
+      "question": "Can monitoring failure be separated from a clean endpoint?",
+      "related_mission": "046",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT007",
+      "phase": 1,
+      "orbit": "MERCURY",
+      "title": "MERCURY · Network Layer Map",
+      "artifact": "A schematic with application, transport and observation points",
+      "question": "Where does an encrypted connection remain observable without content inspection?",
+      "related_mission": "041",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT008",
+      "phase": 1,
+      "orbit": "MERCURY",
+      "title": "MERCURY · DNS Provenance Card",
+      "artifact": "A fictional domain record history",
+      "question": "Can a naming change be dated without inferring ownership from it?",
+      "related_mission": "049",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT009",
+      "phase": 1,
+      "orbit": "MERCURY",
+      "title": "MERCURY · Certificate Lifecycle Lens",
+      "artifact": "A synthetic certificate validity timeline",
+      "question": "Does certificate validity establish legitimacy of the service behind it?",
+      "related_mission": "049",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT010",
+      "phase": 1,
+      "orbit": "MERCURY",
+      "title": "MERCURY · Permission Matrix Primer",
+      "artifact": "A six-role fictional task matrix",
+      "question": "Which permission is unnecessary for the declared task?",
+      "related_mission": "062",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT011",
+      "phase": 1,
+      "orbit": "MERCURY",
+      "title": "MERCURY · Log Time Fundamentals",
+      "artifact": "Three fabricated timestamp streams",
+      "question": "Which order is genuinely known when clock bounds overlap?",
+      "related_mission": "043",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT012",
+      "phase": 1,
+      "orbit": "MERCURY",
+      "title": "MERCURY · Hash and Signature Distinction",
+      "artifact": "Known synthetic files and a signature-concept worksheet",
+      "question": "What does integrity establish that authenticity does not, and vice versa?",
+      "related_mission": "036",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT013",
+      "phase": 1,
+      "orbit": "MERCURY",
+      "title": "MERCURY · Encryption Context Review",
+      "artifact": "A data-flow diagram with declared key holders",
+      "question": "Who can see plaintext at each boundary even when the link is encrypted?",
+      "related_mission": "008",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT014",
+      "phase": 1,
+      "orbit": "MERCURY",
+      "title": "MERCURY · Data Classification Budget",
+      "artifact": "A mock collection plan with sensitive fields removed",
+      "question": "Which fields are necessary for the research decision?",
+      "related_mission": "070",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT015",
+      "phase": 1,
+      "orbit": "MERCURY",
+      "title": "MERCURY · Safe Lab Isolation",
+      "artifact": "A plan for an offline fixture directory",
+      "question": "Can any action in the plan reach an undeclared environment?",
+      "related_mission": "090",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT016",
+      "phase": 1,
+      "orbit": "MERCURY",
+      "title": "MERCURY · Versioned Lab Inventory",
+      "artifact": "A fixture and dependency manifest",
+      "question": "Can the same input be reconstructed after a dependency changes?",
+      "related_mission": "055",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT017",
+      "phase": 1,
+      "orbit": "MERCURY",
+      "title": "MERCURY · Benign Process Baseline",
+      "artifact": "A supplied synthetic process-event table",
+      "question": "Which normal maintenance event resembles the scenario under evaluation?",
+      "related_mission": "047",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT018",
+      "phase": 1,
+      "orbit": "MERCURY",
+      "title": "MERCURY · Account Lifecycle Clock",
+      "artifact": "A fictional joiner/mover/leaver history",
+      "question": "Where does permission outlive the task that justified it?",
+      "related_mission": "065",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT019",
+      "phase": 1,
+      "orbit": "MERCURY",
+      "title": "MERCURY · Update Authenticity Review",
+      "artifact": "A staged-update state diagram",
+      "question": "What happens when transport succeeds but verification is unknown?",
+      "related_mission": "037",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT020",
+      "phase": 1,
+      "orbit": "MERCURY",
+      "title": "MERCURY · Service Dependency Primer",
+      "artifact": "A small graph with a shared identity dependency",
+      "question": "Why is component availability insufficient to predict mission availability?",
+      "related_mission": "001",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT021",
+      "phase": 1,
+      "orbit": "MERCURY",
+      "title": "MERCURY · Alert Base-Rate Lesson",
+      "artifact": "A probability worksheet using explicit assumed prevalence",
+      "question": "Can a high-recall detector still produce mostly false alarms?",
+      "related_mission": "086",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT022",
+      "phase": 1,
+      "orbit": "MERCURY",
+      "title": "MERCURY · Evidence Label Practice",
+      "artifact": "A mixed set of synthetic and public-source statements",
+      "question": "Can observed, derived and proposed statements be labeled consistently?",
+      "related_mission": "010",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT023",
+      "phase": 1,
+      "orbit": "MERCURY",
+      "title": "MERCURY · Research Citation Hygiene",
+      "artifact": "A claim-to-source table",
+      "question": "Does each source support the exact claim beside it?",
+      "related_mission": "143",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT024",
+      "phase": 1,
+      "orbit": "MERCURY",
+      "title": "MERCURY · Incident Note Discipline",
+      "artifact": "A synthetic case note with observation and inference columns",
+      "question": "Can another analyst reproduce the conclusion without guessing?",
+      "related_mission": "060",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT025",
+      "phase": 1,
+      "orbit": "MERCURY",
+      "title": "MERCURY · Security Value Definition",
+      "artifact": "A fictional mission requirement and acceptance floor",
+      "question": "What measurable outcome makes this control useful?",
+      "related_mission": "141",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT026",
+      "phase": 2,
+      "orbit": "GEMINI",
+      "title": "GEMINI · Scope Passport",
+      "artifact": "A signed-by-role fictional assessment scope",
+      "question": "Are target ownership, permitted actions and expiry unambiguous?",
+      "related_mission": "131",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT027",
+      "phase": 2,
+      "orbit": "GEMINI",
+      "title": "GEMINI · Rules of Engagement Ledger",
+      "artifact": "A scenario-specific permission and exclusion table",
+      "question": "Can a stop condition override an otherwise permitted exercise?",
+      "related_mission": "090",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT028",
+      "phase": 2,
+      "orbit": "GEMINI",
+      "title": "GEMINI · Mission Objective Interview",
+      "artifact": "A structured stakeholder worksheet",
+      "question": "Is the assessment answering a mission question rather than counting findings?",
+      "related_mission": "001",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT029",
+      "phase": 2,
+      "orbit": "GEMINI",
+      "title": "GEMINI · Evidence Collection Ceiling",
+      "artifact": "A minimal synthetic evidence schema",
+      "question": "Can the endpoint be measured without collecting content or credentials?",
+      "related_mission": "070",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT030",
+      "phase": 2,
+      "orbit": "GEMINI",
+      "title": "GEMINI · Consent and Contact Plan",
+      "artifact": "A fictional participant consent and escalation register",
+      "question": "Who can pause a human-involved exercise and how is withdrawal handled?",
+      "related_mission": "063",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT031",
+      "phase": 2,
+      "orbit": "GEMINI",
+      "title": "GEMINI · Test Fixture Acceptance",
+      "artifact": "A manifest of harmless event fixtures",
+      "question": "Which fixture assumption could invalidate the claimed coverage?",
+      "related_mission": "143",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT032",
+      "phase": 2,
+      "orbit": "GEMINI",
+      "title": "GEMINI · Baseline Equality Contract",
+      "artifact": "A comparator information/compute budget",
+      "question": "Did the candidate receive labels or resources withheld from the baseline?",
+      "related_mission": "144",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT033",
+      "phase": 2,
+      "orbit": "GEMINI",
+      "title": "GEMINI · White-Cell Decision Journal",
+      "artifact": "A tabletop adjudication log",
+      "question": "Can scenario control and evaluated analyst decisions be separated?",
+      "related_mission": "111",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT034",
+      "phase": 2,
+      "orbit": "GEMINI",
+      "title": "GEMINI · Stop-Condition Rehearsal",
+      "artifact": "A simulated halt and restart record",
+      "question": "Does every participant know who authorizes resumption?",
+      "related_mission": "124",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT035",
+      "phase": 2,
+      "orbit": "GEMINI",
+      "title": "GEMINI · Safety and Availability Review",
+      "artifact": "A paper hazard/mission consequence matrix",
+      "question": "Can the exercise fail a service even when no security control changes?",
+      "related_mission": "006",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT036",
+      "phase": 2,
+      "orbit": "GEMINI",
+      "title": "GEMINI · Red-Blue Handoff Schema",
+      "artifact": "A synthetic event receipt and analyst review sheet",
+      "question": "Does the defender receive enough context to judge an alert independently?",
+      "related_mission": "116",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT037",
+      "phase": 2,
+      "orbit": "GEMINI",
+      "title": "GEMINI · Finding Severity Model",
+      "artifact": "A declared consequence rubric with uncertainty",
+      "question": "Does the grade reflect actual prerequisite and mission consequence?",
+      "related_mission": "141",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT038",
+      "phase": 2,
+      "orbit": "GEMINI",
+      "title": "GEMINI · Finding Reproduction Packet",
+      "artifact": "A benign fixture plus expected observation",
+      "question": "Can a reviewer validate the observation without an exploit or a live target?",
+      "related_mission": "055",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT039",
+      "phase": 2,
+      "orbit": "GEMINI",
+      "title": "GEMINI · False Positive Adjudication",
+      "artifact": "A blinded labeled maintenance-case set",
+      "question": "How often does a reviewer reject a legitimate operation?",
+      "related_mission": "130",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT040",
+      "phase": 2,
+      "orbit": "GEMINI",
+      "title": "GEMINI · Remediation Owner Receipt",
+      "artifact": "A fictional ownership/closure record",
+      "question": "Does ownership include authority and evidence to resolve the finding?",
+      "related_mission": "138",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT041",
+      "phase": 2,
+      "orbit": "GEMINI",
+      "title": "GEMINI · Retest Planning Matrix",
+      "artifact": "A change-specific validation plan",
+      "question": "Does the retest examine the changed behavior or merely repeat the old test?",
+      "related_mission": "017",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT042",
+      "phase": 2,
+      "orbit": "GEMINI",
+      "title": "GEMINI · Exception Authority Map",
+      "artifact": "A paper exception approval chain",
+      "question": "Can a temporary exemption remain invisible after expiry?",
+      "related_mission": "064",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT043",
+      "phase": 2,
+      "orbit": "GEMINI",
+      "title": "GEMINI · Assessment Data Retention",
+      "artifact": "A fixture retention/deletion plan",
+      "question": "Can results remain reproducible after unnecessary detail is removed?",
+      "related_mission": "056",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT044",
+      "phase": 2,
+      "orbit": "GEMINI",
+      "title": "GEMINI · Time and Cost Capture",
+      "artifact": "An analyst-hours and runtime worksheet",
+      "question": "What benefit survives normalization by staff time?",
+      "related_mission": "146",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT045",
+      "phase": 2,
+      "orbit": "GEMINI",
+      "title": "GEMINI · Evidence Chain Receipt",
+      "artifact": "A synthetic input/output hash ledger",
+      "question": "Can every conclusion be tied to one evaluated input revision?",
+      "related_mission": "058",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT046",
+      "phase": 2,
+      "orbit": "GEMINI",
+      "title": "GEMINI · Coverage Gap Register",
+      "artifact": "A list of unobservable states in a fictional service",
+      "question": "Which missing observation matters most to the mission claim?",
+      "related_mission": "046",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT047",
+      "phase": 2,
+      "orbit": "GEMINI",
+      "title": "GEMINI · Negative Finding Report",
+      "artifact": "A report template for a failed hypothesis",
+      "question": "Can a lack of improvement be distinguished from insufficient data?",
+      "related_mission": "148",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT048",
+      "phase": 2,
+      "orbit": "GEMINI",
+      "title": "GEMINI · Executive Decision Brief",
+      "artifact": "A one-page fictional risk/options briefing",
+      "question": "Which decision is supported and which uncertainty remains unresolved?",
+      "related_mission": "150",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT049",
+      "phase": 2,
+      "orbit": "GEMINI",
+      "title": "GEMINI · Technical Annex Contract",
+      "artifact": "A versioned model/data/test annex",
+      "question": "Can a second engineer independently check the main result?",
+      "related_mission": "010",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT050",
+      "phase": 2,
+      "orbit": "GEMINI",
+      "title": "GEMINI · Engagement Closure Review",
+      "artifact": "A mock scope, artifacts and recovery checklist",
+      "question": "Can the owner establish that the exercise left no persistent change?",
+      "related_mission": "040",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT051",
+      "phase": 3,
+      "orbit": "ARTEMIS",
+      "title": "ARTEMIS · Authorization Decision Witness",
+      "artifact": "A request simulator with expected allow/deny labels",
+      "question": "Does every permitted request have a task and grant witness?",
+      "related_mission": "016",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT052",
+      "phase": 3,
+      "orbit": "ARTEMIS",
+      "title": "ARTEMIS · Revocation Blackout Study",
+      "artifact": "An offline cache/lease timeline",
+      "question": "What bound on stale permission can actually be supported?",
+      "related_mission": "069",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT053",
+      "phase": 3,
+      "orbit": "ARTEMIS",
+      "title": "ARTEMIS · Session Expiry Edge Cases",
+      "artifact": "A synthetic session state table",
+      "question": "What happens to a legitimate task at an expiry boundary?",
+      "related_mission": "067",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT054",
+      "phase": 3,
+      "orbit": "ARTEMIS",
+      "title": "ARTEMIS · Break-Glass Accountability",
+      "artifact": "A paper emergency authorization history",
+      "question": "Can necessary emergency work remain accountable without silently granting permanent access?",
+      "related_mission": "064",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT055",
+      "phase": 3,
+      "orbit": "ARTEMIS",
+      "title": "ARTEMIS · Service Identity Rotation",
+      "artifact": "A synthetic workload identity history",
+      "question": "Can old and new identities overlap without losing attribution?",
+      "related_mission": "074",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT056",
+      "phase": 3,
+      "orbit": "ARTEMIS",
+      "title": "ARTEMIS · Delegation Provenance",
+      "artifact": "A fictional delegation graph",
+      "question": "Does revoking an upstream grant invalidate derived authority?",
+      "related_mission": "061",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT057",
+      "phase": 3,
+      "orbit": "ARTEMIS",
+      "title": "ARTEMIS · Task-Minimal Role Design",
+      "artifact": "An offline role/need matrix",
+      "question": "Which feasible role set minimizes excess authority at equal task success?",
+      "related_mission": "062",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT058",
+      "phase": 3,
+      "orbit": "ARTEMIS",
+      "title": "ARTEMIS · API Contract State Map",
+      "artifact": "A harmless state-transition interpreter",
+      "question": "Does a valid input in the wrong state violate the business contract?",
+      "related_mission": "011",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT059",
+      "phase": 3,
+      "orbit": "ARTEMIS",
+      "title": "ARTEMIS · Parser Boundary Specification",
+      "artifact": "A bounded schema acceptance model",
+      "question": "Which rejected input should be benign and which acceptance is unsupported?",
+      "related_mission": "012",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT060",
+      "phase": 3,
+      "orbit": "ARTEMIS",
+      "title": "ARTEMIS · Exception Handling Evidence",
+      "artifact": "Synthetic error-path traces",
+      "question": "Does a failed operation still preserve the declared authorization invariant?",
+      "related_mission": "014",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT061",
+      "phase": 3,
+      "orbit": "ARTEMIS",
+      "title": "ARTEMIS · Rate and Resource Budget",
+      "artifact": "A service-queue simulator with benign bursts",
+      "question": "At what demand is the availability claim infeasible without blaming an adversary?",
+      "related_mission": "020",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT062",
+      "phase": 3,
+      "orbit": "ARTEMIS",
+      "title": "ARTEMIS · Data-Flow Destination Contract",
+      "artifact": "A fictional producer/consumer policy table",
+      "question": "Can every declared destination be justified by purpose and authority?",
+      "related_mission": "005",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT063",
+      "phase": 3,
+      "orbit": "ARTEMIS",
+      "title": "ARTEMIS · Configuration Semantic Difference",
+      "artifact": "Synthetic before/after policy documents",
+      "question": "Does a small text change materially alter authorization?",
+      "related_mission": "017",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT064",
+      "phase": 3,
+      "orbit": "ARTEMIS",
+      "title": "ARTEMIS · Cloud Desired-State Reconciliation",
+      "artifact": "A fabricated observed/declared resource history",
+      "question": "Can delayed observation be distinguished from configuration drift?",
+      "related_mission": "071",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT065",
+      "phase": 3,
+      "orbit": "ARTEMIS",
+      "title": "ARTEMIS · Ephemeral Resource Attribution",
+      "artifact": "Synthetic creation/deletion and resource identifiers",
+      "question": "What survives when an identifier is reused?",
+      "related_mission": "072",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT066",
+      "phase": 3,
+      "orbit": "ARTEMIS",
+      "title": "ARTEMIS · Backup Key Dependency",
+      "artifact": "A fictional key/snapshot recovery graph",
+      "question": "Can a valid backup be restored if its identity provider is unavailable?",
+      "related_mission": "080",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT067",
+      "phase": 3,
+      "orbit": "ARTEMIS",
+      "title": "ARTEMIS · Cluster Admission Evidence",
+      "artifact": "Synthetic deployment metadata",
+      "question": "Can an admission decision explain every missing trust requirement?",
+      "related_mission": "079",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT068",
+      "phase": 3,
+      "orbit": "ARTEMIS",
+      "title": "ARTEMIS · Storage Residency Constraint",
+      "artifact": "A paper data/region constraint graph",
+      "question": "Is a relocation decision both authorized and consistent with the data contract?",
+      "related_mission": "076",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT069",
+      "phase": 3,
+      "orbit": "ARTEMIS",
+      "title": "ARTEMIS · Serverless Permission Scope",
+      "artifact": "A synthetic task-to-permission matrix",
+      "question": "Can ephemeral execution retain unintended authority between tasks?",
+      "related_mission": "078",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT070",
+      "phase": 3,
+      "orbit": "ARTEMIS",
+      "title": "ARTEMIS · Secret-Free Diagnostics",
+      "artifact": "Fabricated logs with explicit forbidden fields",
+      "question": "Can the failure be explained without emitting authentication material?",
+      "related_mission": "073",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT071",
+      "phase": 3,
+      "orbit": "ARTEMIS",
+      "title": "ARTEMIS · Component Identity Join",
+      "artifact": "Synthetic package and artifact identifiers",
+      "question": "How often does name-only matching misidentify the component?",
+      "related_mission": "031",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT072",
+      "phase": 3,
+      "orbit": "ARTEMIS",
+      "title": "ARTEMIS · SBOM Change Provenance",
+      "artifact": "Two artificial SBOM snapshots",
+      "question": "Is a dependency addition supported by the evaluated build artifact?",
+      "related_mission": "032",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT073",
+      "phase": 3,
+      "orbit": "ARTEMIS",
+      "title": "ARTEMIS · Build Evidence Freshness",
+      "artifact": "A synthetic artifact/provenance history",
+      "question": "Does current metadata bind the exact deployed revision?",
+      "related_mission": "002",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT074",
+      "phase": 3,
+      "orbit": "ARTEMIS",
+      "title": "ARTEMIS · Restore Consistency Certificate",
+      "artifact": "A fictional multi-service checkpoint",
+      "question": "Which individually valid snapshot combination cannot support a consistent mission state?",
+      "related_mission": "122",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT075",
+      "phase": 3,
+      "orbit": "ARTEMIS",
+      "title": "ARTEMIS · Control Rollback Accounting",
+      "artifact": "A reversible paper configuration experiment",
+      "question": "Can rollback restore both behavior and evidence lineage?",
+      "related_mission": "123",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT076",
+      "phase": 4,
+      "orbit": "KEPLER",
+      "title": "KEPLER · Public Persona Evidence Card",
+      "artifact": "A source-backed Nightmare-Eclipse alias card",
+      "question": "Does the source connect a publication persona, an operator or only reused tooling?",
+      "related_mission": "137",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT077",
+      "phase": 4,
+      "orbit": "KEPLER",
+      "title": "KEPLER · Community Claim Provenance",
+      "artifact": "A Church of Malware self-description receipt",
+      "question": "Which assertion is self-published rather than independently established?",
+      "related_mission": "133",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT078",
+      "phase": 4,
+      "orbit": "KEPLER",
+      "title": "KEPLER · Tool Author Versus Intruder",
+      "artifact": "A public-report claim graph",
+      "question": "Can shared tooling justify attributing an intrusion to its author?",
+      "related_mission": "054",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT079",
+      "phase": 4,
+      "orbit": "KEPLER",
+      "title": "KEPLER · Report Chronology Discipline",
+      "artifact": "A publication/observation/retrieval timeline",
+      "question": "Is a historical patch statement incorrectly presented as current status?",
+      "related_mission": "052",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT080",
+      "phase": 4,
+      "orbit": "KEPLER",
+      "title": "KEPLER · KEV Membership Interpretation",
+      "artifact": "The pinned public catalog metadata projection",
+      "question": "What does a positive listing establish that an absent listing does not?",
+      "related_mission": "135",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT081",
+      "phase": 4,
+      "orbit": "KEPLER",
+      "title": "KEPLER · Advisory Observation Matrix",
+      "artifact": "A public CISA claim/source table",
+      "question": "Which behavior is actually documented versus generalized by the analyst?",
+      "related_mission": "137",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT082",
+      "phase": 4,
+      "orbit": "KEPLER",
+      "title": "KEPLER · Behavior Versus Indicator Study",
+      "artifact": "Synthetic behavior and indicator labels",
+      "question": "Can a detector remain useful after incidental identifiers change?",
+      "related_mission": "045",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT083",
+      "phase": 4,
+      "orbit": "KEPLER",
+      "title": "KEPLER · Coverage Matrix with Unknowns",
+      "artifact": "An offline mechanism/artifact/control matrix",
+      "question": "Can an unobserved technique be mistaken for a covered one?",
+      "related_mission": "046",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT084",
+      "phase": 4,
+      "orbit": "KEPLER",
+      "title": "KEPLER · Telemetry Dropout Challenge",
+      "artifact": "Synthetic sensor blocks removed from a replay",
+      "question": "How much detection depends on the missing observation rather than the rule?",
+      "related_mission": "046",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT085",
+      "phase": 4,
+      "orbit": "KEPLER",
+      "title": "KEPLER · Benign Administration Confounder",
+      "artifact": "Synthetic maintenance and scenario traces",
+      "question": "Can the same visible action have a legitimate explanation?",
+      "related_mission": "047",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT086",
+      "phase": 4,
+      "orbit": "KEPLER",
+      "title": "KEPLER · Endpoint Protection Health Study",
+      "artifact": "Fabricated protection-health events",
+      "question": "Can status disagreement be investigated without changing or disabling protections?",
+      "related_mission": "022",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT087",
+      "phase": 4,
+      "orbit": "KEPLER",
+      "title": "KEPLER · VPN Identity Evidence Review",
+      "artifact": "Sanitized fictional login records",
+      "question": "Does a suspicious login establish compromised credentials or only demand review?",
+      "related_mission": "068",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT088",
+      "phase": 4,
+      "orbit": "KEPLER",
+      "title": "KEPLER · Timeline Correlation Limits",
+      "artifact": "The supplied clock-interval fixture",
+      "question": "Which apparent sequence remains temporally indeterminate?",
+      "related_mission": "052",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT089",
+      "phase": 4,
+      "orbit": "KEPLER",
+      "title": "KEPLER · Source Independence Audit",
+      "artifact": "A publisher citation graph",
+      "question": "Are five reports five observations or five copies of one observation?",
+      "related_mission": "133",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT090",
+      "phase": 4,
+      "orbit": "KEPLER",
+      "title": "KEPLER · Alias Collision Review",
+      "artifact": "A synthetic alias-to-publication table",
+      "question": "Can similar handles be kept separate without a supported linkage?",
+      "related_mission": "137",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT091",
+      "phase": 4,
+      "orbit": "KEPLER",
+      "title": "KEPLER · Intelligence Confidence Calibration",
+      "artifact": "Fabricated claims with later outcomes",
+      "question": "Is analyst confidence calibrated at the claim level?",
+      "related_mission": "142",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT092",
+      "phase": 4,
+      "orbit": "KEPLER",
+      "title": "KEPLER · Disclosure Ethics Casebook",
+      "artifact": "A public-source decision/impact chronology",
+      "question": "Can stakeholder perspectives be documented without treating a grievance as motive proof?",
+      "related_mission": "139",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT093",
+      "phase": 4,
+      "orbit": "KEPLER",
+      "title": "KEPLER · Historical Indicator Decay",
+      "artifact": "A fictional time-indexed indicator set",
+      "question": "When does an old match stop supporting the original hypothesis?",
+      "related_mission": "132",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT094",
+      "phase": 4,
+      "orbit": "KEPLER",
+      "title": "KEPLER · ATT&CK Mapping Review",
+      "artifact": "A source-evidence-to-taxonomy worksheet",
+      "question": "Does a tactic label add evidence or only organize it?",
+      "related_mission": "045",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT095",
+      "phase": 4,
+      "orbit": "KEPLER",
+      "title": "KEPLER · D3FEND Countermeasure Study",
+      "artifact": "A defensive mechanism/artifact graph",
+      "question": "Which observable effect would validate the chosen countermeasure?",
+      "related_mission": "048",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT096",
+      "phase": 4,
+      "orbit": "KEPLER",
+      "title": "KEPLER · Detection Rule Fixture Contract",
+      "artifact": "A harmless labeled-event fixture",
+      "question": "Can every expected alert be explained by declared input fields?",
+      "related_mission": "086",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT097",
+      "phase": 4,
+      "orbit": "KEPLER",
+      "title": "KEPLER · Detection Latency Denominator",
+      "artifact": "Synthetic event/onset/receipt timestamps",
+      "question": "Where does the detection clock begin when telemetry is delayed?",
+      "related_mission": "043",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT098",
+      "phase": 4,
+      "orbit": "KEPLER",
+      "title": "KEPLER · Rare-Event Precision Budget",
+      "artifact": "The supplied synthetic telemetry benchmark",
+      "question": "How does benign drift defeat a high-recall success claim?",
+      "related_mission": "086",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT099",
+      "phase": 4,
+      "orbit": "KEPLER",
+      "title": "KEPLER · Contradictory Report Adjudication",
+      "artifact": "A documented claim conflict with explicit dates",
+      "question": "Can conflicting assessments remain visible rather than being averaged into certainty?",
+      "related_mission": "137",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT100",
+      "phase": 4,
+      "orbit": "KEPLER",
+      "title": "KEPLER · Adversary Case Evidence Export",
+      "artifact": "A sanitized source receipt packet",
+      "question": "Can the reader distinguish public reporting, local inference and unknown identity?",
+      "related_mission": "055",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT101",
+      "phase": 5,
+      "orbit": "PIONEER",
+      "title": "PIONEER · Identity Failure Campaign",
+      "artifact": "A fictional shared-identity outage timeline",
+      "question": "Can essential functions survive a common identity failure?",
+      "related_mission": "003",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT102",
+      "phase": 5,
+      "orbit": "PIONEER",
+      "title": "PIONEER · Segmentation Policy Witness",
+      "artifact": "A static fictional permitted-flow matrix",
+      "question": "Do the declared isolation claims follow from the policy model?",
+      "related_mission": "048",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT103",
+      "phase": 5,
+      "orbit": "PIONEER",
+      "title": "PIONEER · Lateral Consequence Model",
+      "artifact": "An abstract dependency graph with no executable actions",
+      "question": "Which loss is caused by shared dependence rather than mere adjacency?",
+      "related_mission": "003",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT104",
+      "phase": 5,
+      "orbit": "PIONEER",
+      "title": "PIONEER · Data Egress Purpose Review",
+      "artifact": "A synthetic data/destination authorization table",
+      "question": "Is the information transfer justified by mission purpose?",
+      "related_mission": "008",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT105",
+      "phase": 5,
+      "orbit": "PIONEER",
+      "title": "PIONEER · Recovery Escrow Reachability",
+      "artifact": "An offline approved-image/key dependency graph",
+      "question": "Can recovery succeed when the primary trust service is unavailable?",
+      "related_mission": "040",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT106",
+      "phase": 5,
+      "orbit": "PIONEER",
+      "title": "PIONEER · Multi-Sensor Timeline Exercise",
+      "artifact": "Fabricated host, identity and service events",
+      "question": "How does sensor correlation change evidence without overclaiming cause?",
+      "related_mission": "053",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT107",
+      "phase": 5,
+      "orbit": "PIONEER",
+      "title": "PIONEER · Delayed Evidence Courier",
+      "artifact": "The supplied contact-limited scheduling fixture",
+      "question": "Can remote evidence remain fresh enough for the decision?",
+      "related_mission": "110",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT108",
+      "phase": 5,
+      "orbit": "PIONEER",
+      "title": "PIONEER · Battery-Limited Assurance",
+      "artifact": "A synthetic duty-cycle and evidence-refresh budget",
+      "question": "Which mandatory coverage makes a proposed schedule infeasible?",
+      "related_mission": "009",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT109",
+      "phase": 5,
+      "orbit": "PIONEER",
+      "title": "PIONEER · Ground-Station Change Receipt",
+      "artifact": "A fictional configuration revision log",
+      "question": "Can a mission command policy be tied to its reviewed revision?",
+      "related_mission": "104",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT110",
+      "phase": 5,
+      "orbit": "PIONEER",
+      "title": "PIONEER · CubeSat Update Tabletop",
+      "artifact": "The supplied abstract update/reset fixture",
+      "question": "Which reset state has no independently available approved image?",
+      "related_mission": "103",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT111",
+      "phase": 5,
+      "orbit": "PIONEER",
+      "title": "PIONEER · Payload Partition Review",
+      "artifact": "A paper payload/control data-flow diagram",
+      "question": "Can a payload fault affect authority outside its intended boundary?",
+      "related_mission": "107",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT112",
+      "phase": 5,
+      "orbit": "PIONEER",
+      "title": "PIONEER · Ephemeris Integrity Notebook",
+      "artifact": "Synthetic orbit-data provenance fields",
+      "question": "What check distinguishes data consistency from source authenticity?",
+      "related_mission": "105",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT113",
+      "phase": 5,
+      "orbit": "PIONEER",
+      "title": "PIONEER · Clock Trust Ensemble",
+      "artifact": "Fictional clock intervals with one missing source",
+      "question": "What temporal conclusion survives loss of the reference clock?",
+      "related_mission": "106",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT114",
+      "phase": 5,
+      "orbit": "PIONEER",
+      "title": "PIONEER · Radiation and Trust-State Review",
+      "artifact": "A reset/authority product-state model",
+      "question": "Can recovered health coexist with invalid authorization?",
+      "related_mission": "109",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT115",
+      "phase": 5,
+      "orbit": "PIONEER",
+      "title": "PIONEER · Receive-Only RF Evidence",
+      "artifact": "A simulated spectral observation ledger",
+      "question": "Can observation reliability be assessed without active transmission?",
+      "related_mission": "108",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT116",
+      "phase": 5,
+      "orbit": "PIONEER",
+      "title": "PIONEER · Physical Residual Confounding",
+      "artifact": "A synthetic process-mode residual study",
+      "question": "Does changed physical demand explain the apparent fault?",
+      "related_mission": "091",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT117",
+      "phase": 5,
+      "orbit": "PIONEER",
+      "title": "PIONEER · Maintenance Mode Authority",
+      "artifact": "A fictional maintenance permission/time record",
+      "question": "Can elevated maintenance authority expire reliably?",
+      "related_mission": "092",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT118",
+      "phase": 5,
+      "orbit": "PIONEER",
+      "title": "PIONEER · Safety Interlock Evidence",
+      "artifact": "A paper safety requirement-to-test trace",
+      "question": "Is the digital exercise invalid if it assumes an unreviewed physical transition?",
+      "related_mission": "093",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT119",
+      "phase": 5,
+      "orbit": "PIONEER",
+      "title": "PIONEER · Sensor Calibration Lineage",
+      "artifact": "Fabricated calibration records and uncertainty bounds",
+      "question": "Can common calibration bias defeat sensor agreement?",
+      "related_mission": "094",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT120",
+      "phase": 5,
+      "orbit": "PIONEER",
+      "title": "PIONEER · Island-Mode Service Contract",
+      "artifact": "A fictional essential-function reduced-mode plan",
+      "question": "Which service can be retained while declared protections remain mandatory?",
+      "related_mission": "095",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT121",
+      "phase": 5,
+      "orbit": "PIONEER",
+      "title": "PIONEER · Command Plausibility Model",
+      "artifact": "A synthetic command/state decision matrix",
+      "question": "Can a digitally authorized command still violate the physical safe set?",
+      "related_mission": "096",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT122",
+      "phase": 5,
+      "orbit": "PIONEER",
+      "title": "PIONEER · Legacy Device Boundary",
+      "artifact": "An approved-interface schematic for a fictional legacy device",
+      "question": "Which assumed control cannot actually be enforced by that device?",
+      "related_mission": "098",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT123",
+      "phase": 5,
+      "orbit": "PIONEER",
+      "title": "PIONEER · Recovery Prerequisite Experiment",
+      "artifact": "The supplied six-job offline scheduler",
+      "question": "When does a simple feasible heuristic match an optimized plan?",
+      "related_mission": "099",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT124",
+      "phase": 5,
+      "orbit": "PIONEER",
+      "title": "PIONEER · Cross-Site Common Cause",
+      "artifact": "A fictional multi-site recovery dependency graph",
+      "question": "Are independent sites actually dependent on the same supplier, key or operator?",
+      "related_mission": "100",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT125",
+      "phase": 5,
+      "orbit": "PIONEER",
+      "title": "PIONEER · Operator Handoff Under Loss",
+      "artifact": "Consented tabletop notes with missing evidence",
+      "question": "Can safe coordination survive a shift change and reduced communications?",
+      "related_mission": "116",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT126",
+      "phase": 6,
+      "orbit": "JAMES WEBB",
+      "title": "JAMES WEBB · Partial Observability Thesis",
+      "artifact": "An estimator with explicit latent-state assumptions",
+      "question": "Which state cannot be inferred from the chosen telemetry?",
+      "related_mission": "046",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT127",
+      "phase": 6,
+      "orbit": "JAMES WEBB",
+      "title": "JAMES WEBB · Sequential Decision Calibration",
+      "artifact": "A validation-only threshold and cost study",
+      "question": "Does threshold selection leak future outcomes?",
+      "related_mission": "142",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT128",
+      "phase": 6,
+      "orbit": "JAMES WEBB",
+      "title": "JAMES WEBB · Event-Level Benchmark Geometry",
+      "artifact": "A synthetic labeled interval corpus",
+      "question": "Does point-adjusted scoring hide missed parts of an event?",
+      "related_mission": "143",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT129",
+      "phase": 6,
+      "orbit": "JAMES WEBB",
+      "title": "JAMES WEBB · Domain Shift Identifiability",
+      "artifact": "A held-out channel/environment evaluation plan",
+      "question": "Which improvement survives an unseen operating mode?",
+      "related_mission": "088",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT130",
+      "phase": 6,
+      "orbit": "JAMES WEBB",
+      "title": "JAMES WEBB · Negative-Evidence Bounds",
+      "artifact": "A capture-probability sensitivity derivation",
+      "question": "What conclusion survives nonrandom missingness?",
+      "related_mission": "057",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT131",
+      "phase": 6,
+      "orbit": "JAMES WEBB",
+      "title": "JAMES WEBB · Causal Control Effect Study",
+      "artifact": "A potential-outcomes and adjustment-set notebook",
+      "question": "Is the intervention effect identifiable from observational incidents?",
+      "related_mission": "144",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT132",
+      "phase": 6,
+      "orbit": "JAMES WEBB",
+      "title": "JAMES WEBB · Common-Cause Tail Risk",
+      "artifact": "A scenario ensemble with shared latent failures",
+      "question": "How much does assumed independence understate mission loss?",
+      "related_mission": "148",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT133",
+      "phase": 6,
+      "orbit": "JAMES WEBB",
+      "title": "JAMES WEBB · Temporal Refinement Proof",
+      "artifact": "A finite abstract/concrete policy relation",
+      "question": "Which implementation trace violates the declared abstract authorization?",
+      "related_mission": "016",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT134",
+      "phase": 6,
+      "orbit": "JAMES WEBB",
+      "title": "JAMES WEBB · Proof Assumption Expiry",
+      "artifact": "A proof/assumption change-impact graph",
+      "question": "Can a valid proof become inapplicable after an environment change?",
+      "related_mission": "007",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT135",
+      "phase": 6,
+      "orbit": "JAMES WEBB",
+      "title": "JAMES WEBB · Resource-Normalized Detection",
+      "artifact": "An equal-budget comparator design",
+      "question": "Does accuracy improvement survive analyst-time and compute normalization?",
+      "related_mission": "146",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT136",
+      "phase": 6,
+      "orbit": "JAMES WEBB",
+      "title": "JAMES WEBB · Privacy Utility Frontier",
+      "artifact": "The supplied analytic privacy-scale study",
+      "question": "What contribution and composition assumptions support the guarantee?",
+      "related_mission": "066",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT137",
+      "phase": 6,
+      "orbit": "JAMES WEBB",
+      "title": "JAMES WEBB · Operator Intervention Bias",
+      "artifact": "A causal diagram with selective human review",
+      "question": "Does the observed label set reflect triage decisions rather than event truth?",
+      "related_mission": "087",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT138",
+      "phase": 6,
+      "orbit": "JAMES WEBB",
+      "title": "JAMES WEBB · Cognitive Load Crossover",
+      "artifact": "A consented randomized tabletop protocol",
+      "question": "Can faster decisions increase severe errors?",
+      "related_mission": "112",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT139",
+      "phase": 6,
+      "orbit": "JAMES WEBB",
+      "title": "JAMES WEBB · Accessible Assessment Instrument",
+      "artifact": "Task-balanced alternative evidence views",
+      "question": "Is apparent usability improvement compatible with all included participants?",
+      "related_mission": "114",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT140",
+      "phase": 6,
+      "orbit": "JAMES WEBB",
+      "title": "JAMES WEBB · Evidence Graph Reproducibility",
+      "artifact": "A versioned source/transformation/claim graph",
+      "question": "Can an independent reviewer reproduce a conclusion under pinned inputs?",
+      "related_mission": "058",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT141",
+      "phase": 6,
+      "orbit": "JAMES WEBB",
+      "title": "JAMES WEBB · Uncertain Recovery Optimization",
+      "artifact": "A declared tail-loss schedule study",
+      "question": "Does a tail-optimal schedule generalize beyond the optimization scenarios?",
+      "related_mission": "121",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT142",
+      "phase": 6,
+      "orbit": "JAMES WEBB",
+      "title": "JAMES WEBB · Formal State-Space Limits",
+      "artifact": "A bound and abstraction sensitivity ledger",
+      "question": "Which unmodeled state invalidates the bounded proof claim?",
+      "related_mission": "019",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT143",
+      "phase": 6,
+      "orbit": "JAMES WEBB",
+      "title": "JAMES WEBB · Synthetic Fidelity Discrimination",
+      "artifact": "A synthetic-versus-source observation study",
+      "question": "Can the benchmark preserve useful statistics without copying personal records?",
+      "related_mission": "089",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT144",
+      "phase": 6,
+      "orbit": "JAMES WEBB",
+      "title": "JAMES WEBB · Attribution Hypothesis Competition",
+      "artifact": "A source-labeled rival-explanation graph",
+      "question": "What independent observation could distinguish authorship from tool adoption?",
+      "related_mission": "137",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT145",
+      "phase": 6,
+      "orbit": "JAMES WEBB",
+      "title": "JAMES WEBB · Intelligence Selection Bias",
+      "artifact": "A catalog-inclusion/observation process model",
+      "question": "Can reporting changes mimic changes in threat prevalence?",
+      "related_mission": "133",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT146",
+      "phase": 6,
+      "orbit": "JAMES WEBB",
+      "title": "JAMES WEBB · Benchmark Contamination Audit",
+      "artifact": "A model/data/tuning lineage passport",
+      "question": "Where has the supposedly untouched test set influenced a decision?",
+      "related_mission": "143",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT147",
+      "phase": 6,
+      "orbit": "JAMES WEBB",
+      "title": "JAMES WEBB · Multiplicty and Novelty Review",
+      "artifact": "A preregistered confirmatory/exploratory plan",
+      "question": "Are many hypotheses generating false confidence or an actual narrow contribution?",
+      "related_mission": "141",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT148",
+      "phase": 6,
+      "orbit": "JAMES WEBB",
+      "title": "JAMES WEBB · Energy and Carbon Trade Study",
+      "artifact": "A power/resource model with uncertainty",
+      "question": "Which savings can be measured rather than assumed from invocation count?",
+      "related_mission": "147",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT149",
+      "phase": 6,
+      "orbit": "JAMES WEBB",
+      "title": "JAMES WEBB · Independent Assurance Panel",
+      "artifact": "A blinded artifact and rival-mechanism review",
+      "question": "Which claim survives review by someone outside the implementer team?",
+      "related_mission": "145",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    },
+    {
+      "id": "RT150",
+      "phase": 6,
+      "orbit": "JAMES WEBB",
+      "title": "JAMES WEBB · Longitudinal Mission Observatory",
+      "artifact": "A versioned outcome and denominator pipeline",
+      "question": "Can changes in measurement be separated from changes in cyber risk?",
+      "related_mission": "150",
+      "status": "Proposed authorized assessment research; not an exploit or deployed capability"
+    }
+  ]
+}

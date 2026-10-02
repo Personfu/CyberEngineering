@@ -1,0 +1,101 @@
+[
+  {
+    "id": "CL01",
+    "source_id": "TI01",
+    "subject": "Nightmare-Eclipse",
+    "claim": "Huntress describes Nightmare-Eclipse / Chaotic Eclipse as a vulnerability-publication persona.",
+    "evidence_type": "Publisher-reported alias association",
+    "limitation": "This does not establish a real name or that the persona conducted the investigated intrusion.",
+    "review_date": "2026-10-02"
+  },
+  {
+    "id": "CL02",
+    "source_id": "TI01",
+    "subject": "Nightmare-Eclipse tooling",
+    "claim": "Huntress reports tool activity in a customer intrusion and states the observed tools appeared unsuccessful.",
+    "evidence_type": "First-party reported observation",
+    "limitation": "Tool adoption does not identify the developer as the intruder; this is a historical April case.",
+    "review_date": "2026-10-02"
+  },
+  {
+    "id": "CL03",
+    "source_id": "TI02",
+    "subject": "Church of Malware",
+    "claim": "The homepage describes an offensive-research and security-education mission and claims nonprofit status.",
+    "evidence_type": "Self-published claim",
+    "limitation": "Legal status was not independently checked; mission language is not evidence of criminal conduct.",
+    "review_date": "2026-10-02"
+  },
+  {
+    "id": "CL04",
+    "source_id": "TI04",
+    "subject": "CVE-2026-33825",
+    "claim": "The pinned KEV row lists Microsoft Defender, addition date 2026-04-22, and ransomware-use value Known.",
+    "evidence_type": "Observed public catalog metadata",
+    "limitation": "Catalog metadata does not identify any operator or victim and does not date exploitation onset.",
+    "review_date": "2026-10-02"
+  },
+  {
+    "id": "CL05",
+    "source_id": "TI03",
+    "subject": "CVE-2026-33825",
+    "claim": "NVD describes a local privilege-escalation issue in Microsoft Defender.",
+    "evidence_type": "Official record description",
+    "limitation": "No affected-build enumeration, exploit verification or current endpoint patch assessment was performed.",
+    "review_date": "2026-10-02"
+  },
+  {
+    "id": "CL06",
+    "source_id": "TI05",
+    "subject": "Scattered Spider",
+    "claim": "The joint advisory describes a cybercriminal group targeting large companies and contracted IT help desks.",
+    "evidence_type": "Government attributed characterization",
+    "limitation": "Applies to the advisory cluster and reporting window; an individual match or legitimate tool alone is not attribution.",
+    "review_date": "2026-10-02"
+  },
+  {
+    "id": "CL07",
+    "source_id": "TI06",
+    "subject": "TraderTraitor",
+    "claim": "FBI attributes the February 2025 Bybit theft to North Korea and describes TraderTraitor actors moving the assets.",
+    "evidence_type": "Government attribution statement",
+    "limitation": "No independent attribution analysis was conducted here; retain the issuer and historical date.",
+    "review_date": "2026-10-02"
+  },
+  {
+    "id": "CL08",
+    "source_id": "TI02",
+    "subject": "ek0mssavi0r",
+    "claim": "The homepage publicly labels repository and article entries with this handle.",
+    "evidence_type": "Observed self-published byline",
+    "limitation": "Byline is not verified personal identity or evidence of an intrusion.",
+    "review_date": "2026-10-02"
+  },
+  {
+    "id": "CL09",
+    "source_id": "TI02",
+    "subject": "leviathan",
+    "claim": "The homepage publicly labels a repository entry with this handle.",
+    "evidence_type": "Observed self-published byline",
+    "limitation": "No identity, membership hierarchy or external-account linkage was established.",
+    "review_date": "2026-10-02"
+  },
+  {
+    "id": "CL10",
+    "source_id": "TI02",
+    "subject": "Trilltechnician",
+    "claim": "The homepage publicly labels a repository entry with this handle.",
+    "evidence_type": "Observed self-published byline",
+    "limitation": "No real-world identity or malicious operation was established.",
+    "review_date": "2026-10-02"
+  },
+  {
+    "id": "CL11",
+    "source_id": "TI02",
+    "subject": "n0mad1k",
+    "claim": "The homepage names this handle in connection with its daily brief.",
+    "evidence_type": "Observed self-published attribution",
+    "limitation": "The stated community role is not independently corroborated.",
+    "review_date": "2026-10-02"
+  }
+]

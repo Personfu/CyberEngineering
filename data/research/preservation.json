@@ -1,0 +1,22 @@
+{
+  "base_commit": "a9fc2a752620ba211bd6ca04cf8bb03da4f679db",
+  "reason": "Protect original 150 mission IDs, titles, mechanisms and source boundaries during extension",
+  "files": {
+    "data/ideas.json": "0993e47237c8568c96c61453d496ef4fa3cd8a561de875897f1af020614cb1f1",
+    "atlas/01-mission-systems-and-architecture.md": "a7cc43e3ba4384b15702bea9fe6f81b46f306d22318ffaeda8bf127fc1de03f5",
+    "atlas/02-formal-software-assurance.md": "c7b6d0768a3f8a572b6225d49e0eaab404801805548b84191a7c972079a6db64",
+    "atlas/03-pcb-hardware-and-firmware-trust.md": "47507c1fac3a3d037358f646abcee72e345b5998a80db0d4ef18895042b0ac9d",
+    "atlas/04-supply-chain-and-provenance.md": "f3d6ab0ca56b9a0ee46c67a4e9fb3d0267b8b817f4b92e71adf3ba498fbe9fe1",
+    "atlas/05-network-observability.md": "c4a7973f110f54eda85b4361a237632f93af974c01f65dea10abe0cc173381ba",
+    "atlas/06-forensic-science.md": "5ac6908b3b63514fe100d67e34e7da1bf50463dd28531da1688fca32895b6d07",
+    "atlas/07-identity-privacy.md": "3b0821afa48117d6d7438f1b7abf7f5929baf9442b083267378fde9a6478d47e",
+    "atlas/08-cloud-systems.md": "4662230b880efaea3b84a89801948caa41637f2050b9959c2e085a8bb0634306",
+    "atlas/09-ai-security.md": "a5ebcd223f48cd0aee26835aab29e2d0ccc74b72a8f8e5840c4948b94ecf86c9",
+    "atlas/10-ot-resilience.md": "9ae6d32deeff033c9c56697ff23dd53724f6d63f45597709d52ca3fcebe2dd3e",
+    "atlas/11-rf-space-remote-systems.md": "b19bb5c5b9c86b4f50f46f598b5da165605544626775f81f2ffabacb3cebe507",
+    "atlas/12-human-factors-learning.md": "4f6419c3184dd016dd9200984d3b1e63ef1e5799862310526980548bdbaba961",
+    "atlas/13-response-resilience.md": "4080548932ca49bd25243736fe0fda545390e87181f7c6950913731920454cad",
+    "atlas/14-authorized-exposure-intelligence.md": "461cc471b59d6093595655dc9bf6da3315936bf730c167f8a3c218324516632f",
+    "atlas/15-measurement-governance-futures.md": "477c1df7497534ed472514453a65dfe0f19c837ddab54eab6647e09b5b5b20b7"
+  }
+}

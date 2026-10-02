@@ -1,0 +1,62 @@
+[
+  {
+    "id": "TI01",
+    "publisher": "Huntress",
+    "title": "Nightmare-Eclipse Tooling Seen in Real-World Intrusion",
+    "url": "https://www.huntress.com/blog/nightmare-eclipse-intrusion",
+    "publication_date": "2026-04-20",
+    "source_class": "First-party incident investigation report",
+    "inspection": "Article inspected; no exploit artifacts acquired",
+    "retrieved_date": "2026-10-02"
+  },
+  {
+    "id": "TI02",
+    "publisher": "Church of Malware",
+    "title": "The sanctuary of code",
+    "url": "https://churchofmalware.org/",
+    "publication_date": null,
+    "source_class": "Self-published organization homepage",
+    "inspection": "Homepage inspected; no repositories, malware or community messages acquired",
+    "retrieved_date": "2026-10-02"
+  },
+  {
+    "id": "TI03",
+    "publisher": "NIST NVD",
+    "title": "CVE-2026-33825",
+    "url": "https://nvd.nist.gov/vuln/detail/cve-2026-33825",
+    "publication_date": null,
+    "source_class": "Official vulnerability record",
+    "inspection": "Official search result description inspected; page text unavailable",
+    "retrieved_date": "2026-10-02"
+  },
+  {
+    "id": "TI04",
+    "publisher": "CISA",
+    "title": "KEV issuer metadata snapshot",
+    "url": "https://github.com/cisagov/kev-data",
+    "publication_date": "2026-10-01",
+    "source_class": "Pinned public catalog metadata",
+    "inspection": "Previously acquired source-commit-pinned five-field projection; not an actor attribution source",
+    "retrieved_date": "2026-10-02"
+  },
+  {
+    "id": "TI05",
+    "publisher": "ASD ACSC and joint advisory authors",
+    "title": "Scattered Spider",
+    "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/scattered-spider",
+    "publication_date": "2025-07-30",
+    "source_class": "Joint government advisory",
+    "inspection": "Updated official advisory inspected; no actor tools acquired",
+    "retrieved_date": "2026-10-02"
+  },
+  {
+    "id": "TI06",
+    "publisher": "FBI IC3",
+    "title": "North Korea Responsible for $1.5 Billion Bybit Hack",
+    "url": "https://www.ic3.gov/PSA/2025/PSA250226",
+    "publication_date": "2025-02-26",
+    "source_class": "Government public attribution statement",
+    "inspection": "Official statement inspected; no addresses imported or followed",
+    "retrieved_date": "2026-10-02"
+  }
+]
