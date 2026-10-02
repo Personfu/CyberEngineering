@@ -1,0 +1,2484 @@
+{
+  "project": "Project HELIOS · Cyber Mission Atlas",
+  "status": "150 research proposals; no empirical performance is claimed",
+  "count": 150,
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Mission Systems & Architecture",
+      "path": "atlas/01-mission-systems-and-architecture.md"
+    },
+    {
+      "number": 2,
+      "title": "Formal Software Assurance",
+      "path": "atlas/02-formal-software-assurance.md"
+    },
+    {
+      "number": 3,
+      "title": "PCB, Hardware & Firmware Trust",
+      "path": "atlas/03-pcb-hardware-and-firmware-trust.md"
+    },
+    {
+      "number": 4,
+      "title": "Supply Chain & Provenance",
+      "path": "atlas/04-supply-chain-and-provenance.md"
+    },
+    {
+      "number": 5,
+      "title": "Network Observability",
+      "path": "atlas/05-network-observability.md"
+    },
+    {
+      "number": 6,
+      "title": "Forensic Science and Evidence Integrity",
+      "path": "atlas/06-forensic-science.md"
+    },
+    {
+      "number": 7,
+      "title": "Identity, Consent and Authority",
+      "path": "atlas/07-identity-privacy.md"
+    },
+    {
+      "number": 8,
+      "title": "Cloud, Workload and Recovery Systems",
+      "path": "atlas/08-cloud-systems.md"
+    },
+    {
+      "number": 9,
+      "title": "AI Systems and Bounded Automation",
+      "path": "atlas/09-ai-security.md"
+    },
+    {
+      "number": 10,
+      "title": "Cyberphysical and Operational Resilience",
+      "path": "atlas/10-ot-resilience.md"
+    },
+    {
+      "number": 11,
+      "title": "RF, space, and remote systems",
+      "path": "atlas/11-rf-space-remote-systems.md"
+    },
+    {
+      "number": 12,
+      "title": "Human factors and security learning",
+      "path": "atlas/12-human-factors-learning.md"
+    },
+    {
+      "number": 13,
+      "title": "Incident response and resilience",
+      "path": "atlas/13-response-resilience.md"
+    },
+    {
+      "number": 14,
+      "title": "Authorized exposure and intelligence governance",
+      "path": "atlas/14-authorized-exposure-intelligence.md"
+    },
+    {
+      "number": 15,
+      "title": "Measurement, governance, and futures",
+      "path": "atlas/15-measurement-governance-futures.md"
+    }
+  ],
+  "ideas": [
+    {
+      "id": "001",
+      "title": "Function-First Risk Atlas",
+      "chapter": 1,
+      "theme": "Mission Systems & Architecture",
+      "path": "atlas/01-mission-systems-and-architecture.md",
+      "anchor": "m001",
+      "thesis": "Mapping mission functions to dependencies predicts outage consequence better than asset criticality labels.",
+      "abstract": "Hypothesis. Mapping mission functions to dependencies predicts outage consequence better than asset criticality labels. Design. Build a typed graph with functions, service dependencies, recovery paths, control owners, and confidence intervals on each edge. Estimate consequence as",
+      "word_count": 125,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v1/r1/final",
+        "https://www.nist.gov/cyberframework"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "002",
+      "title": "Living Assurance Constellation",
+      "chapter": 1,
+      "theme": "Mission Systems & Architecture",
+      "path": "atlas/01-mission-systems-and-architecture.md",
+      "anchor": "m002",
+      "thesis": "A claim/evidence graph updated by CI flags expired security claims before deployment.",
+      "abstract": "Hypothesis. A claim/evidence graph updated by CI flags expired security claims before deployment. Design. Represent each assurance claim as a node connected to requirements, tests, build identity, architecture revision, and evidence expiry date. A release gate evaluates whether e",
+      "word_count": 121,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/218/final",
+        "https://slsa.dev/spec/v1.2/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "003",
+      "title": "Blast-Radius Digital Twin",
+      "chapter": 1,
+      "theme": "Mission Systems & Architecture",
+      "path": "atlas/01-mission-systems-and-architecture.md",
+      "anchor": "m003",
+      "thesis": "Interdependency simulation predicts which service failures propagate to mission loss.",
+      "abstract": "Hypothesis. Interdependency simulation predicts which service failures propagate to mission loss. Design. Couple a directed dependency graph to a discrete-event simulator whose nodes have capacity, failover delay, and recovery-state variables. Inject synthetic service outages and",
+      "word_count": 121,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v2/r1/final",
+        "https://www.nist.gov/cyberframework/profiles"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "004",
+      "title": "Graceful-Degradation Architect",
+      "chapter": 1,
+      "theme": "Mission Systems & Architecture",
+      "path": "atlas/01-mission-systems-and-architecture.md",
+      "anchor": "m004",
+      "thesis": "Pre-designed reduced modes retain more essential service during partial compromise.",
+      "abstract": "Hypothesis. Pre-designed reduced modes retain more essential service during partial compromise. Design. Model system modes as a state machine with permitted functions, dependency budgets, entry conditions, and safe exit criteria. Optimize for retained essential throughput subject",
+      "word_count": 121,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v2/r1/final",
+        "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "005",
+      "title": "Executable Trust Boundaries",
+      "chapter": 1,
+      "theme": "Mission Systems & Architecture",
+      "path": "atlas/01-mission-systems-and-architecture.md",
+      "anchor": "m005",
+      "thesis": "Machine-checked data-flow contracts detect architectural drift before runtime exposure.",
+      "abstract": "Hypothesis. Machine-checked data-flow contracts detect architectural drift before runtime exposure. Design. Describe each service interface with producer, consumer, data class, authorization predicate, retention rule, and permitted destination. Compile that contract into architec",
+      "word_count": 120,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v1/r1/final",
+        "https://csrc.nist.gov/pubs/sp/800/207/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "006",
+      "title": "Security–Safety Trade-Space Explorer",
+      "chapter": 1,
+      "theme": "Mission Systems & Architecture",
+      "path": "atlas/01-mission-systems-and-architecture.md",
+      "anchor": "m006",
+      "thesis": "Joint optimization finds architectures with lower mission risk at the same cost and latency.",
+      "abstract": "Hypothesis. Joint optimization finds architectures with lower mission risk at the same cost and latency. Design. Define a Pareto search over controls with variables for residual risk, safety hazard severity, cost, delay, and power. Generate only designs that satisfy hard safety c",
+      "word_count": 121,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v1/r1/final",
+        "https://csrc.nist.gov/pubs/sp/800/160/v2/r1/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "007",
+      "title": "Assumption Expiry Ledger",
+      "chapter": 1,
+      "theme": "Mission Systems & Architecture",
+      "path": "atlas/01-mission-systems-and-architecture.md",
+      "anchor": "m007",
+      "thesis": "Monitoring conditions behind design assumptions exposes risk earlier than periodic reassessment.",
+      "abstract": "Hypothesis. Monitoring conditions behind design assumptions exposes risk earlier than periodic reassessment. Design. Give each assumption a statement, owner, evidence source, validity condition, observation cadence, and expiry trigger. An event stream marks assumptions at risk wh",
+      "word_count": 112,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v1/r1/final",
+        "https://www.nist.gov/cyberframework"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "008",
+      "title": "Policy Across Domains",
+      "chapter": 1,
+      "theme": "Mission Systems & Architecture",
+      "path": "atlas/01-mission-systems-and-architecture.md",
+      "anchor": "m008",
+      "thesis": "Formal information-flow constraints make cross-domain transfers auditable end to end.",
+      "abstract": "Hypothesis. Formal information-flow constraints make cross-domain transfers auditable end to end. Design. Specify source classification, destination eligibility, transformation, release authority, and audit event for each transfer. Treat policy as a finite-state relation and prov",
+      "word_count": 120,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/207/final",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "009",
+      "title": "Defense Energy Budget",
+      "chapter": 1,
+      "theme": "Mission Systems & Architecture",
+      "path": "atlas/01-mission-systems-and-architecture.md",
+      "anchor": "m009",
+      "thesis": "Resource-aware protective controls preserve security under constrained power and compute.",
+      "abstract": "Hypothesis. Resource-aware protective controls preserve security under constrained power and compute. Design. For a battery or edge node, allocate CPU cycles, storage writes, radio airtime, and joules among sensing, authentication, logging, and recovery. A scheduling model select",
+      "word_count": 113,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v2/r1/final",
+        "https://csrc.nist.gov/pubs/sp/800/193/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "010",
+      "title": "Mission Thread Witness",
+      "chapter": 1,
+      "theme": "Mission Systems & Architecture",
+      "path": "atlas/01-mission-systems-and-architecture.md",
+      "anchor": "m010",
+      "thesis": "A trace from user goal through hardware/software controls makes assurance gaps measurable.",
+      "abstract": "Hypothesis. A trace from user goal through hardware/software controls makes assurance gaps measurable. Design. Create a versioned trace graph from stakeholder need to system requirement, interface, implementation component, test, and acceptance record. Report coverage separately ",
+      "word_count": 116,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v1/r1/final",
+        "https://csrc.nist.gov/pubs/sp/800/218/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "011",
+      "title": "State-Machine API Sentinel",
+      "chapter": 2,
+      "theme": "Formal Software Assurance",
+      "path": "atlas/02-formal-software-assurance.md",
+      "anchor": "m011",
+      "thesis": "Protocol state models catch invalid transitions missed by schema validation.",
+      "abstract": "Hypothesis. Protocol state models catch invalid transitions missed by schema validation. Design. Define an API as states, transition guards, and postconditions; generate test sequences from the model and compare them with observed response codes and state changes. Include authent",
+      "word_count": 121,
+      "source_urls": [
+        "https://api-security.owasp.org/editions/2023/en/0x11-t10/",
+        "https://csrc.nist.gov/pubs/sp/800/218/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "012",
+      "title": "Parser Boundary Proofbench",
+      "chapter": 2,
+      "theme": "Formal Software Assurance",
+      "path": "atlas/02-formal-software-assurance.md",
+      "anchor": "m012",
+      "thesis": "Typed parsers plus property tests reduce malformed-input ambiguity at critical interfaces.",
+      "abstract": "Hypothesis. Typed parsers plus property tests reduce malformed-input ambiguity at critical interfaces. Design. Specify a grammar and canonicalization rules for an owned parser, then test properties such as round-trip stability, deterministic rejection, bounded memory, and agreeme",
+      "word_count": 117,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/218/final",
+        "https://cwe.mitre.org/data/definitions/20.html"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "013",
+      "title": "Memory-Safety Migration Optimizer",
+      "chapter": 2,
+      "theme": "Formal Software Assurance",
+      "path": "atlas/02-formal-software-assurance.md",
+      "anchor": "m013",
+      "thesis": "Risk-weighted module migration yields greater defect reduction per engineering hour.",
+      "abstract": "Hypothesis. Risk-weighted module migration yields greater defect reduction per engineering hour. Design. Score modules by reachable input surface, privilege, parser complexity, known fault history, coupling, and estimated rewrite effort. Solve a constrained portfolio problem that",
+      "word_count": 111,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/218/final",
+        "https://www.cisa.gov/sites/default/files/2023-10/Shifting-the-Balance-of-Cybersecurity-Risk-Principles-and-Approaches-for-Secure-by-Design-Software.pdf"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "014",
+      "title": "Exceptional-Path Cartography",
+      "chapter": 2,
+      "theme": "Formal Software Assurance",
+      "path": "atlas/02-formal-software-assurance.md",
+      "anchor": "m014",
+      "thesis": "Systematic modeling of timeouts, retries, and failover finds more latent faults than happy-path testing.",
+      "abstract": "Hypothesis. Systematic modeling of timeouts, retries, and failover finds more latent faults than happy-path testing. Design. Build an event graph for each request with timeout budgets, retry limits, idempotency keys, and compensation steps. Model-check whether every reachable sta",
+      "word_count": 117,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v2/r1/final",
+        "https://csrc.nist.gov/pubs/sp/800/218/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "015",
+      "title": "Compiler-Decision Attestation",
+      "chapter": 2,
+      "theme": "Formal Software Assurance",
+      "path": "atlas/02-formal-software-assurance.md",
+      "anchor": "m015",
+      "thesis": "Tracing compiler decisions locates behavior-changing build divergence earlier than a final binary hash comparison.",
+      "abstract": "Hypothesis. Tracing compiler decisions locates behavior-changing build divergence earlier than a final binary hash comparison. Design. Attest the input and output digest of each compiler stage—preprocessing, intermediate representation, optimization, code generation, and linking—",
+      "word_count": 119,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/218/final",
+        "https://slsa.dev/spec/v1.2/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "016",
+      "title": "Temporal Authorization Checker",
+      "chapter": 2,
+      "theme": "Formal Software Assurance",
+      "path": "atlas/02-formal-software-assurance.md",
+      "anchor": "m016",
+      "thesis": "Time-aware policy models uncover privilege windows invisible in static access reviews.",
+      "abstract": "Hypothesis. Time-aware policy models uncover privilege windows invisible in static access reviews. Design. Express authorization as a predicate over subject, resource, action, device state, delegated role, and time. Simulate role changes, token expiry, emergency access, and revoc",
+      "word_count": 116,
+      "source_urls": [
+        "https://api-security.owasp.org/editions/2023/en/0x11-t10/",
+        "https://csrc.nist.gov/pubs/sp/800/207/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "017",
+      "title": "Semantic Diff Gate",
+      "chapter": 2,
+      "theme": "Formal Software Assurance",
+      "path": "atlas/02-formal-software-assurance.md",
+      "anchor": "m017",
+      "thesis": "Behavior-focused change analysis predicts security regressions better than line-based diff size.",
+      "abstract": "Hypothesis. Behavior-focused change analysis predicts security regressions better than line-based diff size. Design. Compute a semantic change graph of altered data flows, permissions, validation rules, and exposed interfaces; rank required review depth by reachable behavior rath",
+      "word_count": 106,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/218/final",
+        "https://owasp.org/projects/asvs?tab=main"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "018",
+      "title": "Contract Fuzzing Laboratory",
+      "chapter": 2,
+      "theme": "Formal Software Assurance",
+      "path": "atlas/02-formal-software-assurance.md",
+      "anchor": "m018",
+      "thesis": "Generated benign edge cases expose inconsistent component assumptions without attack payloads.",
+      "abstract": "Hypothesis. Generated benign edge cases expose inconsistent component assumptions without attack payloads. Design. Derive test cases from shared contracts for lengths, encodings, order, duplicate fields, optional values, and schema versions. Compare each owned component's parse, ",
+      "word_count": 103,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/218/final",
+        "https://cwe.mitre.org/data/definitions/20.html"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "019",
+      "title": "Proof-Carrying Configuration",
+      "chapter": 2,
+      "theme": "Formal Software Assurance",
+      "path": "atlas/02-formal-software-assurance.md",
+      "anchor": "m019",
+      "thesis": "Deployment settings accompanied by machine-checkable invariants reduce unsafe configuration drift.",
+      "abstract": "Hypothesis. Deployment settings accompanied by machine-checkable invariants reduce unsafe configuration drift. Design. Package each configuration change with assertions about exposed ports, identity scopes, encryption modes, logging, and rollback. Validate the assertions against ",
+      "word_count": 107,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/218/final",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "020",
+      "title": "Resource-Exhaustion Model",
+      "chapter": 2,
+      "theme": "Formal Software Assurance",
+      "path": "atlas/02-formal-software-assurance.md",
+      "anchor": "m020",
+      "thesis": "Bounding legitimate workload envelopes exposes denial-of-service fragility before production.",
+      "abstract": "Hypothesis. Bounding legitimate workload envelopes exposes denial-of-service fragility before production. Design. Model queue depth, arrival rate, service time, memory pressure, and backpressure policy for each owned service. Generate lawful synthetic demand within an agreed labo",
+      "word_count": 125,
+      "source_urls": [
+        "https://api-security.owasp.org/editions/2023/en/0xa4-unrestricted-resource-consumption/",
+        "https://csrc.nist.gov/pubs/sp/800/160/v2/r1/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "021",
+      "title": "Trust-Visible PCB",
+      "chapter": 3,
+      "theme": "PCB, Hardware & Firmware Trust",
+      "path": "atlas/03-pcb-hardware-and-firmware-trust.md",
+      "anchor": "m021",
+      "thesis": "Board layout encoding power, trust zones, test points, and fault isolation improves design-review accuracy.",
+      "abstract": "Hypothesis. Board layout encoding power, trust zones, test points, and fault isolation improves design-review accuracy. Design. Produce a layered KiCad board whose silkscreen and drawing layers identify trust boundaries, rail names, lifecycle-only debug access, recovery controls,",
+      "word_count": 116,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v1/r1/final",
+        "https://docs.kicad.org/9.0/en/pcbnew/pcbnew.html"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "022",
+      "title": "Power-Rail Integrity Sentinel",
+      "chapter": 3,
+      "theme": "PCB, Hardware & Firmware Trust",
+      "path": "atlas/03-pcb-hardware-and-firmware-trust.md",
+      "anchor": "m022",
+      "thesis": "Non-invasive rail telemetry distinguishes component failure from unexpected firmware behavior.",
+      "abstract": "Hypothesis. Non-invasive rail telemetry distinguishes component failure from unexpected firmware behavior. Design. Place current and voltage monitors on selected rails, timestamp measurements, and infer operating mode from a bounded state model of draw, ripple, and transition seq",
+      "word_count": 120,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/193/final",
+        "https://docs.kicad.org/9.0/en/pcbnew/pcbnew.html"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "023",
+      "title": "Atomic Firmware Lifeboat",
+      "chapter": 3,
+      "theme": "PCB, Hardware & Firmware Trust",
+      "path": "atlas/03-pcb-hardware-and-firmware-trust.md",
+      "anchor": "m023",
+      "thesis": "A/B update and verified rollback preserve bootability under interrupted updates.",
+      "abstract": "Hypothesis. A/B update and verified rollback preserve bootability under interrupted updates. Design. Specify immutable first-stage verification, two signed application slots, an update journal, anti-rollback state, and a bounded recovery mode. Model boot-state transitions so powe",
+      "word_count": 111,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/193/final",
+        "https://opentitan.org/book/doc/security/specs/device_life_cycle/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "024",
+      "title": "Debug-Port Custody Map",
+      "chapter": 3,
+      "theme": "PCB, Hardware & Firmware Trust",
+      "path": "atlas/03-pcb-hardware-and-firmware-trust.md",
+      "anchor": "m024",
+      "thesis": "Lifecycle-bound debug access reduces accidental field exposure while preserving repairability.",
+      "abstract": "Hypothesis. Lifecycle-bound debug access reduces accidental field exposure while preserving repairability. Design. Map JTAG, UART, SWD, test pads, and firmware service commands to manufacturing, provisioning, field, and return states. Gate each path with a documented authorizatio",
+      "word_count": 113,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/193/final",
+        "https://opentitan.org/book/doc/security/specs/device_life_cycle/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "025",
+      "title": "Key-Custody Microarchitecture",
+      "chapter": 3,
+      "theme": "PCB, Hardware & Firmware Trust",
+      "path": "atlas/03-pcb-hardware-and-firmware-trust.md",
+      "anchor": "m025",
+      "thesis": "Measuring secret access across boot, operation, and disposal identifies key-leakage windows.",
+      "abstract": "Hypothesis. Measuring secret access across boot, operation, and disposal identifies key-leakage windows. Design. Create a data-flow graph for key generation, derivation, storage, side-loaded use, backup, rotation, and destruction. Mark each transition by trust domain, permitted r",
+      "word_count": 117,
+      "source_urls": [
+        "https://opentitan.org/book/hw/ip/keymgr/doc/interfaces.html",
+        "https://trustedcomputinggroup.org/resource/tpm-library-specification/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "026",
+      "title": "Side-Channel Budget Ledger",
+      "chapter": 3,
+      "theme": "PCB, Hardware & Firmware Trust",
+      "path": "atlas/03-pcb-hardware-and-firmware-trust.md",
+      "anchor": "m026",
+      "thesis": "A design-time emissions budget helps compare countermeasures without claiming perfect secrecy.",
+      "abstract": "Hypothesis. A design-time emissions budget helps compare countermeasures without claiming perfect secrecy. Design. Allocate a leakage budget across clocking, cryptographic blocks, power distribution, and enclosure interfaces; identify test conditions, threat capability, and measu",
+      "word_count": 111,
+      "source_urls": [
+        "https://opentitan.org/book/doc/security/implementation_guidelines/hardware/index.html",
+        "https://opentitan.org/book/hw/ip/aes/doc/theory_of_operation.html"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "027",
+      "title": "Sensor-Bus Cross-Check",
+      "chapter": 3,
+      "theme": "PCB, Hardware & Firmware Trust",
+      "path": "atlas/03-pcb-hardware-and-firmware-trust.md",
+      "anchor": "m027",
+      "thesis": "Independent sensor paths detect silent integrity faults with bounded false alarms.",
+      "abstract": "Hypothesis. Independent sensor paths detect silent integrity faults with bounded false alarms. Design. Pair a primary digital sensor with an independent modality or reference channel, then model consistency as a time-aware residual with uncertainty from calibration, drift, and en",
+      "word_count": 113,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v2/r1/final",
+        "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "028",
+      "title": "Board Fault-Containment Cells",
+      "chapter": 3,
+      "theme": "PCB, Hardware & Firmware Trust",
+      "path": "atlas/03-pcb-hardware-and-firmware-trust.md",
+      "anchor": "m028",
+      "thesis": "Partitioned power/reset domains limit single-component failure propagation.",
+      "abstract": "Hypothesis. Partitioned power/reset domains limit single-component failure propagation. Design. Divide the PCB into protected cells with current limits, reset isolation, monitored crossings, and a documented shared-ground strategy. Simulate fault propagation before layout; keep h",
+      "word_count": 111,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v2/r1/final",
+        "https://docs.kicad.org/9.0/en/pcbnew/pcbnew.html"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "029",
+      "title": "CAD-to-Fab Provenance Chain",
+      "chapter": 3,
+      "theme": "PCB, Hardware & Firmware Trust",
+      "path": "atlas/03-pcb-hardware-and-firmware-trust.md",
+      "anchor": "m029",
+      "thesis": "Signed design and manufacturing artifacts make unauthorized board revisions detectable.",
+      "abstract": "Hypothesis. Signed design and manufacturing artifacts make unauthorized board revisions detectable. Design. Bind schematic revision, PCB source, stackup, BOM, fabrication outputs, assembly instructions, and inspection records into a signed manifest with canonical hashes. Add an a",
+      "word_count": 113,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/ir/8536/final",
+        "https://www.nist.gov/programs-projects/digital-thread-manufacturing"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "030",
+      "title": "Environmental Security Margin",
+      "chapter": 3,
+      "theme": "PCB, Hardware & Firmware Trust",
+      "path": "atlas/03-pcb-hardware-and-firmware-trust.md",
+      "anchor": "m030",
+      "thesis": "Thermal, voltage, and radiation tests reveal where security controls cease to function reliably.",
+      "abstract": "Hypothesis. Thermal, voltage, and radiation tests reveal where security controls cease to function reliably. Design. Define an operating envelope and monitor verified boot, secure storage, watchdog, and fault reporting across controlled temperature and supply-voltage sweeps; trea",
+      "word_count": 115,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v1/r1/final",
+        "https://csrc.nist.gov/pubs/sp/800/193/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "031",
+      "title": "Dependency Trust Graph",
+      "chapter": 4,
+      "theme": "Supply Chain & Provenance",
+      "path": "atlas/04-supply-chain-and-provenance.md",
+      "anchor": "m031",
+      "thesis": "Provenance-weighted edges prioritize supplier risks better than component counts.",
+      "abstract": "Hypothesis. Provenance-weighted edges prioritize supplier risks better than component counts. Design. Connect products, direct and transitive dependencies, maintainers, build services, signatures, and evidence sources in a typed graph. Assign each edge an uncertainty interval bas",
+      "word_count": 112,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/161/r1/upd1/final",
+        "https://slsa.dev/spec/v1.2/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "032",
+      "title": "SBOM Drift Observatory",
+      "chapter": 4,
+      "theme": "Supply Chain & Provenance",
+      "path": "atlas/04-supply-chain-and-provenance.md",
+      "anchor": "m032",
+      "thesis": "Comparing declared and observed components detects divergence across releases.",
+      "abstract": "Hypothesis. Comparing declared and observed components detects divergence across releases. Design. Normalize software bill of materials records, package-lock data, and resolved binary dependencies into a release-by-release timeline. Separate version change, replacement, disappear",
+      "word_count": 112,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/161/r1/upd1/final",
+        "https://www.cisa.gov/sites/default/files/2025-08/2025_CISA_SBOM_Minimum_Elements.pdf"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "033",
+      "title": "Reproducibility Dividend",
+      "chapter": 4,
+      "theme": "Supply Chain & Provenance",
+      "path": "atlas/04-supply-chain-and-provenance.md",
+      "anchor": "m033",
+      "thesis": "Deterministic builds reduce uncertainty when investigating disputed binaries.",
+      "abstract": "Hypothesis. Deterministic builds reduce uncertainty when investigating disputed binaries. Design. Build the same owned source and pinned dependencies in independent clean environments operated by separate reviewers. Compare final artifact digests and signed provenance, then model",
+      "word_count": 121,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/218/final",
+        "https://slsa.dev/spec/v1.2/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "034",
+      "title": "Opaque Artifact Risk Ledger",
+      "chapter": 4,
+      "theme": "Supply Chain & Provenance",
+      "path": "atlas/04-supply-chain-and-provenance.md",
+      "anchor": "m034",
+      "thesis": "Evidence gaps around closed components can be quantified and mitigated explicitly.",
+      "abstract": "Hypothesis. Evidence gaps around closed components can be quantified and mitigated explicitly. Design. For each opaque firmware or library component, record origin, versionability, update channel, interface privileges, available test evidence, and replacement options. Compute an ",
+      "word_count": 119,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/1800/34/final",
+        "https://csrc.nist.gov/pubs/sp/800/161/r1/upd1/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "035",
+      "title": "Component End-of-Life Forecast",
+      "chapter": 4,
+      "theme": "Supply Chain & Provenance",
+      "path": "atlas/04-supply-chain-and-provenance.md",
+      "anchor": "m035",
+      "thesis": "Joint patchability and obsolescence modeling predicts future security debt.",
+      "abstract": "Hypothesis. Joint patchability and obsolescence modeling predicts future security debt. Design. Build a scenario model with end-of-support date, supplier concentration, patch lead time, spare availability, qualification cost, and mission replacement window. Report the probability",
+      "word_count": 114,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v2/r1/final",
+        "https://csrc.nist.gov/pubs/sp/800/161/r1/upd1/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "036",
+      "title": "Signed Design-Bundle Passport",
+      "chapter": 4,
+      "theme": "Supply Chain & Provenance",
+      "path": "atlas/04-supply-chain-and-provenance.md",
+      "anchor": "m036",
+      "thesis": "Linking CAD, firmware, schematic, and test records reveals inconsistent product revisions.",
+      "abstract": "Hypothesis. Linking CAD, firmware, schematic, and test records reveals inconsistent product revisions. Design. Define a release passport containing hashes and semantic versions for PCB source, fabrication data, BOM, bootloader, application, calibration, and acceptance tests. Sign",
+      "word_count": 111,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/ir/8536/final",
+        "https://www.nist.gov/programs-projects/digital-thread-manufacturing"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "037",
+      "title": "Update Lineage Verifier",
+      "chapter": 4,
+      "theme": "Supply Chain & Provenance",
+      "path": "atlas/04-supply-chain-and-provenance.md",
+      "anchor": "m037",
+      "thesis": "Release-to-device traceability exposes deployment gaps and rollback ambiguity.",
+      "abstract": "Hypothesis. Release-to-device traceability exposes deployment gaps and rollback ambiguity. Design. Record each device's approved update lineage as a graph of release signatures, eligibility rules, install acknowledgments, rollback limits, and recovery state. Compare intended flee",
+      "word_count": 102,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/ir/8536/final",
+        "https://csrc.nist.gov/pubs/sp/800/193/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "038",
+      "title": "Transitive Impact Simulator",
+      "chapter": 4,
+      "theme": "Supply Chain & Provenance",
+      "path": "atlas/04-supply-chain-and-provenance.md",
+      "anchor": "m038",
+      "thesis": "A dependency graph estimates which missions a compromised supplier could affect.",
+      "abstract": "Hypothesis. A dependency graph estimates which missions a compromised supplier could affect. Design. Join supplier and component relationships to deployed product and mission-function graphs, then simulate bounded supplier failure or integrity-loss scenarios. Report reachability,",
+      "word_count": 111,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v2/r1/final",
+        "https://csrc.nist.gov/pubs/sp/800/161/r1/upd1/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "039",
+      "title": "Supplier Evidence Contract",
+      "chapter": 4,
+      "theme": "Supply Chain & Provenance",
+      "path": "atlas/04-supply-chain-and-provenance.md",
+      "anchor": "m039",
+      "thesis": "Standardized evidence requests improve comparison without treating self-attestation as proof.",
+      "abstract": "Hypothesis. Standardized evidence requests improve comparison without treating self-attestation as proof. Design. Publish a machine-readable acquisition contract for component identity, support horizon, build provenance, vulnerability disclosure route, update policy, and independ",
+      "word_count": 114,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/1326/final",
+        "https://csrc.nist.gov/pubs/sp/800/161/r1/upd1/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "040",
+      "title": "Recovery Escrow Architecture",
+      "chapter": 4,
+      "theme": "Supply Chain & Provenance",
+      "path": "atlas/04-supply-chain-and-provenance.md",
+      "anchor": "m040",
+      "thesis": "Tested source, build, and key custody plans reduce dependence on a single unavailable supplier.",
+      "abstract": "Hypothesis. Tested source, build, and key custody plans reduce dependence on a single unavailable supplier. Design. Specify an escrow package for authorized emergency maintenance: source or reproducible binaries, toolchains, interface documents, test vectors, custodians, activati",
+      "word_count": 115,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v2/r1/final",
+        "https://csrc.nist.gov/pubs/sp/800/161/r1/upd1/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "041",
+      "title": "Packet-to-Service Atlas",
+      "chapter": 5,
+      "theme": "Network Observability",
+      "path": "atlas/05-network-observability.md",
+      "anchor": "m041",
+      "thesis": "Fusing flow records with service inventories explains unknown traffic without payload inspection.",
+      "abstract": "Hypothesis. Fusing flow records with service inventories explains unknown traffic without payload inspection. Design. Link IPFIX-like flow tuples to authorized CMDB entries, workload identities, DNS names, and change tickets. Score a flow's likely service owner with explicit evid",
+      "word_count": 111,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/215/final",
+        "https://www.rfc-editor.org/info/rfc7011/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "042",
+      "title": "Privacy-Preserving Flow Lens",
+      "chapter": 5,
+      "theme": "Network Observability",
+      "path": "atlas/05-network-observability.md",
+      "anchor": "m042",
+      "thesis": "Coarse traffic features retain incident utility while limiting sensitive-content collection.",
+      "abstract": "Hypothesis. Coarse traffic features retain incident utility while limiting sensitive-content collection. Design. Compare several feature sets—full flow records, bucketed volumes, service-level aggregates, and rotating pseudonyms—under a fixed retention window. Measure incident-cl",
+      "word_count": 105,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/188/final",
+        "https://www.rfc-editor.org/info/rfc9232/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "043",
+      "title": "Clock-Coherence Monitor",
+      "chapter": 5,
+      "theme": "Network Observability",
+      "path": "atlas/05-network-observability.md",
+      "anchor": "m043",
+      "thesis": "Time-offset estimates improve cross-device event ordering and forensic confidence in enterprise telemetry.",
+      "abstract": "Hypothesis. Time-offset estimates improve cross-device event ordering and forensic confidence in enterprise telemetry. Design. For packet sensors, gateways, DNS servers, and service logs, estimate offset, drift, and uncertainty against an authenticated time reference; store event",
+      "word_count": 121,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+        "https://www.rfc-editor.org/info/rfc8915/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "044",
+      "title": "Control-Plane Change Witness",
+      "chapter": 5,
+      "theme": "Network Observability",
+      "path": "atlas/05-network-observability.md",
+      "anchor": "m044",
+      "thesis": "Tracking intended versus observed routing and configuration changes surfaces hidden connectivity drift.",
+      "abstract": "Hypothesis. Tracking intended versus observed routing and configuration changes surfaces hidden connectivity drift. Design. Store approved network intent as versioned route, ACL, DNS, and segmentation constraints. Compare it with observed control-plane state and limited reachabil",
+      "word_count": 111,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/215/final",
+        "https://www.rfc-editor.org/info/rfc6241/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "045",
+      "title": "Weak-Signal Correlator",
+      "chapter": 5,
+      "theme": "Network Observability",
+      "path": "atlas/05-network-observability.md",
+      "anchor": "m045",
+      "thesis": "Combining several low-confidence benign indicators reduces false positives at a fixed detection rate.",
+      "abstract": "Hypothesis. Combining several low-confidence benign indicators reduces false positives at a fixed detection rate. Design. Fuse service ownership mismatch, rare flow direction, clock-adjusted event order, and change-context features in a calibrated model. Require multiple independ",
+      "word_count": 113,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+        "https://www.rfc-editor.org/info/rfc9232/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "046",
+      "title": "Capture Sufficiency Planner",
+      "chapter": 5,
+      "theme": "Network Observability",
+      "path": "atlas/05-network-observability.md",
+      "anchor": "m046",
+      "thesis": "Modeling sensor placement reveals evidence blind spots before an incident.",
+      "abstract": "Hypothesis. Modeling sensor placement reveals evidence blind spots before an incident. Design. Represent the network as a graph of observation points, encrypted tunnels, NAT boundaries, and mission-critical paths. Solve a constrained placement problem that maximizes question-answ",
+      "word_count": 112,
+      "source_urls": [
+        "https://www.nist.gov/privacy-framework",
+        "https://www.rfc-editor.org/info/rfc9232/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "047",
+      "title": "Adaptive Baseline with Change Memory",
+      "chapter": 5,
+      "theme": "Network Observability",
+      "path": "atlas/05-network-observability.md",
+      "anchor": "m047",
+      "thesis": "Separating planned change from anomalies lowers alert churn during deployments.",
+      "abstract": "Hypothesis. Separating planned change from anomalies lowers alert churn during deployments. Design. Maintain a baseline conditioned on service owner, deployment version, maintenance window, and approved change record. Use a robust update rule so an unexplained burst cannot immedi",
+      "word_count": 109,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+        "https://www.rfc-editor.org/info/rfc9232/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "048",
+      "title": "Segmentation Proof Harness",
+      "chapter": 5,
+      "theme": "Network Observability",
+      "path": "atlas/05-network-observability.md",
+      "anchor": "m048",
+      "thesis": "Authorized reachability tests verify that network policies match documented trust boundaries.",
+      "abstract": "Hypothesis. Authorized reachability tests verify that network policies match documented trust boundaries. Design. Turn a reviewed policy matrix into harmless connection probes between controlled endpoints, plus static route and ACL analysis. Record permitted, denied, and unobserv",
+      "word_count": 106,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/207/final",
+        "https://csrc.nist.gov/pubs/sp/800/215/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "049",
+      "title": "Name-to-Destination Integrity Map",
+      "chapter": 5,
+      "theme": "Network Observability",
+      "path": "atlas/05-network-observability.md",
+      "anchor": "m049",
+      "thesis": "DNS, inventory, and service ownership reconciliation catches stale or misrouted dependencies.",
+      "abstract": "Hypothesis. DNS, inventory, and service ownership reconciliation catches stale or misrouted dependencies. Design. Compare expected service names, DNS records, certificate identity, resolved destinations, and owner records across environments. Mark relationships as consistent, exp",
+      "word_count": 107,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/215/final",
+        "https://www.rfc-editor.org/info/rfc4035/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "050",
+      "title": "Containment Cost Simulator",
+      "chapter": 5,
+      "theme": "Network Observability",
+      "path": "atlas/05-network-observability.md",
+      "anchor": "m050",
+      "thesis": "Simulating network containment consequences improves route and segmentation choices during response.",
+      "abstract": "Hypothesis. Simulating network containment consequences improves route and segmentation choices during response. Design. Apply candidate ACL, route, or segment changes to a service-and-flow graph; estimate which approved communications would be lost, which suspicious paths remain",
+      "word_count": 127,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/215/final",
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "051",
+      "title": "Memory Snapshot Confidence Map",
+      "chapter": 6,
+      "theme": "Forensic Science and Evidence Integrity",
+      "path": "atlas/06-forensic-science.md",
+      "anchor": "m051",
+      "thesis": "A memory image is a snapshot with blind spots, not a complete account of a host.",
+      "abstract": "Thesis. A memory image is a snapshot with blind spots, not a complete account of a host. System. Build a page-level map that records acquisition time, unreadable ranges, symbol/version compatibility, parser confidence and whether each claimed artifact is supported by one or sever",
+      "word_count": 118,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/53/a/r5/final",
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "052",
+      "title": "Multi-Source Causal Timeline",
+      "chapter": 6,
+      "theme": "Forensic Science and Evidence Integrity",
+      "path": "atlas/06-forensic-science.md",
+      "anchor": "m052",
+      "thesis": "An ordered list of timestamps is weaker than a defensible explanation of which events could have caused others.",
+      "abstract": "Thesis. An ordered list of timestamps is weaker than a defensible explanation of which events could have caused others. System. Normalize each source into event, observer, clock interval and provenance fields; create a directed graph only when temporal order, system dependency an",
+      "word_count": 118,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+        "https://www.oasis-open.org/standard/stix-version-2-1/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "053",
+      "title": "PCAP–Syslog Reconciliation Engine",
+      "chapter": 6,
+      "theme": "Forensic Science and Evidence Integrity",
+      "path": "atlas/06-forensic-science.md",
+      "anchor": "m053",
+      "thesis": "Packet and syslog views can disagree because of capture loss, NAT, sampling, delayed writes and clock drift.",
+      "abstract": "Thesis. Packet and syslog views can disagree because of capture loss, NAT, sampling, delayed writes and clock drift. System. Join records on bounded flow identifiers and event intervals, then produce four classes: corroborated, packet-only, log-only and unresolved. Estimate captu",
+      "word_count": 115,
+      "source_urls": [
+        "https://attack.mitre.org/tactics/",
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "054",
+      "title": "Artifact Provenance Probability",
+      "chapter": 6,
+      "theme": "Forensic Science and Evidence Integrity",
+      "path": "atlas/06-forensic-science.md",
+      "anchor": "m054",
+      "thesis": "Analysts need to distinguish “observed” from “likely derived from” without hiding assumptions.",
+      "abstract": "Thesis. Analysts need to distinguish “observed” from “likely derived from” without hiding assumptions. System. Represent a file or log artifact as a provenance graph linking source, acquisition operation, transformation, analyst action and digest. Use probabilistic scoring only f",
+      "word_count": 107,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/53/a/r5/final",
+        "https://docs.sigstore.dev/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "055",
+      "title": "Reproducible Evidence Laboratory",
+      "chapter": 6,
+      "theme": "Forensic Science and Evidence Integrity",
+      "path": "atlas/06-forensic-science.md",
+      "anchor": "m055",
+      "thesis": "A defensible conclusion should survive independent replay from the same inputs.",
+      "abstract": "Thesis. A defensible conclusion should survive independent replay from the same inputs. System. Package read-only artifacts, checksums, parser versions, environment locks, analysis notebooks and expected output hashes in an isolated lab. Each run creates a new signed result manif",
+      "word_count": 107,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+        "https://slsa.dev/spec/v1.2/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "056",
+      "title": "Evidence Retention Optimizer",
+      "chapter": 6,
+      "theme": "Forensic Science and Evidence Integrity",
+      "path": "atlas/06-forensic-science.md",
+      "anchor": "m056",
+      "thesis": "Retaining everything can increase privacy risk and investigation cost, while discarding key context can destroy recoverability.",
+      "abstract": "Thesis. Retaining everything can increase privacy risk and investigation cost, while discarding key context can destroy recoverability. System. Formulate retention as a constrained optimization problem: minimize storage and privacy exposure subject to legal holds, incident hypoth",
+      "word_count": 109,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+        "https://www.nist.gov/privacy-framework"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "057",
+      "title": "Negative-Evidence Logic",
+      "chapter": 6,
+      "theme": "Forensic Science and Evidence Integrity",
+      "path": "atlas/06-forensic-science.md",
+      "anchor": "m057",
+      "thesis": "“No alert” is useful only when a sensor was capable of observing the event and was healthy at the time.",
+      "abstract": "Thesis. “No alert” is useful only when a sensor was capable of observing the event and was healthy at the time. System. Attach detection rules, coverage windows, sampling rates and health telemetry to every negative claim. Use three-valued logic—observed, absent-under-coverage, u",
+      "word_count": 110,
+      "source_urls": [
+        "https://attack.mitre.org/tactics/",
+        "https://csrc.nist.gov/pubs/sp/800/53/a/r5/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "058",
+      "title": "Cross-Host Chain of Custody",
+      "chapter": 6,
+      "theme": "Forensic Science and Evidence Integrity",
+      "path": "atlas/06-forensic-science.md",
+      "anchor": "m058",
+      "thesis": "Cross-host reconstruction fails when transfers and transforms are undocumented.",
+      "abstract": "Thesis. Cross-host reconstruction fails when transfers and transforms are undocumented. System. Define a custody event schema with artifact digest, owner, authorized purpose, source/destination, time interval, tool version and transformation parent. Use an append-only manifest an",
+      "word_count": 99,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+        "https://slsa.dev/spec/v1.2/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "059",
+      "title": "Volatile-State Acquisition Planner",
+      "chapter": 6,
+      "theme": "Forensic Science and Evidence Integrity",
+      "path": "atlas/06-forensic-science.md",
+      "anchor": "m059",
+      "thesis": "The safest collection order depends on volatility, impact and the possibility that acquisition changes the system.",
+      "abstract": "Thesis. The safest collection order depends on volatility, impact and the possibility that acquisition changes the system. System. Build a decision model that ranks candidate observations by expected evidentiary gain minus service disruption, contamination and privacy costs, unde",
+      "word_count": 117,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "060",
+      "title": "Investigator Uncertainty Console",
+      "chapter": 6,
+      "theme": "Forensic Science and Evidence Integrity",
+      "path": "atlas/06-forensic-science.md",
+      "anchor": "m060",
+      "thesis": "Investigators should see how much of a conclusion rests on assumptions, missing sensors or stale signatures.",
+      "abstract": "Thesis. Investigators should see how much of a conclusion rests on assumptions, missing sensors or stale signatures. System. Create a claim ledger that links each narrative assertion to primary observations, transformations, alternative hypotheses and confidence bounds. A visuali",
+      "word_count": 111,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/53/a/r5/final",
+        "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "061",
+      "title": "Permission Origin Graph",
+      "chapter": 7,
+      "theme": "Identity, Consent and Authority",
+      "path": "atlas/07-identity-privacy.md",
+      "anchor": "m061",
+      "thesis": "A role label rarely tells an operator why a subject can reach a resource.",
+      "abstract": "Thesis. A role label rarely tells an operator why a subject can reach a resource. System. Construct a graph of principals, groups, delegated roles, service identities, policy rules and resource paths. For each permitted action, compute the shortest and all materially distinct aut",
+      "word_count": 108,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/207/final",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "062",
+      "title": "Least-Privilege Solver",
+      "chapter": 7,
+      "theme": "Identity, Consent and Authority",
+      "path": "atlas/07-identity-privacy.md",
+      "anchor": "m062",
+      "thesis": "Permission reduction should be optimized against real tasks and safety constraints, not arbitrary role size.",
+      "abstract": "Thesis. Permission reduction should be optimized against real tasks and safety constraints, not arbitrary role size. System. Define a binary policy matrix A(subject, action, resource) and an observed task matrix T ; solve for the smallest authorized A that covers approved T , pre",
+      "word_count": 109,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/207/final",
+        "https://csrc.nist.gov/pubs/sp/800/53/a/r5/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "063",
+      "title": "Consent Lifecycle Auditor",
+      "chapter": 7,
+      "theme": "Identity, Consent and Authority",
+      "path": "atlas/07-identity-privacy.md",
+      "anchor": "m063",
+      "thesis": "Consent is an evolving state with scope, expiration and withdrawal, not a one-time checkbox.",
+      "abstract": "Thesis. Consent is an evolving state with scope, expiration and withdrawal, not a one-time checkbox. System. Represent consent as a versioned purpose–data–recipient–duration tuple and trace each processing event to the consent state valid at event time. Test renewal, withdrawal, ",
+      "word_count": 107,
+      "source_urls": [
+        "https://pages.nist.gov/800-63-4/",
+        "https://www.nist.gov/privacy-framework"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "064",
+      "title": "Break-Glass Accountability",
+      "chapter": 7,
+      "theme": "Identity, Consent and Authority",
+      "path": "atlas/07-identity-privacy.md",
+      "anchor": "m064",
+      "thesis": "Emergency access can remain available while becoming narrow, time-limited and independently reviewable.",
+      "abstract": "Thesis. Emergency access can remain available while becoming narrow, time-limited and independently reviewable. System. Issue a scoped emergency grant bound to an incident, approving actor, resource, start/end time and immutable reason record. A policy engine enforces expiry and ",
+      "word_count": 110,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "065",
+      "title": "Service-Identity Expiration Clock",
+      "chapter": 7,
+      "theme": "Identity, Consent and Authority",
+      "path": "atlas/07-identity-privacy.md",
+      "anchor": "m065",
+      "thesis": "Credential rotation must be measured against the time during which a stolen credential would remain useful.",
+      "abstract": "Thesis. Credential rotation must be measured against the time during which a stolen credential would remain useful. System. Build an identity inventory linking workload, issuer, certificate/token lifetime, rotation path and relying parties. Simulate issuer loss, stale caches and ",
+      "word_count": 97,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/207/a/final",
+        "https://spiffe.io/docs/latest/spiffe-about/overview/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "066",
+      "title": "Private Correlation Token",
+      "chapter": 7,
+      "theme": "Identity, Consent and Authority",
+      "path": "atlas/07-identity-privacy.md",
+      "anchor": "m066",
+      "thesis": "Cross-system incident correlation need not expose durable personal identifiers to every analyst.",
+      "abstract": "Thesis. Cross-system incident correlation need not expose durable personal identifiers to every analyst. System. Derive short-lived, purpose-bound correlation tokens in a trusted service with explicit rotation and access logging. Match events over a defined investigation window w",
+      "word_count": 103,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/226/final",
+        "https://www.nist.gov/privacy-framework"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "067",
+      "title": "Device-Bound Session Assurance",
+      "chapter": 7,
+      "theme": "Identity, Consent and Authority",
+      "path": "atlas/07-identity-privacy.md",
+      "anchor": "m067",
+      "thesis": "Session trust should change when the device, authenticator or environment changes.",
+      "abstract": "Thesis. Session trust should change when the device, authenticator or environment changes. System. Bind a session to a phishing-resistant authentication event and a privacy-minimized device assurance signal; re-evaluate when risk signals change or the binding expires. Use a state",
+      "word_count": 105,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/207/final",
+        "https://pages.nist.gov/800-63-4/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "068",
+      "title": "Access Decision Explainer",
+      "chapter": 7,
+      "theme": "Identity, Consent and Authority",
+      "path": "atlas/07-identity-privacy.md",
+      "anchor": "m068",
+      "thesis": "A deny/allow result is harder to trust and repair when the controlling rule is opaque.",
+      "abstract": "Thesis. A deny/allow result is harder to trust and repair when the controlling rule is opaque. System. Produce a minimal explanation tuple: decision, evaluated policy version, relevant attributes, precedence path and safe remediation. Verify the explanation by replaying the same ",
+      "word_count": 108,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/207/a/final",
+        "https://owasp.org/projects/asvs?tab=main"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "069",
+      "title": "Revocation Latency Observatory",
+      "chapter": 7,
+      "theme": "Identity, Consent and Authority",
+      "path": "atlas/07-identity-privacy.md",
+      "anchor": "m069",
+      "thesis": "A revocation command is only successful when all relevant enforcement points stop accepting the identity.",
+      "abstract": "Thesis. A revocation command is only successful when all relevant enforcement points stop accepting the identity. System. Instrument issuer, cache, gateway, application and offline client acknowledgments. Define latency as the interval from an approved revoke event to the last su",
+      "word_count": 96,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/207/final",
+        "https://spiffe.io/docs/latest/spiffe-about/overview/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "070",
+      "title": "Data-Minimization Twin",
+      "chapter": 7,
+      "theme": "Identity, Consent and Authority",
+      "path": "atlas/07-identity-privacy.md",
+      "anchor": "m070",
+      "thesis": "Teams need to see the functional cost and privacy benefit of collecting less.",
+      "abstract": "Thesis. Teams need to see the functional cost and privacy benefit of collecting less. System. Mirror a data-processing workflow using synthetic records, then vary fields, retention periods and aggregation levels. Model service utility, privacy exposure and incident-investigation ",
+      "word_count": 101,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/226/final",
+        "https://www.nist.gov/privacy-framework"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "071",
+      "title": "Desired-State Security Diff",
+      "chapter": 8,
+      "theme": "Cloud, Workload and Recovery Systems",
+      "path": "atlas/08-cloud-systems.md",
+      "anchor": "m071",
+      "thesis": "A line-by-line infrastructure diff misses the security meaning of a change.",
+      "abstract": "Thesis. A line-by-line infrastructure diff misses the security meaning of a change. System. Translate an infrastructure plan into a resource-and-policy graph, then compare before and after effective permissions, reachable paths, encryption boundaries and data location. Rank chang",
+      "word_count": 97,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/207/a/final",
+        "https://kubernetes.io/docs/concepts/security/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "072",
+      "title": "Ephemeral Resource Lineage",
+      "chapter": 8,
+      "theme": "Cloud, Workload and Recovery Systems",
+      "path": "atlas/08-cloud-systems.md",
+      "anchor": "m072",
+      "thesis": "Short-lived workloads can disappear before an incident investigation begins.",
+      "abstract": "Thesis. Short-lived workloads can disappear before an incident investigation begins. System. Assign every resource a lineage edge from source revision through build, deployment controller, runtime identity and termination record. Emit compact, signed birth/death events to an inde",
+      "word_count": 102,
+      "source_urls": [
+        "https://kubernetes.io/docs/concepts/security/",
+        "https://slsa.dev/spec/v1.2/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "073",
+      "title": "Secret Journey Map",
+      "chapter": 8,
+      "theme": "Cloud, Workload and Recovery Systems",
+      "path": "atlas/08-cloud-systems.md",
+      "anchor": "m073",
+      "thesis": "A secret’s risk is determined by every copy, delivery and exposure point over time.",
+      "abstract": "Thesis. A secret’s risk is determined by every copy, delivery and exposure point over time. System. Model generation, storage, injection, use, rotation and revocation as a graph of secret metadata ; record identities and systems that can read each stage without storing secret val",
+      "word_count": 103,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://kubernetes.io/docs/concepts/security/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "074",
+      "title": "Federated Service-Identity Lattice",
+      "chapter": 8,
+      "theme": "Cloud, Workload and Recovery Systems",
+      "path": "atlas/08-cloud-systems.md",
+      "anchor": "m074",
+      "thesis": "Workload identities need scoped trust across clouds without turning every federation into universal authority.",
+      "abstract": "Thesis. Workload identities need scoped trust across clouds without turning every federation into universal authority. System. Express trust as a partial order of issuing domain, workload selector, allowed resource, assurance evidence and expiration. Federation is permitted only ",
+      "word_count": 97,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/207/a/final",
+        "https://spiffe.io/docs/latest/spiffe-about/overview/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "075",
+      "title": "Runtime-to-Template Reconciler",
+      "chapter": 8,
+      "theme": "Cloud, Workload and Recovery Systems",
+      "path": "atlas/08-cloud-systems.md",
+      "anchor": "m075",
+      "thesis": "A secure deployment template is weak evidence if the running workload has changed.",
+      "abstract": "Thesis. A secure deployment template is weak evidence if the running workload has changed. System. Reconcile declared manifests and attested images with observed process, volume, network and service-account state. Produce a typed deviation record: expected, approved exception, ac",
+      "word_count": 103,
+      "source_urls": [
+        "https://kubernetes.io/docs/concepts/security/",
+        "https://slsa.dev/spec/v1.2/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "076",
+      "title": "Storage Residency Proof",
+      "chapter": 8,
+      "theme": "Cloud, Workload and Recovery Systems",
+      "path": "atlas/08-cloud-systems.md",
+      "anchor": "m076",
+      "thesis": "A location setting does not show where all copies and backups of data actually reside.",
+      "abstract": "Thesis. A location setting does not show where all copies and backups of data actually reside. System. Build a lineage record for object creation, replication, snapshotting, export and deletion across regions, with signed provider events when available. Check each path against an",
+      "word_count": 105,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/53/a/r5/final",
+        "https://www.nist.gov/privacy-framework"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "077",
+      "title": "Security Failure-Domain Design",
+      "chapter": 8,
+      "theme": "Cloud, Workload and Recovery Systems",
+      "path": "atlas/08-cloud-systems.md",
+      "anchor": "m077",
+      "thesis": "Independent services can share a hidden failure point such as one issuer, logging plane or control account.",
+      "abstract": "Thesis. Independent services can share a hidden failure point such as one issuer, logging plane or control account. System. Model trust dependencies as a multiplex graph and compute minimal cut sets for loss of confidentiality, command authority or recovery. Propose isolation cha",
+      "word_count": 98,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/207/a/final",
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "078",
+      "title": "Serverless Permission Sandbox",
+      "chapter": 8,
+      "theme": "Cloud, Workload and Recovery Systems",
+      "path": "atlas/08-cloud-systems.md",
+      "anchor": "m078",
+      "thesis": "Event-driven functions often receive broad cloud permissions for a narrow task.",
+      "abstract": "Thesis. Event-driven functions often receive broad cloud permissions for a narrow task. System. Execute a function against synthetic events in an isolated account; collect required API calls and data scopes, then synthesize a candidate policy constrained by approved workflows and",
+      "word_count": 105,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/207/final",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "079",
+      "title": "Cluster Admission Evidence Gate",
+      "chapter": 8,
+      "theme": "Cloud, Workload and Recovery Systems",
+      "path": "atlas/08-cloud-systems.md",
+      "anchor": "m079",
+      "thesis": "Admission should depend on evidence about artifact origin and workload policy, with a clear exception path.",
+      "abstract": "Thesis. Admission should depend on evidence about artifact origin and workload policy, with a clear exception path. System. Validate image digest, signed provenance, approved source revision, SBOM availability and pod security requirements as separate claims. Produce a signed dec",
+      "word_count": 105,
+      "source_urls": [
+        "https://kubernetes.io/docs/concepts/security/",
+        "https://slsa.dev/spec/v1.2/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "080",
+      "title": "Cloud Recovery Portability Test",
+      "chapter": 8,
+      "theme": "Cloud, Workload and Recovery Systems",
+      "path": "atlas/08-cloud-systems.md",
+      "anchor": "m080",
+      "thesis": "Backup claims should be measured by the ability to restore critical service outside its usual control plane.",
+      "abstract": "Thesis. Backup claims should be measured by the ability to restore critical service outside its usual control plane. System. Export versioned data, policy, identity mapping and infrastructure recipes into an isolated recovery account; run a scripted restore with dependency checks",
+      "word_count": 106,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/ir/8374/r1/final",
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "081",
+      "title": "Evidence-Bound Security Assistant",
+      "chapter": 9,
+      "theme": "AI Systems and Bounded Automation",
+      "path": "atlas/09-ai-security.md",
+      "anchor": "m081",
+      "thesis": "An assistant is useful only if analysts can distinguish sourced observation from model inference.",
+      "abstract": "Thesis. An assistant is useful only if analysts can distinguish sourced observation from model inference. System. Give the model a versioned, access-controlled evidence store; require each claim to cite a record ID and time interval, with unsupported claims labeled as hypotheses.",
+      "word_count": 104,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+        "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "082",
+      "title": "Prompt Boundary Evaluator",
+      "chapter": 9,
+      "theme": "AI Systems and Bounded Automation",
+      "path": "atlas/09-ai-security.md",
+      "anchor": "m082",
+      "thesis": "Security assistants must treat retrieved documents and logs as untrusted task data.",
+      "abstract": "Thesis. Security assistants must treat retrieved documents and logs as untrusted task data. System. Build an evaluation harness that inserts benignly simulated instruction attempts into synthetic search results, code comments and ticket text; measure whether the assistant preserv",
+      "word_count": 106,
+      "source_urls": [
+        "https://www.cisa.gov/news-events/alerts/2023/11/26/cisa-and-uk-ncsc-unveil-joint-guidelines-secure-ai-system-development",
+        "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "083",
+      "title": "Model Lineage Registry",
+      "chapter": 9,
+      "theme": "AI Systems and Bounded Automation",
+      "path": "atlas/09-ai-security.md",
+      "anchor": "m083",
+      "thesis": "A model result needs a reproducible route back to data, code and evaluation.",
+      "abstract": "Thesis. A model result needs a reproducible route back to data, code and evaluation. System. Link model version, training-data manifest, approved use, preprocessing, hyperparameters, evaluation suite, deployment target and signer in a provenance graph. Record dataset licenses and",
+      "word_count": 95,
+      "source_urls": [
+        "https://slsa.dev/spec/v1.2/",
+        "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "084",
+      "title": "Privacy Leakage Observatory",
+      "chapter": 9,
+      "theme": "AI Systems and Bounded Automation",
+      "path": "atlas/09-ai-security.md",
+      "anchor": "m084",
+      "thesis": "Model privacy risk should be measured over updates and usage patterns, not once at release.",
+      "abstract": "Thesis. Model privacy risk should be measured over updates and usage patterns, not once at release. System. Place synthetic canary records in controlled training and retrieval sets, then run membership, memorization and prompt-leakage probes under an approved evaluation plan. Tra",
+      "word_count": 106,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/226/final",
+        "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "085",
+      "title": "Agent Authority Envelope",
+      "chapter": 9,
+      "theme": "AI Systems and Bounded Automation",
+      "path": "atlas/09-ai-security.md",
+      "anchor": "m085",
+      "thesis": "An AI agent should have exactly the tool scope, budget and lifetime needed for a stated task.",
+      "abstract": "Thesis. An AI agent should have exactly the tool scope, budget and lifetime needed for a stated task. System. Express authority as an envelope (tools, resources, actions, time, budget, approver) enforced by a policy gateway outside the model. Generate a complete decision log and ",
+      "word_count": 107,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/207/final",
+        "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "086",
+      "title": "Calibrated Alert Triage",
+      "chapter": 9,
+      "theme": "AI Systems and Bounded Automation",
+      "path": "atlas/09-ai-security.md",
+      "anchor": "m086",
+      "thesis": "An alert rank is valuable only if predicted urgency matches observed outcomes and analyst capacity.",
+      "abstract": "Thesis. An alert rank is valuable only if predicted urgency matches observed outcomes and analyst capacity. System. Combine confirmed exploitation, asset criticality, reachable attack path, detection quality and uncertainty into a ranking model. Preserve separate factors and allo",
+      "word_count": 101,
+      "source_urls": [
+        "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+        "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "087",
+      "title": "Human Override Feedback Loop",
+      "chapter": 9,
+      "theme": "AI Systems and Bounded Automation",
+      "path": "atlas/09-ai-security.md",
+      "anchor": "m087",
+      "thesis": "Overrides reveal both model errors and changing operational needs.",
+      "abstract": "Thesis. Overrides reveal both model errors and changing operational needs. System. Capture an analyst’s override with reason, evidence references, final outcome and whether the model’s original decision was uncertain. Separate safety-critical overrides from preference changes and",
+      "word_count": 93,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+        "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "088",
+      "title": "Concept-Drift Sentinel",
+      "chapter": 9,
+      "theme": "AI Systems and Bounded Automation",
+      "path": "atlas/09-ai-security.md",
+      "anchor": "m088",
+      "thesis": "A detection model can become unreliable while its infrastructure remains healthy.",
+      "abstract": "Thesis. A detection model can become unreliable while its infrastructure remains healthy. System. Monitor changes in input schema, feature distribution, alert prevalence, analyst outcomes and subgroup error. Use a reference-window model with defined false-alarm budget and trigger",
+      "word_count": 98,
+      "source_urls": [
+        "https://www.cisa.gov/news-events/alerts/2023/11/26/cisa-and-uk-ncsc-unveil-joint-guidelines-secure-ai-system-development",
+        "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "089",
+      "title": "Synthetic Telemetry Fidelity Lab",
+      "chapter": 9,
+      "theme": "AI Systems and Bounded Automation",
+      "path": "atlas/09-ai-security.md",
+      "anchor": "m089",
+      "thesis": "Synthetic incident data should disclose what behavior it represents and where it diverges from real operations.",
+      "abstract": "Thesis. Synthetic incident data should disclose what behavior it represents and where it diverges from real operations. System. Generate host, network and identity events from an explicit state-machine scenario; validate causal order, protocol syntax, class balance and missingnes",
+      "word_count": 101,
+      "source_urls": [
+        "https://www.nist.gov/privacy-framework",
+        "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "090",
+      "title": "AI Exercise Safety Case",
+      "chapter": 9,
+      "theme": "AI Systems and Bounded Automation",
+      "path": "atlas/09-ai-security.md",
+      "anchor": "m090",
+      "thesis": "An AI-driven security exercise needs a documented argument that its benefits justify its operational risks.",
+      "abstract": "Thesis. An AI-driven security exercise needs a documented argument that its benefits justify its operational risks. System. Define exercise goals, permitted targets, simulated capabilities, data boundaries, stop conditions and independent observers. Link each hazard to a control ",
+      "word_count": 110,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+        "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "091",
+      "title": "Physics-Informed Integrity Monitor",
+      "chapter": 10,
+      "theme": "Cyberphysical and Operational Resilience",
+      "path": "atlas/10-ot-resilience.md",
+      "anchor": "m091",
+      "thesis": "Telemetry can be syntactically valid but physically impossible.",
+      "abstract": "Thesis. Telemetry can be syntactically valid but physically impossible. System. Couple a simplified process model with sensor and actuator constraints; compare observed state transitions against conservation laws, rate limits and measured uncertainty. Output a residual vector and",
+      "word_count": 111,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/82/r3/final",
+        "https://d3fend.mitre.org/about/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "092",
+      "title": "Maintenance Window Risk Planner",
+      "chapter": 10,
+      "theme": "Cyberphysical and Operational Resilience",
+      "path": "atlas/10-ot-resilience.md",
+      "anchor": "m092",
+      "thesis": "Security maintenance scheduling should account for the physical process, staffing and exposure window together.",
+      "abstract": "Thesis. Security maintenance scheduling should account for the physical process, staffing and exposure window together. System. Optimize patch or inspection timing under hard safety constraints, capacity forecasts, fallback availability, exploit evidence and recovery duration. Pr",
+      "word_count": 104,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/82/r3/final",
+        "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "093",
+      "title": "Safety Controller Evidence Mirror",
+      "chapter": 10,
+      "theme": "Cyberphysical and Operational Resilience",
+      "path": "atlas/10-ot-resilience.md",
+      "anchor": "m093",
+      "thesis": "Security investigators need visibility into safety-controller state without risking its operation.",
+      "abstract": "Thesis. Security investigators need visibility into safety-controller state without risking its operation. System. Design a physically and logically read-only mirror that records approved status signals, configuration digests, timestamp uncertainty and health checks on a separate",
+      "word_count": 107,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/53/a/r5/final",
+        "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "094",
+      "title": "Sensor Calibration Attestation",
+      "chapter": 10,
+      "theme": "Cyberphysical and Operational Resilience",
+      "path": "atlas/10-ot-resilience.md",
+      "anchor": "m094",
+      "thesis": "A sensor value is meaningful only with its calibration state, firmware and uncertainty.",
+      "abstract": "Thesis. A sensor value is meaningful only with its calibration state, firmware and uncertainty. System. Bind each reading stream to a signed calibration record containing instrument ID, reference standard, valid interval, firmware digest and uncertainty model. Mark readings after",
+      "word_count": 112,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/213/final",
+        "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "095",
+      "title": "Island-Mode Mission Test",
+      "chapter": 10,
+      "theme": "Cyberphysical and Operational Resilience",
+      "path": "atlas/10-ot-resilience.md",
+      "anchor": "m095",
+      "thesis": "Critical operations must behave predictably when identity, cloud or network services vanish.",
+      "abstract": "Thesis. Critical operations must behave predictably when identity, cloud or network services vanish. System. Define a local safe operating envelope and minimal cached authority for disconnected mode; simulate loss of upstream services, stale commands and reconnection conflicts. T",
+      "word_count": 107,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/82/r3/final",
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "096",
+      "title": "Command Plausibility Envelope",
+      "chapter": 10,
+      "theme": "Cyberphysical and Operational Resilience",
+      "path": "atlas/10-ot-resilience.md",
+      "anchor": "m096",
+      "thesis": "Authorized commands can still be unsafe in the current physical state.",
+      "abstract": "Thesis. Authorized commands can still be unsafe in the current physical state. System. Compute a state-dependent set of permitted command values from process limits, interlocks, actuator rate bounds and operating mode. In research mode, compare proposed commands with this envelop",
+      "word_count": 103,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/82/r3/final",
+        "https://d3fend.mitre.org/about/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "097",
+      "title": "Cyberphysical Digital Twin",
+      "chapter": 10,
+      "theme": "Cyberphysical and Operational Resilience",
+      "path": "atlas/10-ot-resilience.md",
+      "anchor": "m097",
+      "thesis": "A useful twin connects process dynamics, controller logic and cyber dependencies rather than simulating only one layer.",
+      "abstract": "Thesis. A useful twin connects process dynamics, controller logic and cyber dependencies rather than simulating only one layer. System. Model plant state x , control command u , sensor observation y , communication delay τ and trust state z . Co-simulate routine operations, lost ",
+      "word_count": 111,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/53/a/r5/final",
+        "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "098",
+      "title": "Legacy Device Containment Architecture",
+      "chapter": 10,
+      "theme": "Cyberphysical and Operational Resilience",
+      "path": "atlas/10-ot-resilience.md",
+      "anchor": "m098",
+      "thesis": "An unpatchable device can sometimes be protected by shaping the environment around it.",
+      "abstract": "Thesis. An unpatchable device can sometimes be protected by shaping the environment around it. System. Build a least-privilege communication graph, protocol-aware gateway, maintenance-access path and passive monitoring plan for one legacy device class. Include physical fail-safe ",
+      "word_count": 100,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/207/final",
+        "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "099",
+      "title": "State-Aware Recovery Sequencer",
+      "chapter": 10,
+      "theme": "Cyberphysical and Operational Resilience",
+      "path": "atlas/10-ot-resilience.md",
+      "anchor": "m099",
+      "thesis": "Restoring services in the wrong order can damage an industrial process even when every system starts successfully.",
+      "abstract": "Thesis. Restoring services in the wrong order can damage an industrial process even when every system starts successfully. System. Encode dependencies and physical preconditions as a directed graph: power, safety controller, instrumentation, command authority, process controller ",
+      "word_count": 114,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+        "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "100",
+      "title": "Cross-Site Recovery Lattice",
+      "chapter": 10,
+      "theme": "Cyberphysical and Operational Resilience",
+      "path": "atlas/10-ot-resilience.md",
+      "anchor": "m100",
+      "thesis": "Several facilities may share hidden dependencies that make simultaneous recovery impossible.",
+      "abstract": "Thesis. Several facilities may share hidden dependencies that make simultaneous recovery impossible. System. Represent sites, spare parts, identity services, communication links and crews as a capacity-constrained dependency graph. Optimize staged recovery for safety and essentia",
+      "word_count": 104,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/ir/8374/r1/final",
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "101",
+      "title": "Ground-to-Orbit Command Chain",
+      "chapter": 11,
+      "theme": "RF, space, and remote systems",
+      "path": "atlas/11-rf-space-remote-systems.md",
+      "anchor": "m101",
+      "thesis": "A command is trustworthy only when the approving role, ground transformation, transmission, receipt, and on-board action can be joined into one verifiable record.",
+      "abstract": "Thesis. A command is trustworthy only when the approving role, ground transformation, transmission, receipt, and on-board action can be joined into one verifiable record. Proposed system. Define a command-event schema with mission identifier, approved intent hash, signer, ground ",
+      "word_count": 125,
+      "source_urls": [
+        "https://standards.nasa.gov/standard/nasa/nasa-std-1006",
+        "https://www.nasa.gov/smallsat-institute/sst-soa/ground-data-systems-and-mission-operations/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "102",
+      "title": "Link-Integrity Weather Map",
+      "chapter": 11,
+      "theme": "RF, space, and remote systems",
+      "path": "atlas/11-rf-space-remote-systems.md",
+      "anchor": "m102",
+      "thesis": "Treating all RF degradation as a security event wastes attention; treating all degradation as weather hides integrity loss.",
+      "abstract": "Thesis. Treating all RF degradation as a security event wastes attention; treating all degradation as weather hides integrity loss. Proposed system. Build a passive observation model with received-signal quality, error-correction counts, expected geometry, authorized link schedul",
+      "word_count": 115,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v2/r1/final",
+        "https://www.nasa.gov/smallsat-institute/sst-soa/ground-data-systems-and-mission-operations/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "103",
+      "title": "CubeSat Update Survival Model",
+      "chapter": 11,
+      "theme": "RF, space, and remote systems",
+      "path": "atlas/11-rf-space-remote-systems.md",
+      "anchor": "m103",
+      "thesis": "A verified A/B firmware architecture should preserve a bootable, authorized image across interrupted remote updates.",
+      "abstract": "Thesis. A verified A/B firmware architecture should preserve a bootable, authorized image across interrupted remote updates. Proposed system. Model boot states, image hashes, signature decisions, watchdog resets, energy reserve, and contact windows as a state machine. A hardware-",
+      "word_count": 116,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v2/r1/final",
+        "https://standards.nasa.gov/standard/nasa/nasa-std-1006"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "104",
+      "title": "Ground-Station Configuration Witness",
+      "chapter": 11,
+      "theme": "RF, space, and remote systems",
+      "path": "atlas/11-rf-space-remote-systems.md",
+      "anchor": "m104",
+      "thesis": "A cryptographically linked history of approved ground-station configurations can make unnoticed operational drift easier to detect.",
+      "abstract": "Thesis. A cryptographically linked history of approved ground-station configurations can make unnoticed operational drift easier to detect. Proposed system. Each approved configuration snapshot records software versions, antenna-controller settings, command-routing policy, signer",
+      "word_count": 113,
+      "source_urls": [
+        "https://www.nasa.gov/smallsat-institute/sst-soa/ground-data-systems-and-mission-operations/",
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "105",
+      "title": "Ephemeris Data Integrity Check",
+      "chapter": 11,
+      "theme": "RF, space, and remote systems",
+      "path": "atlas/11-rf-space-remote-systems.md",
+      "anchor": "m105",
+      "thesis": "Cross-checking orbital-state inputs from independent approved sources can reveal corrupted or stale data before planning uses them.",
+      "abstract": "Thesis. Cross-checking orbital-state inputs from independent approved sources can reveal corrupted or stale data before planning uses them. Proposed system. Accept signed ephemeris records, source identity, epoch, reference frame, uncertainty covariance, and approved validity win",
+      "word_count": 112,
+      "source_urls": [
+        "https://standards.nasa.gov/standard/nasa/nasa-std-1006",
+        "https://www.nist.gov/publications/engineering-trustworthy-secure-systems"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "106",
+      "title": "Time-Source Trust Ensemble",
+      "chapter": 11,
+      "theme": "RF, space, and remote systems",
+      "path": "atlas/11-rf-space-remote-systems.md",
+      "anchor": "m106",
+      "thesis": "Independent clock evidence can distinguish timing uncertainty from event-order disagreement in remote operations.",
+      "abstract": "Thesis. Independent clock evidence can distinguish timing uncertainty from event-order disagreement in remote operations. Proposed system. Combine local oscillator telemetry, authenticated time-service status, contact timing, and approved reference clocks into an interval estimat",
+      "word_count": 111,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v2/r1/final",
+        "https://www.nasa.gov/smallsat-institute/sst-soa/ground-data-systems-and-mission-operations/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "107",
+      "title": "Payload Partition Boundary",
+      "chapter": 11,
+      "theme": "RF, space, and remote systems",
+      "path": "atlas/11-rf-space-remote-systems.md",
+      "anchor": "m107",
+      "thesis": "Measured resource and authority isolation should prevent a noncritical experiment from degrading spacecraft command functions.",
+      "abstract": "Thesis. Measured resource and authority isolation should prevent a noncritical experiment from degrading spacecraft command functions. Proposed system. Specify a partition contract for CPU, memory, bus access, power draw, persistent storage, command privileges, and reset behavior",
+      "word_count": 110,
+      "source_urls": [
+        "https://standards.nasa.gov/standard/nasa/nasa-std-1006",
+        "https://www.nist.gov/publications/engineering-trustworthy-secure-systems"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "108",
+      "title": "Spectrum-Coexistence Ledger",
+      "chapter": 11,
+      "theme": "RF, space, and remote systems",
+      "path": "atlas/11-rf-space-remote-systems.md",
+      "anchor": "m108",
+      "thesis": "A documented, authorized history of passive RF observations and operating schedules can improve reliability planning for shared spectrum.",
+      "abstract": "Thesis. A documented, authorized history of passive RF observations and operating schedules can improve reliability planning for shared spectrum. Proposed system. Record mission-owned receiver measurements, location, time, frequency allocation, antenna configuration, expected con",
+      "word_count": 111,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v2/r1/final",
+        "https://www.nasa.gov/smallsat-institute/sst-soa/ground-data-systems-and-mission-operations/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "109",
+      "title": "Radiation–Security Coupling Study",
+      "chapter": 11,
+      "theme": "RF, space, and remote systems",
+      "path": "atlas/11-rf-space-remote-systems.md",
+      "anchor": "m109",
+      "thesis": "Transient hardware faults can alter security state, so resilience claims should include controlled fault conditions as well as normal execution.",
+      "abstract": "Thesis. Transient hardware faults can alter security state, so resilience claims should include controlled fault conditions as well as normal execution. Proposed system. Use a nonflight emulator or approved laboratory board to perturb memory, voltage, and reset events within safe",
+      "word_count": 110,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v2/r1/final",
+        "https://standards.nasa.gov/standard/nasa/nasa-std-1006"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "110",
+      "title": "Remote Evidence Courier",
+      "chapter": 11,
+      "theme": "RF, space, and remote systems",
+      "path": "atlas/11-rf-space-remote-systems.md",
+      "anchor": "m110",
+      "thesis": "Delay-tolerant, signed evidence bundles can preserve a traceable record when links are intermittent and packets arrive out of order.",
+      "abstract": "Thesis. Delay-tolerant, signed evidence bundles can preserve a traceable record when links are intermittent and packets arrive out of order. Proposed system. Package telemetry chunks with content hash, source key, sequence window, local-time interval, previous-bundle hash, compre",
+      "word_count": 111,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+        "https://www.nasa.gov/smallsat-institute/sst-soa/ground-data-systems-and-mission-operations/"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "111",
+      "title": "Decision-Centered Incident Exercise",
+      "chapter": 12,
+      "theme": "Human factors and security learning",
+      "path": "atlas/12-human-factors-learning.md",
+      "anchor": "m111",
+      "thesis": "Exercise success should reflect evidence interpretation and the consequences of decisions, not whether a participant clicked through a scripted checklist.",
+      "abstract": "Thesis. Exercise success should reflect evidence interpretation and the consequences of decisions, not whether a participant clicked through a scripted checklist. Proposed system. Build fictional incident cards with ambiguous but controlled evidence, branching options, time press",
+      "word_count": 114,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/181/r1/final",
+        "https://csrc.nist.gov/pubs/sp/800/50/r1/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "112",
+      "title": "Cognitive Load Alert Budget",
+      "chapter": 12,
+      "theme": "Human factors and security learning",
+      "path": "atlas/12-human-factors-learning.md",
+      "anchor": "m112",
+      "thesis": "Reducing simultaneous choices in an operator console should improve correct prioritization during simulated high-volume events.",
+      "abstract": "Thesis. Reducing simultaneous choices in an operator console should improve correct prioritization during simulated high-volume events. Proposed system. Represent each alert by evidence quality, mission impact, freshness, required decision, and reversible actions. A configurable ",
+      "word_count": 113,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/50/r1/final",
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "113",
+      "title": "Security Documentation as Control",
+      "chapter": 12,
+      "theme": "Human factors and security learning",
+      "path": "atlas/12-human-factors-learning.md",
+      "anchor": "m113",
+      "thesis": "A tested task guide can prevent security errors as measurably as a technical control.",
+      "abstract": "Thesis. A tested task guide can prevent security errors as measurably as a technical control. Proposed system. Turn operational instructions into versioned decision aids with purpose, prerequisites, stop conditions, evidence to collect, escalation contact, and rollback. Associate",
+      "word_count": 115,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/181/r1/final",
+        "https://csrc.nist.gov/pubs/sp/800/50/r1/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "114",
+      "title": "Accessibility-Preserving Defense UI",
+      "chapter": 12,
+      "theme": "Human factors and security learning",
+      "path": "atlas/12-human-factors-learning.md",
+      "anchor": "m114",
+      "thesis": "Interfaces designed for varied visual, motor, and cognitive needs should increase decision accuracy across a broader operator population.",
+      "abstract": "Thesis. Interfaces designed for varied visual, motor, and cognitive needs should increase decision accuracy across a broader operator population. Proposed system. Produce equivalent keyboard, screen-reader, high-contrast, and low-distraction paths through an incident dashboard. M",
+      "word_count": 105,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/181/r1/final",
+        "https://csrc.nist.gov/pubs/sp/800/50/r1/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "115",
+      "title": "Opt-In Reporting Rehearsal",
+      "chapter": 12,
+      "theme": "Human factors and security learning",
+      "path": "atlas/12-human-factors-learning.md",
+      "anchor": "m115",
+      "thesis": "Rehearsing the decision to report ambiguous evidence may shorten reporting delay without pressuring people to make confident accusations.",
+      "abstract": "Thesis. Rehearsing the decision to report ambiguous evidence may shorten reporting delay without pressuring people to make confident accusations. Proposed system. Create a transparent, consented exercise with fictional suspicious events, simple reporting paths, immediate supporti",
+      "word_count": 114,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/50/r1/final",
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "116",
+      "title": "Shift-Handoff Memory",
+      "chapter": 12,
+      "theme": "Human factors and security learning",
+      "path": "atlas/12-human-factors-learning.md",
+      "anchor": "m116",
+      "thesis": "A structured handoff that preserves uncertainty and pending decisions should reduce evidence loss between response shifts.",
+      "abstract": "Thesis. A structured handoff that preserves uncertainty and pending decisions should reduce evidence loss between response shifts. Proposed system. Use a case-state schema for confirmed facts, disputed interpretations, missing data, owner, next action, time constraint, and eviden",
+      "word_count": 113,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/181/r1/final",
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "117",
+      "title": "Learning from Near Misses",
+      "chapter": 12,
+      "theme": "Human factors and security learning",
+      "path": "atlas/12-human-factors-learning.md",
+      "anchor": "m117",
+      "thesis": "A low-friction, non-punitive record of near misses can reveal system design problems before they become incidents.",
+      "abstract": "Thesis. A low-friction, non-punitive record of near misses can reveal system design problems before they become incidents. Proposed system. Offer a privacy-preserving submission channel that captures task context, barrier that caught the problem, contributing interface/process co",
+      "word_count": 114,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v2/r1/final",
+        "https://csrc.nist.gov/pubs/sp/800/50/r1/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "118",
+      "title": "Role-Specific Skill Telemetry",
+      "chapter": 12,
+      "theme": "Human factors and security learning",
+      "path": "atlas/12-human-factors-learning.md",
+      "anchor": "m118",
+      "thesis": "Observed task performance can target learning more precisely than generic course attendance.",
+      "abstract": "Thesis. Observed task performance can target learning more precisely than generic course attendance. Proposed system. Map fictional practice tasks to NICE knowledge/skill statements and capture outcome, evidence reasoning, uncertainty management, and help-seeking. Report aggregat",
+      "word_count": 105,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/181/r1/final",
+        "https://csrc.nist.gov/pubs/sp/800/50/r1/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "119",
+      "title": "Multilingual Incident Vocabulary",
+      "chapter": 12,
+      "theme": "Human factors and security learning",
+      "path": "atlas/12-human-factors-learning.md",
+      "anchor": "m119",
+      "thesis": "A controlled glossary that preserves uncertainty, severity, and action state across languages should reduce coordination errors.",
+      "abstract": "Thesis. A controlled glossary that preserves uncertainty, severity, and action state across languages should reduce coordination errors. Proposed system. Define canonical incident concepts with approved translations, examples, forbidden ambiguities, and machine-readable identifie",
+      "word_count": 108,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/181/r1/final",
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "120",
+      "title": "Team Coordination Simulator",
+      "chapter": 12,
+      "theme": "Human factors and security learning",
+      "path": "atlas/12-human-factors-learning.md",
+      "anchor": "m120",
+      "thesis": "Communication structure, not only individual skill, determines containment and restoration quality.",
+      "abstract": "Thesis. Communication structure, not only individual skill, determines containment and restoration quality. Proposed system. A tabletop simulator assigns operations, engineering, legal/privacy, and communications roles distinct partial views of a fictional event. Experimental con",
+      "word_count": 97,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/181/r1/final",
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "121",
+      "title": "Mission-Weighted Recovery Order",
+      "chapter": 13,
+      "theme": "Incident response and resilience",
+      "path": "atlas/13-response-resilience.md",
+      "anchor": "m121",
+      "thesis": "Restoring services in dependency and mission-value order should recover useful capability sooner than restoring the most visible servers first.",
+      "abstract": "Thesis. Restoring services in dependency and mission-value order should recover useful capability sooner than restoring the most visible servers first. Proposed system. Build a directed dependency graph with service readiness, prerequisite restoration time, expected mission utili",
+      "word_count": 115,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "122",
+      "title": "Verified Restore Gate",
+      "chapter": 13,
+      "theme": "Incident response and resilience",
+      "path": "atlas/13-response-resilience.md",
+      "anchor": "m122",
+      "thesis": "A backup is operationally valuable only if its data, configuration, dependencies, and restored function can be independently verified.",
+      "abstract": "Thesis. A backup is operationally valuable only if its data, configuration, dependencies, and restored function can be independently verified. Proposed system. Attach to each backup a manifest of content hashes, application version, secret references, restoration prerequisites, a",
+      "word_count": 122,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "123",
+      "title": "Reversible Containment Planner",
+      "chapter": 13,
+      "theme": "Incident response and resilience",
+      "path": "atlas/13-response-resilience.md",
+      "anchor": "m123",
+      "thesis": "Comparing the reversibility and mission cost of defensive interventions should reduce unnecessary service disruption.",
+      "abstract": "Thesis. Comparing the reversibility and mission cost of defensive interventions should reduce unnecessary service disruption. Proposed system. Represent each approved containment option with expected risk reduction, affected dependencies, execution delay, monitoring evidence, rol",
+      "word_count": 118,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v2/r1/final",
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "124",
+      "title": "Incident Branching Playbook",
+      "chapter": 13,
+      "theme": "Incident response and resilience",
+      "path": "atlas/13-response-resilience.md",
+      "anchor": "m124",
+      "thesis": "A playbook that states evidence thresholds and uncertainty explicitly should produce more consistent escalation than a linear checklist.",
+      "abstract": "Thesis. A playbook that states evidence thresholds and uncertainty explicitly should produce more consistent escalation than a linear checklist. Proposed system. Define a decision graph with observation, confidence, required authority, time limit, privacy constraint, and reversib",
+      "word_count": 115,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "125",
+      "title": "Distributed Recovery Quorum",
+      "chapter": 13,
+      "theme": "Incident response and resilience",
+      "path": "atlas/13-response-resilience.md",
+      "anchor": "m125",
+      "thesis": "Independent approval and evidence checks for high-impact recovery steps should prevent one mistaken actor from propagating a bad state across a system.",
+      "abstract": "Thesis. Independent approval and evidence checks for high-impact recovery steps should prevent one mistaken actor from propagating a bad state across a system. Proposed system. Specify which operations require two roles, distinct devices, validated backup provenance, and an expir",
+      "word_count": 111,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v2/r1/final",
+        "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "126",
+      "title": "Safe Degradation Controller",
+      "chapter": 13,
+      "theme": "Incident response and resilience",
+      "path": "atlas/13-response-resilience.md",
+      "anchor": "m126",
+      "thesis": "Preapproved operating limits can keep essential services available when integrity is uncertain, instead of forcing an all-or-nothing shutdown.",
+      "abstract": "Thesis. Preapproved operating limits can keep essential services available when integrity is uncertain, instead of forcing an all-or-nothing shutdown. Proposed system. Define service modes, allowed operations, dependency requirements, data freshness, human approvals, and transiti",
+      "word_count": 108,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v2/r1/final",
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "127",
+      "title": "Compromise Dwell-Time Lens",
+      "chapter": 13,
+      "theme": "Incident response and resilience",
+      "path": "atlas/13-response-resilience.md",
+      "anchor": "m127",
+      "thesis": "Separating time to observe, triage, validate, decide, and contain reveals the dominant response bottleneck more clearly than one mean detection time.",
+      "abstract": "Thesis. Separating time to observe, triage, validate, decide, and contain reveals the dominant response bottleneck more clearly than one mean detection time. Proposed system. A timestamped event model stores source, uncertainty interval, analyst decision, handoff, and disposition",
+      "word_count": 108,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/55/v1/final",
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "128",
+      "title": "Outage Communications Continuity",
+      "chapter": 13,
+      "theme": "Incident response and resilience",
+      "path": "atlas/13-response-resilience.md",
+      "anchor": "m128",
+      "thesis": "A deliberately independent coordination channel should shorten recovery delays when primary collaboration tools are unavailable.",
+      "abstract": "Thesis. A deliberately independent coordination channel should shorten recovery delays when primary collaboration tools are unavailable. Proposed system. Define a minimal message schema for mission state, decision authority, evidence pointer, next action, and acknowledgement. Exe",
+      "word_count": 107,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "129",
+      "title": "Action-to-Outcome Ledger",
+      "chapter": 13,
+      "theme": "Incident response and resilience",
+      "path": "atlas/13-response-resilience.md",
+      "anchor": "m129",
+      "thesis": "Explicitly linking an incident response action to its expected and observed effects improves after-action learning.",
+      "abstract": "Thesis. Explicitly linking an incident response action to its expected and observed effects improves after-action learning. Proposed system. Store an action identifier, approving role, rationale, predicted effect, dependency assumptions, time window, actual observations, and alte",
+      "word_count": 108,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/55/v2/final",
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "130",
+      "title": "False-Alarm Cost Model",
+      "chapter": 13,
+      "theme": "Incident response and resilience",
+      "path": "atlas/13-response-resilience.md",
+      "anchor": "m130",
+      "thesis": "Response thresholds should account for the harm of unnecessary containment as well as the harm of missed incidents.",
+      "abstract": "Thesis. Response thresholds should account for the harm of unnecessary containment as well as the harm of missed incidents. Proposed system. Define a transparent decision model with event probability, mission impact, action efficacy, rollback cost, and uncertainty intervals. Expl",
+      "word_count": 113,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/55/v1/final",
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "131",
+      "title": "Owned-Asset Exposure Census",
+      "chapter": 14,
+      "theme": "Authorized exposure and intelligence governance",
+      "path": "atlas/14-authorized-exposure-intelligence.md",
+      "anchor": "m131",
+      "thesis": "Reconciliation of an organization's approved inventory with permitted external observations can reveal forgotten owned services.",
+      "abstract": "Thesis. Reconciliation of an organization's approved inventory with permitted external observations can reveal forgotten owned services. Proposed system. A scope registry stores approved domains, ranges, legal owner, data sources, observation dates, and collection limits. Compare",
+      "word_count": 109,
+      "source_urls": [
+        "https://www.cisa.gov/news-events/directives/bod-23-01-improving-asset-visibility-and-vulnerability-detection-federal-networks",
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "132",
+      "title": "Exposure Half-Life Tracker",
+      "chapter": 14,
+      "theme": "Authorized exposure and intelligence governance",
+      "path": "atlas/14-authorized-exposure-intelligence.md",
+      "anchor": "m132",
+      "thesis": "The elapsed time from confirmed exposure to verified closure is a better operational measure than the number of raw findings.",
+      "abstract": "Thesis. The elapsed time from confirmed exposure to verified closure is a better operational measure than the number of raw findings. Proposed system. Each case has discovery, ownership confirmation, risk acceptance or fix decision, remediation, and independent verification times",
+      "word_count": 115,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/55/v1/final",
+        "https://www.cisa.gov/news-events/directives/bod-23-01-improving-asset-visibility-and-vulnerability-detection-federal-networks"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "133",
+      "title": "External-Signal Confidence Broker",
+      "chapter": 14,
+      "theme": "Authorized exposure and intelligence governance",
+      "path": "atlas/14-authorized-exposure-intelligence.md",
+      "anchor": "m133",
+      "thesis": "Requiring corroboration and age checks before action should reduce mistakes caused by a single stale external feed.",
+      "abstract": "Thesis. Requiring corroboration and age checks before action should reduce mistakes caused by a single stale external feed. Proposed system. Normalize permitted exposure notices into claims with source, observation time, asset match, confidence, and contradiction links. A policy ",
+      "word_count": 112,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/150/final",
+        "https://www.cisa.gov/news-events/directives/bod-23-01-improving-asset-visibility-and-vulnerability-detection-federal-networks"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "134",
+      "title": "Identifier Privacy Watch",
+      "chapter": 14,
+      "theme": "Authorized exposure and intelligence governance",
+      "path": "atlas/14-authorized-exposure-intelligence.md",
+      "anchor": "m134",
+      "thesis": "An opt-in audit of organizational contact identifiers can find unnecessary public disclosure while minimizing the audit's own privacy impact.",
+      "abstract": "Thesis. An opt-in audit of organizational contact identifiers can find unnecessary public disclosure while minimizing the audit's own privacy impact. Proposed system. Collect only consented, organization-owned identifiers, stated purpose, approved public use, observation source, ",
+      "word_count": 104,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/150/final",
+        "https://www.nist.gov/privacy-framework"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "135",
+      "title": "Vulnerability-to-Mission Relevance",
+      "chapter": 14,
+      "theme": "Authorized exposure and intelligence governance",
+      "path": "atlas/14-authorized-exposure-intelligence.md",
+      "anchor": "m135",
+      "thesis": "A vulnerability's priority should reflect deployed exposure and mission dependency in addition to advisory severity.",
+      "abstract": "Thesis. A vulnerability's priority should reflect deployed exposure and mission dependency in addition to advisory severity. Proposed system. Join approved asset inventory, installed component/version evidence, reachability class, compensating controls, business function, and aut",
+      "word_count": 108,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/40/r4/final",
+        "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "136",
+      "title": "Internet-Facing Change Receipt",
+      "chapter": 14,
+      "theme": "Authorized exposure and intelligence governance",
+      "path": "atlas/14-authorized-exposure-intelligence.md",
+      "anchor": "m136",
+      "thesis": "Linking an approved change to a later observed exposure state should make unexpected internet-facing drift easier to resolve.",
+      "abstract": "Thesis. Linking an approved change to a later observed exposure state should make unexpected internet-facing drift easier to resolve. Proposed system. Issue a signed receipt with asset owner, change ticket, intended public endpoint, configuration hash, window, and rollback plan. ",
+      "word_count": 112,
+      "source_urls": [
+        "https://www.cisa.gov/news-events/directives/bod-23-01-improving-asset-visibility-and-vulnerability-detection-federal-networks",
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "137",
+      "title": "Threat-Intel Contradiction Graph",
+      "chapter": 14,
+      "theme": "Authorized exposure and intelligence governance",
+      "path": "atlas/14-authorized-exposure-intelligence.md",
+      "anchor": "m137",
+      "thesis": "Connecting intelligence claims to evidence and to contradicting claims should expose weak conclusions before they shape defense.",
+      "abstract": "Thesis. Connecting intelligence claims to evidence and to contradicting claims should expose weak conclusions before they shape defense. Proposed system. Represent each claim with source, date, handling restriction, confidence rationale, supporting observations, and countereviden",
+      "word_count": 107,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/150/final",
+        "https://csrc.nist.gov/pubs/sp/800/55/v1/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "138",
+      "title": "Exposure-to-Owner Resolver",
+      "chapter": 14,
+      "theme": "Authorized exposure and intelligence governance",
+      "path": "atlas/14-authorized-exposure-intelligence.md",
+      "anchor": "m138",
+      "thesis": "An explainable owner-matching model can reduce orphaned remediation tasks without silently assigning responsibility to the wrong team.",
+      "abstract": "Thesis. An explainable owner-matching model can reduce orphaned remediation tasks without silently assigning responsibility to the wrong team. Proposed system. Join approved domain/asset registries, infrastructure-as-code ownership, service tags, certificate records, and change h",
+      "word_count": 108,
+      "source_urls": [
+        "https://www.cisa.gov/news-events/directives/bod-23-01-improving-asset-visibility-and-vulnerability-detection-federal-networks",
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "139",
+      "title": "Responsible Disclosure Workflow Twin",
+      "chapter": 14,
+      "theme": "Authorized exposure and intelligence governance",
+      "path": "atlas/14-authorized-exposure-intelligence.md",
+      "anchor": "m139",
+      "thesis": "Rehearsing vulnerability-report intake and escalation should reveal preventable delay before a real report arrives.",
+      "abstract": "Thesis. Rehearsing vulnerability-report intake and escalation should reveal preventable delay before a real report arrives. Proposed system. A process simulator models report receipt, acknowledgment, validity review, owner assignment, remediation decision, disclosure coordination",
+      "word_count": 97,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/216/final",
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "140",
+      "title": "Owned-Decoy Value Study",
+      "chapter": 14,
+      "theme": "Authorized exposure and intelligence governance",
+      "path": "atlas/14-authorized-exposure-intelligence.md",
+      "anchor": "m140",
+      "thesis": "A narrowly scoped, isolated decoy may provide useful early-warning evidence, but its value should be measured against cost and privacy exposure.",
+      "abstract": "Thesis. A narrowly scoped, isolated decoy may provide useful early-warning evidence, but its value should be measured against cost and privacy exposure. Proposed system. Deploy only within an approved test network or owned address space with no production privileges; record aggre",
+      "word_count": 117,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/150/final",
+        "https://www.nist.gov/privacy-framework"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "141",
+      "title": "Cyber Quality Unit",
+      "chapter": 15,
+      "theme": "Measurement, governance, and futures",
+      "path": "atlas/15-measurement-governance-futures.md",
+      "anchor": "m141",
+      "thesis": "A defined unit of security and reliability quality should enable comparisons across releases without collapsing distinct harms into one opaque score.",
+      "abstract": "Thesis. A defined unit of security and reliability quality should enable comparisons across releases without collapsing distinct harms into one opaque score. Proposed system. Define a measure vector: mission availability under specified stress, integrity violations per test-hour,",
+      "word_count": 135,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v2/r1/final",
+        "https://csrc.nist.gov/pubs/sp/800/55/v1/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "142",
+      "title": "Control Calibration Curve",
+      "chapter": 15,
+      "theme": "Measurement, governance, and futures",
+      "path": "atlas/15-measurement-governance-futures.md",
+      "anchor": "m142",
+      "thesis": "A control's predicted protection should be compared with observed behavior, just as a probabilistic forecast is calibrated against outcomes.",
+      "abstract": "Thesis. A control's predicted protection should be compared with observed behavior, just as a probabilistic forecast is calibrated against outcomes. Proposed system. For each bounded test scenario, record the control's predicted success probability, actual success, operating cond",
+      "word_count": 113,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/55/v1/final",
+        "https://www.nist.gov/publications/engineering-trustworthy-secure-systems"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "143",
+      "title": "Benchmark Provenance Passport",
+      "chapter": 15,
+      "theme": "Measurement, governance, and futures",
+      "path": "atlas/15-measurement-governance-futures.md",
+      "anchor": "m143",
+      "thesis": "A benchmark is trustworthy only when its origin, transformations, exclusions, and limits travel with every result.",
+      "abstract": "Thesis. A benchmark is trustworthy only when its origin, transformations, exclusions, and limits travel with every result. Proposed system. Specify a machine-readable passport with dataset source/permission, collection interval, label method, preprocessing code hash, split rule, ",
+      "word_count": 109,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/55/v2/final",
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "144",
+      "title": "Counterfactual Defense Study",
+      "chapter": 15,
+      "theme": "Measurement, governance, and futures",
+      "path": "atlas/15-measurement-governance-futures.md",
+      "anchor": "m144",
+      "thesis": "A control should be credited only for outcome differences that survive a plausible comparison with what would have happened without it.",
+      "abstract": "Thesis. A control should be credited only for outcome differences that survive a plausible comparison with what would have happened without it. Proposed system. Build matched synthetic scenarios with identical workload, fault schedule, and resource budget; vary one control while ",
+      "word_count": 112,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v2/r1/final",
+        "https://csrc.nist.gov/pubs/sp/800/55/v1/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "145",
+      "title": "Capability Maturity Evidence Graph",
+      "chapter": 15,
+      "theme": "Measurement, governance, and futures",
+      "path": "atlas/15-measurement-governance-futures.md",
+      "anchor": "m145",
+      "thesis": "A graph of requirements, tests, observations, and unresolved exceptions provides a more defensible capability picture than a self-rated maturity score.",
+      "abstract": "Thesis. A graph of requirements, tests, observations, and unresolved exceptions provides a more defensible capability picture than a self-rated maturity score. Proposed system. Each claim links to a bounded system, control owner, test method, result, date, environment, and expiry",
+      "word_count": 108,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/55/v2/final",
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "146",
+      "title": "Security Cost Frontier",
+      "chapter": 15,
+      "theme": "Measurement, governance, and futures",
+      "path": "atlas/15-measurement-governance-futures.md",
+      "anchor": "m146",
+      "thesis": "Plotting security outcome against implementation and operating cost can reveal dominated options and diminishing returns.",
+      "abstract": "Thesis. Plotting security outcome against implementation and operating cost can reveal dominated options and diminishing returns. Proposed system. Record acquisition cost, labor, compute, latency, maintenance, and a mission-relevant loss metric for each candidate architecture. Us",
+      "word_count": 109,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/55/v1/final",
+        "https://www.nist.gov/publications/engineering-trustworthy-secure-systems"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "147",
+      "title": "Assurance Carbon Budget",
+      "chapter": 15,
+      "theme": "Measurement, governance, and futures",
+      "path": "atlas/15-measurement-governance-futures.md",
+      "anchor": "m147",
+      "thesis": "Security verification should be measured for energy and compute demand so expensive pipelines can be made more efficient without losing defect-detection value.",
+      "abstract": "Thesis. Security verification should be measured for energy and compute demand so expensive pipelines can be made more efficient without losing defect-detection value. Proposed system. Instrument test jobs for runtime, compute-hours, estimated energy, test coverage, fault discove",
+      "word_count": 116,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/55/v2/final",
+        "https://www.nist.gov/publications/engineering-trustworthy-secure-systems"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "148",
+      "title": "Uncertainty Reserve",
+      "chapter": 15,
+      "theme": "Measurement, governance, and futures",
+      "path": "atlas/15-measurement-governance-futures.md",
+      "anchor": "m148",
+      "thesis": "An explicit budget for uncertainty can identify where another measurement is more valuable than another control.",
+      "abstract": "Thesis. An explicit budget for uncertainty can identify where another measurement is more valuable than another control. Proposed system. Model each mission risk estimate with a range, evidence quality, dependence between inputs, and decision threshold. Compute the expected value",
+      "word_count": 105,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/55/v1/final",
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "149",
+      "title": "Strategic Option Portfolio",
+      "chapter": 15,
+      "theme": "Measurement, governance, and futures",
+      "path": "atlas/15-measurement-governance-futures.md",
+      "anchor": "m149",
+      "thesis": "Small reversible experiments can reveal which emerging defenses merit investment before an organization commits to a large rollout.",
+      "abstract": "Thesis. Small reversible experiments can reveal which emerging defenses merit investment before an organization commits to a large rollout. Proposed system. Maintain an option register with hypothesis, small-scope experiment, maximum cost, stop condition, scale condition, safety ",
+      "word_count": 106,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/55/v2/final",
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20"
+      ],
+      "status": "research proposal; not implemented or validated"
+    },
+    {
+      "id": "150",
+      "title": "Cyber Mission Observatory",
+      "chapter": 15,
+      "theme": "Measurement, governance, and futures",
+      "path": "atlas/15-measurement-governance-futures.md",
+      "anchor": "m150",
+      "thesis": "Longitudinal outcome measurement can reveal whether engineering changes improve resilience after the initial launch period.",
+      "abstract": "Thesis. Longitudinal outcome measurement can reveal whether engineering changes improve resilience after the initial launch period. Proposed system. Combine versioned architecture decisions, control evidence, approved telemetry, incident and near-miss categories, mission availabi",
+      "word_count": 111,
+      "source_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/160/v2/r1/final",
+        "https://csrc.nist.gov/pubs/sp/800/55/v2/final"
+      ],
+      "status": "research proposal; not implemented or validated"
+    }
+  ]
+}
