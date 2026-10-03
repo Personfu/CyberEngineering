@@ -2,9 +2,13 @@
 
 # Project HELIOS · Cyber Mission Atlas
 
-**New to IT or red/blue-team work? Start with [MERCURY Foundations](foundations/README.md): everyday IT, Kali orientation, twenty core tools, manual-page navigation, six local labs and three actual publisher screenshots.** The [Church of Malware public forge review](intelligence/CHURCH-FORGE.md) uses the user-selected Explore listing and a bounded 33-record metadata catalog.
+**NIGHTSHIFT: [the connected cyberpunk learning site](site/README.md).** A MySpace-inspired profile with IT/team concepts, searchable tool and mission rooms, a seven-entry hardware bench, DEF CON metadata, community credits and a visual gallery. [Actual browser screenshot](site/screenshots/profile-desktop.png) · [Hardware guides](hardware/README.md) · [Conference coverage](conferences/README.md). Source files are published here; GitHub Pages hosting is not enabled by this commit.
+
+**New to IT or red/blue-team work? Start with [MERCURY Foundations](foundations/README.md): everyday IT, Kali orientation, twenty core tools, manual-page navigation, six local labs and three actual publisher screenshots.** The [Church of Malware public forge review](intelligence/CHURCH-FORGE.md) uses the user-selected Explore listing and a bounded 50-record metadata catalog.
 
 **150 distinct, testable cyberengineering research missions across 15 domains.**
+
+[Delivery and remaining-work register](DELIVERY_STATUS.md) · [ORION community/source directory](community/README.md) · [ProtoPirate public credits](community/PROTOPIRATE.md)
 
 **Graduate research extension: 180 total missions.** All 150 originals are preserved, with 30 new NASA-inspired proposals, 15 domain models, 45 graduate challenges, 11 applicable resource contracts, six executable reference experiments, seven data figures and a pinned CISA metadata snapshot. Start in the [Research Flightbook](research/README.md). These remain proposals and bounded reference mechanics; field effectiveness has not been established. This is a GitHub-native engineering atlas: detailed proposals, models, evaluation criteria, visuals, and primary-source references. It is a research portfolio, not a deployed defense product. Every mission is written for owned, synthetic, or explicitly authorized systems.
 
@@ -46,11 +50,11 @@ The [machine-readable catalog](data/ideas.json) carries the same order, titles, 
 
 ```mermaid
 flowchart LR
-    A[01–05<br/>architecture, code, devices,<br/>provenance, networks] --> E[Evidence fabric<br/>source · time · coverage · uncertainty]
-    B[06–10<br/>forensics, identity, cloud,<br/>AI, cyberphysical] --> E
-    C[11–15<br/>space, people, recovery,<br/>exposure, measurement] --> E
-    E --> M[Mission model<br/>dependencies + safety constraints]
-    M --> D[Decision envelope<br/>approval + rollback + measured outcome]
+    A["01–05: Architecture, code, devices, provenance, networks"] --> E["Evidence: source, time, coverage, uncertainty"]
+    B["06–10: Forensics, identity, cloud, AI, cyberphysical"] --> E
+    C["11–15: Space, people, recovery, exposure, measurement"] --> E
+    E --> M["Mission model: dependencies and safety constraints"]
+    M --> D["Decision: approval, rollback, measured outcome"]
     D -. new evidence .-> E
 ```
 

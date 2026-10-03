@@ -21,4 +21,4 @@ The six-source registry records first-party investigation reporting, official vu
 
 The four homepage handles are documented only as public bylines or attributions; they are not labeled threat actors. The Nightmare-Eclipse and Church of Malware cards remain distinct and do not assert a verified membership relationship.
 
-[Public forge source review: user-selected Explore listing and 33 bounded metadata records](CHURCH-FORGE.md) · [Beginner tool explanations and actual screenshots](../foundations/README.md)
+[Public forge source review: user-selected Explore listing and 50 bounded metadata records](CHURCH-FORGE.md) · [Beginner tool explanations and actual screenshots](../foundations/README.md)

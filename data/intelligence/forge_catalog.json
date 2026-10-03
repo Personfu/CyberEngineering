@@ -1,8 +1,8 @@
 {
-  "count": 33,
+  "count": 50,
   "review_date": "2026-10-03",
   "primary_source_id": "FG01",
-  "coverage": "First Explore page and one namespace; not the entire paginated forge",
+  "coverage": "Explore pages 1 and 2 plus one namespace; not the entire paginated forge",
   "claim_limit": "Categories summarize publisher descriptions, not validated functionality, patch state, attribution or permission to reuse code",
   "sources": [
     {
@@ -20,6 +20,14 @@
       "retrieved_date": "2026-10-03",
       "publication_date": null,
       "visible_records_reviewed": 15
+    },
+    {
+      "id": "FG03",
+      "url": "https://git.churchofmalware.org/explore/repos?page=2",
+      "role": "Second public Explore listing page",
+      "retrieved_date": "2026-10-03",
+      "publication_date": null,
+      "visible_records_reviewed": 20
     }
   ],
   "repositories": [
@@ -250,7 +258,8 @@
       "category_from_publisher_description": "Endpoint-security claim",
       "publisher_updated_at": "2026-09-03T04:07:08Z",
       "source_ids": [
-        "FG02"
+        "FG02",
+        "FG03"
       ],
       "evidence_class": "publisher_metadata",
       "license_state": "not inspected",
@@ -261,7 +270,8 @@
       "category_from_publisher_description": "Endpoint-security claim",
       "publisher_updated_at": "2026-08-30T16:50:09Z",
       "source_ids": [
-        "FG02"
+        "FG02",
+        "FG03"
       ],
       "evidence_class": "publisher_metadata",
       "license_state": "not inspected",
@@ -272,7 +282,8 @@
       "category_from_publisher_description": "Endpoint-security claim",
       "publisher_updated_at": "2026-08-29T03:02:15Z",
       "source_ids": [
-        "FG02"
+        "FG02",
+        "FG03"
       ],
       "evidence_class": "publisher_metadata",
       "license_state": "not inspected",
@@ -387,6 +398,201 @@
       "evidence_class": "publisher_metadata",
       "license_state": "not inspected",
       "integration_status": "REFERENCE ONLY"
+    },
+    {
+      "repository_path": "ek0mssavi0r/noPROXY_c2s",
+      "category_from_publisher_description": "Command-and-control claim",
+      "publisher_updated_at": "2026-09-09T05:40:56Z",
+      "source_ids": [
+        "FG03"
+      ],
+      "evidence_class": "publisher_metadata",
+      "license_state": "not inspected",
+      "integration_status": "REFERENCE ONLY"
+    },
+    {
+      "repository_path": "ek0mssavi0r/rogue",
+      "category_from_publisher_description": "Adversarial framework",
+      "publisher_updated_at": "2026-09-09T05:24:55Z",
+      "source_ids": [
+        "FG03"
+      ],
+      "evidence_class": "publisher_metadata",
+      "license_state": "not inspected",
+      "integration_status": "REFERENCE ONLY"
+    },
+    {
+      "repository_path": "ek0mssavi0r/kas",
+      "category_from_publisher_description": "Insufficient description",
+      "publisher_updated_at": "2026-09-09T05:06:51Z",
+      "source_ids": [
+        "FG03"
+      ],
+      "evidence_class": "publisher_metadata",
+      "license_state": "not inspected",
+      "integration_status": "REFERENCE ONLY"
+    },
+    {
+      "repository_path": "mastercodeon/TubeFlow",
+      "category_from_publisher_description": "Browser extension",
+      "publisher_updated_at": "2026-09-08T19:55:19Z",
+      "source_ids": [
+        "FG03"
+      ],
+      "evidence_class": "publisher_metadata",
+      "license_state": "not inspected",
+      "integration_status": "REFERENCE ONLY"
+    },
+    {
+      "repository_path": "ek0mssavi0r/Centipede",
+      "category_from_publisher_description": "Self-replication claim",
+      "publisher_updated_at": "2026-09-08T19:52:56Z",
+      "source_ids": [
+        "FG03"
+      ],
+      "evidence_class": "publisher_metadata",
+      "license_state": "not inspected",
+      "integration_status": "REFERENCE ONLY"
+    },
+    {
+      "repository_path": "K3ysTr0K3R/modbus-scanner",
+      "category_from_publisher_description": "Insufficient description",
+      "publisher_updated_at": "2026-09-08T00:34:34Z",
+      "source_ids": [
+        "FG03"
+      ],
+      "evidence_class": "publisher_metadata",
+      "license_state": "not inspected",
+      "integration_status": "REFERENCE ONLY"
+    },
+    {
+      "repository_path": "mastercodeon/google-ai-overview-toggle",
+      "category_from_publisher_description": "Browser extension",
+      "publisher_updated_at": "2026-09-06T19:53:37Z",
+      "source_ids": [
+        "FG03"
+      ],
+      "evidence_class": "publisher_metadata",
+      "license_state": "not inspected",
+      "integration_status": "REFERENCE ONLY"
+    },
+    {
+      "repository_path": "proxydom/ieaxi-uac-bypass",
+      "category_from_publisher_description": "Privilege-escalation claim",
+      "publisher_updated_at": "2026-09-05T13:07:22Z",
+      "source_ids": [
+        "FG03"
+      ],
+      "evidence_class": "publisher_metadata",
+      "license_state": "not inspected",
+      "integration_status": "REFERENCE ONLY"
+    },
+    {
+      "repository_path": "n0mad1k/juan-a-see",
+      "category_from_publisher_description": "Insufficient description",
+      "publisher_updated_at": "2026-09-01T15:44:49Z",
+      "source_ids": [
+        "FG03"
+      ],
+      "evidence_class": "publisher_metadata",
+      "license_state": "not inspected",
+      "integration_status": "REFERENCE ONLY"
+    },
+    {
+      "repository_path": "Diablo_Rain/Medusa_Hair",
+      "category_from_publisher_description": "Adversarial research claim",
+      "publisher_updated_at": "2026-09-01T06:10:48Z",
+      "source_ids": [
+        "FG03"
+      ],
+      "evidence_class": "publisher_metadata",
+      "license_state": "not inspected",
+      "integration_status": "REFERENCE ONLY"
+    },
+    {
+      "repository_path": "Knollbyte/Dreadripper",
+      "category_from_publisher_description": "Self-replication claim",
+      "publisher_updated_at": "2026-09-01T04:30:37Z",
+      "source_ids": [
+        "FG03"
+      ],
+      "evidence_class": "publisher_metadata",
+      "license_state": "not inspected",
+      "integration_status": "REFERENCE ONLY"
+    },
+    {
+      "repository_path": "thanatos/Leetify",
+      "category_from_publisher_description": "Radio-observation claim",
+      "publisher_updated_at": "2026-09-01T02:16:21Z",
+      "source_ids": [
+        "FG03"
+      ],
+      "evidence_class": "publisher_metadata",
+      "license_state": "not inspected",
+      "integration_status": "REFERENCE ONLY"
+    },
+    {
+      "repository_path": "leviathan/VIGIL",
+      "category_from_publisher_description": "Insufficient description",
+      "publisher_updated_at": "2026-08-31T18:43:14Z",
+      "source_ids": [
+        "FG03"
+      ],
+      "evidence_class": "publisher_metadata",
+      "license_state": "not inspected",
+      "integration_status": "REFERENCE ONLY"
+    },
+    {
+      "repository_path": "leviathan/SKELETONKEY",
+      "category_from_publisher_description": "Insufficient description",
+      "publisher_updated_at": "2026-08-31T18:43:10Z",
+      "source_ids": [
+        "FG03"
+      ],
+      "evidence_class": "publisher_metadata",
+      "license_state": "not inspected",
+      "integration_status": "REFERENCE ONLY"
+    },
+    {
+      "repository_path": "Diablo_Rain/Project_Addison-x-Syn_OS",
+      "category_from_publisher_description": "Insufficient description",
+      "publisher_updated_at": "2026-08-24T20:51:10Z",
+      "source_ids": [
+        "FG03"
+      ],
+      "evidence_class": "publisher_metadata",
+      "license_state": "not inspected",
+      "integration_status": "REFERENCE ONLY"
+    },
+    {
+      "repository_path": "tototo31/CoM-PGP-Key-Collection",
+      "category_from_publisher_description": "Public-key collection claim",
+      "publisher_updated_at": "2026-08-22T16:12:16Z",
+      "source_ids": [
+        "FG03"
+      ],
+      "evidence_class": "publisher_metadata",
+      "license_state": "not inspected",
+      "integration_status": "REFERENCE ONLY"
+    },
+    {
+      "repository_path": "k3nundrum/Misery",
+      "category_from_publisher_description": "Credential-theft claim",
+      "publisher_updated_at": "2026-08-21T07:46:48Z",
+      "source_ids": [
+        "FG03"
+      ],
+      "evidence_class": "publisher_metadata",
+      "license_state": "not inspected",
+      "integration_status": "REFERENCE ONLY"
+    }
+  ],
+  "access_gaps": [
+    {
+      "url": "https://git.churchofmalware.org/explore/repos?page=3",
+      "review_date": "2026-10-03",
+      "state": "retrieval unavailable",
+      "consequence": "Later pagination not covered"
     }
   ]
 }

@@ -30,3 +30,11 @@ jobs:
 
       - name: Check beginner tool guides, source catalog, and local HTTP tutorial
         run: python scripts/check_foundations.py --smoke
+
+      - name: Check public community source receipts and credits
+        run: python scripts/build_community.py --check
+
+      - name: Check static learning site, catalog coverage and document references
+        run: |
+          python scripts/build_site.py --check
+          python scripts/check_site.py

@@ -40,3 +40,5 @@ flowchart TD
 You are ready for the assessment flightbook when you can identify a tool's input, explain its measurement, name a competing explanation, and give a teammate a reproducible evidence note.
 
 [Public forge source review](../intelligence/CHURCH-FORGE.md) · [Graduate research](../research/README.md)
+
+[ORION public community sources and ProtoPirate credits](../community/README.md) · [RF and map terminology](RF-AND-MAPS.md) · [Delivery status](../DELIVERY_STATUS.md)

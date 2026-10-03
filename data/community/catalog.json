@@ -1,0 +1,349 @@
+{
+  "review_date": "2026-10-03",
+  "sources": [
+    {
+      "id": "CP01",
+      "url": "https://betaskynet.com/",
+      "type": "first_party_link_hub",
+      "access": "page text inspected through web retrieval; direct HTTP 403",
+      "claim_limit": "Publisher links; dynamic counters and app functionality not verified",
+      "review_date": "2026-10-03",
+      "publication_date": null
+    },
+    {
+      "id": "CP02",
+      "url": "https://github.com/RocketGod-git/RocketGod-git.github.io/tree/9c9c289e9d60b8a049c0baa54b6d9c890f5fef59",
+      "type": "pinned_public_repository",
+      "access": "GitHub metadata, full tree, index.html and script.js inspected",
+      "claim_limit": "Static source does not prove current deployment; no LICENSE in inspected tree",
+      "review_date": "2026-10-03",
+      "publication_date": null
+    },
+    {
+      "id": "CP03",
+      "url": "https://github.com/RocketGod-git/ProtoPirate/blob/361adda8c5f6cf26139d3edb298ca5168a98fa5e/README.md",
+      "type": "pinned_first_party_readme",
+      "access": "README inspected",
+      "claim_limit": "Public credits and publisher descriptions; no identity or performance verification",
+      "review_date": "2026-10-03",
+      "publication_date": null
+    },
+    {
+      "id": "CP04",
+      "url": "https://github.com/RocketGod-git/ProtoPirate/blob/361adda8c5f6cf26139d3edb298ca5168a98fa5e/LICENSE",
+      "type": "pinned_license_file",
+      "access": "License text inspected; GitHub metadata identifies GPL-3.0",
+      "claim_limit": "No project source reused or installed; not a legal determination about a derivative",
+      "review_date": "2026-10-03",
+      "publication_date": null
+    },
+    {
+      "id": "CP05",
+      "url": "https://protopirate.net/ProtoPirate/ProtoPirate",
+      "type": "publisher_designated_upstream",
+      "access": "direct retrieval blocked (403)",
+      "claim_limit": "Designation comes from CP03; current upstream state unverified",
+      "review_date": "2026-10-03",
+      "publication_date": null
+    },
+    {
+      "id": "CP06",
+      "url": "https://gangstalkermap.com/",
+      "type": "indexed_first_party_page",
+      "access": "indexed page text reviewed; direct retrieval unavailable/403",
+      "claim_limit": "Publisher-described infrastructure layers, not verified live feed or targeting evidence",
+      "review_date": "2026-10-03",
+      "publication_date": null
+    },
+    {
+      "id": "CP07",
+      "url": "https://dcgroups.betaskynet.com/",
+      "type": "first_party_map_page",
+      "access": "redirect and search interface inspected",
+      "claim_limit": "No map markers, visitor log or location query collected",
+      "review_date": "2026-10-03",
+      "publication_date": null
+    },
+    {
+      "id": "CP08",
+      "url": "https://www.openstreetmap.org/copyright",
+      "type": "official_provider_documentation",
+      "access": "copyright and license page inspected",
+      "claim_limit": "Provider licensing context; no OSM dataset acquired",
+      "review_date": "2026-10-03",
+      "publication_date": null
+    },
+    {
+      "id": "CP09",
+      "url": "https://thepiratesplunder.com/",
+      "type": "publisher_linked_community_site",
+      "access": "direct retrieval blocked (403)",
+      "claim_limit": "Link affiliation from CP01/CP03; no community messages or membership inspected",
+      "review_date": "2026-10-03",
+      "publication_date": null
+    }
+  ],
+  "resources": [
+    {
+      "name": "DEF CON Groups map",
+      "url": "https://dcgroups.betaskynet.com/",
+      "relevance": "Public community-directory UX",
+      "source_id": "CP07",
+      "inspection_state": "interface reviewed; not a member-location feed",
+      "integration_status": "REFERENCE ONLY"
+    },
+    {
+      "name": "WebSerial CLI",
+      "url": "https://webserial.betaskynet.com/",
+      "relevance": "Browser-to-owned-device permission design",
+      "source_id": "CP01",
+      "inspection_state": "publisher link only; direct retrieval blocked",
+      "integration_status": "REFERENCE ONLY"
+    },
+    {
+      "name": "WebUSB CLI",
+      "url": "https://webusb.betaskynet.com/",
+      "relevance": "Browser device selection and authority",
+      "source_id": "CP01",
+      "inspection_state": "publisher link only; direct retrieval blocked",
+      "integration_status": "REFERENCE ONLY"
+    },
+    {
+      "name": "NASA Earth Map",
+      "url": "https://nasa.betaskynet.com/",
+      "relevance": "Earth-data source attribution and time semantics",
+      "source_id": "CP01",
+      "inspection_state": "publisher link only; direct retrieval blocked; no NASA endorsement established",
+      "integration_status": "REFERENCE ONLY"
+    },
+    {
+      "name": "Mobile Sensor Tester",
+      "url": "https://sensorsynth.com/sensor-suite.php",
+      "relevance": "Local sensor observation and uncertainty",
+      "source_id": "CP01",
+      "inspection_state": "publisher link only; direct retrieval blocked",
+      "integration_status": "REFERENCE ONLY"
+    },
+    {
+      "name": "Domain Checker",
+      "url": "https://domainchecker.betaskynet.com/",
+      "relevance": "Naming and response interpretation",
+      "source_id": "CP01",
+      "inspection_state": "publisher link only; no domain query submitted",
+      "integration_status": "REFERENCE ONLY"
+    },
+    {
+      "name": "DMARC Report Analyzer",
+      "url": "https://fuckyou.gay/dmarc.php",
+      "relevance": "Email-report privacy and parsing design",
+      "source_id": "CP01",
+      "inspection_state": "publisher link only; no report uploaded",
+      "integration_status": "REFERENCE ONLY"
+    },
+    {
+      "name": "Gangstalker Map",
+      "url": "https://gangstalkermap.com/",
+      "relevance": "Infrastructure-layer provenance and coverage",
+      "source_id": "CP06",
+      "inspection_state": "indexed publisher text reviewed; live behavior not verified",
+      "integration_status": "REFERENCE ONLY"
+    },
+    {
+      "name": "ProtoPirate GitHub mirror",
+      "url": "https://github.com/RocketGod-git/ProtoPirate",
+      "relevance": "RF vocabulary and release provenance",
+      "source_id": "CP03",
+      "inspection_state": "README/license reviewed; no build, captures or radio actions",
+      "integration_status": "REFERENCE ONLY"
+    },
+    {
+      "name": "ProtoPirate upstream forge",
+      "url": "https://protopirate.net/ProtoPirate/ProtoPirate",
+      "relevance": "Canonical source versus mirror comparison",
+      "source_id": "CP05",
+      "inspection_state": "publisher-designated upstream; direct retrieval blocked",
+      "integration_status": "REFERENCE ONLY"
+    }
+  ],
+  "credits": [
+    {
+      "label": "RocketGod",
+      "kind": "public_credit_label",
+      "roles": [
+        "App Development",
+        "Protocol Magic",
+        "Reverse Engineering Support"
+      ],
+      "source_id": "CP03"
+    },
+    {
+      "label": "MMX",
+      "kind": "public_credit_label",
+      "roles": [
+        "App Development",
+        "Protocol Magic",
+        "Reverse Engineering Support"
+      ],
+      "source_id": "CP03"
+    },
+    {
+      "label": "Leeroy",
+      "kind": "public_credit_label",
+      "roles": [
+        "App Development",
+        "Protocol Magic"
+      ],
+      "source_id": "CP03"
+    },
+    {
+      "label": "gullradriel",
+      "kind": "public_credit_label",
+      "roles": [
+        "App Development"
+      ],
+      "source_id": "CP03"
+    },
+    {
+      "label": "Skorp",
+      "kind": "public_credit_label",
+      "roles": [
+        "App Development",
+        "Protocol Magic"
+      ],
+      "source_id": "CP03"
+    },
+    {
+      "label": "Vadim's Radio Driver",
+      "kind": "public_credit_label",
+      "roles": [
+        "App Development"
+      ],
+      "source_id": "CP03"
+    },
+    {
+      "label": "L0rdDiakon",
+      "kind": "public_credit_label",
+      "roles": [
+        "Protocol Magic"
+      ],
+      "source_id": "CP03"
+    },
+    {
+      "label": "YougZ",
+      "kind": "public_credit_label",
+      "roles": [
+        "Protocol Magic"
+      ],
+      "source_id": "CP03"
+    },
+    {
+      "label": "DoobTheGoober",
+      "kind": "public_credit_label",
+      "roles": [
+        "Protocol Magic",
+        "Reverse Engineering Support"
+      ],
+      "source_id": "CP03"
+    },
+    {
+      "label": "Slackware",
+      "kind": "public_credit_label",
+      "roles": [
+        "Protocol Magic",
+        "Reverse Engineering Support"
+      ],
+      "source_id": "CP03"
+    },
+    {
+      "label": "Trikk",
+      "kind": "public_credit_label",
+      "roles": [
+        "Protocol Magic",
+        "Reverse Engineering Support"
+      ],
+      "source_id": "CP03"
+    },
+    {
+      "label": "Wootini",
+      "kind": "public_credit_label",
+      "roles": [
+        "Protocol Magic"
+      ],
+      "source_id": "CP03"
+    },
+    {
+      "label": "Li0ard",
+      "kind": "public_credit_label",
+      "roles": [
+        "Protocol Magic",
+        "Reverse Engineering Support"
+      ],
+      "source_id": "CP03"
+    },
+    {
+      "label": "Ash",
+      "kind": "public_credit_label",
+      "roles": [
+        "Protocol Magic"
+      ],
+      "source_id": "CP03"
+    },
+    {
+      "label": "NeedNotApply",
+      "kind": "public_credit_label",
+      "roles": [
+        "Reverse Engineering Support"
+      ],
+      "source_id": "CP03"
+    }
+  ],
+  "pinned_file_receipts": [
+    {
+      "source_id": "CP02",
+      "repository": "RocketGod-git/RocketGod-git.github.io",
+      "commit_sha": "9c9c289e9d60b8a049c0baa54b6d9c890f5fef59",
+      "path": "index.html",
+      "bytes": 43259,
+      "git_blob_sha": "ad97e45561b8fa7436cc73d5d59b782404b9741a",
+      "sha256": "7d1e4f5b3bf5b575213dcbc0f7eecf8879d1138e7f3bd2674f259052e4d4ba87",
+      "review_date": "2026-10-03",
+      "full_source_republished": false
+    },
+    {
+      "source_id": "CP02",
+      "repository": "RocketGod-git/RocketGod-git.github.io",
+      "commit_sha": "9c9c289e9d60b8a049c0baa54b6d9c890f5fef59",
+      "path": "script.js",
+      "bytes": 11424,
+      "git_blob_sha": "663533f8b9922f3ebba3a748a1417def6232941d",
+      "sha256": "2f17b80b31e6db4ce116246e7f66b43054dfe16dcde0aa4da8efd7adc8d228cf",
+      "review_date": "2026-10-03",
+      "full_source_republished": false
+    },
+    {
+      "source_id": "CP03",
+      "repository": "RocketGod-git/ProtoPirate",
+      "commit_sha": "361adda8c5f6cf26139d3edb298ca5168a98fa5e",
+      "path": "README.md",
+      "bytes": 7684,
+      "git_blob_sha": "f0100c569370f6330701fa5bdbac20fc87d11f4d",
+      "sha256": "120e68bd43ac4217c3e7530b82da6b96da80c96e73abccf55f78adecefe63d24",
+      "review_date": "2026-10-03",
+      "full_source_republished": false
+    },
+    {
+      "source_id": "CP04",
+      "repository": "RocketGod-git/ProtoPirate",
+      "commit_sha": "361adda8c5f6cf26139d3edb298ca5168a98fa5e",
+      "path": "LICENSE",
+      "bytes": 35149,
+      "git_blob_sha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "review_date": "2026-10-03",
+      "full_source_republished": false
+    }
+  ],
+  "website_license": "No LICENSE file in inspected nine-file tree; reuse permission not established",
+  "protopirate_license_metadata": "GPL-3.0",
+  "collection_scope": "Public metadata, named README credit labels and website source links; no private identities, messages, locations or executable adoption"
+}

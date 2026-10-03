@@ -1,0 +1,45 @@
+{
+  "review_date": "2026-10-03",
+  "assets": [
+    {
+      "url": "https://www.wireshark.org/docs/wsug_html_chunked/images/ws-main.png",
+      "review_date": "2026-10-03",
+      "bytes": 54925,
+      "sha256": "250e5a220b8ff2b0c01d4cd61d7bd8f1db9e924aa54697cce21e6d7ea9a88f99",
+      "hosting": "external publisher URL; recorded bytes used only for browser layout validation",
+      "rights": "Publisher rights retained; not relicensed by this repository"
+    },
+    {
+      "url": "https://portswigger.net/burp/documentation/desktop/images/getting-started/quick-start-pro-proxy-history.png",
+      "review_date": "2026-10-03",
+      "bytes": 170409,
+      "sha256": "9c7a0c588b36ef43a88e38eeb7aead0e6e5e284b66fe63013890f962c278b08e",
+      "hosting": "external publisher URL; recorded bytes used only for browser layout validation",
+      "rights": "Publisher rights retained; not relicensed by this repository"
+    },
+    {
+      "url": "https://portswigger.net/burp/documentation/desktop/images/getting-started/quick-start-pro-intercepted-request.png",
+      "review_date": "2026-10-03",
+      "bytes": 51485,
+      "sha256": "5f00351131827b6e2d543375037692ef190a0ca8fb400a0be5e9aac653dd5b63",
+      "hosting": "external publisher URL; recorded bytes used only for browser layout validation",
+      "rights": "Publisher rights retained; not relicensed by this repository"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RfidResearchGroup/ChameleonUltra/main/docs/images/ultra-overview.png",
+      "review_date": "2026-10-03",
+      "bytes": 74242,
+      "sha256": "c426d4400691b27cb90d70724429c25f261d4a5d4bf88c2e36f767d9d60db874",
+      "hosting": "external publisher URL; recorded bytes used only for browser layout validation",
+      "rights": "Publisher rights retained; not relicensed by this repository"
+    },
+    {
+      "url": "https://shop.hak5.org/cdn/shop/files/wifi-pineapple-pager-black-white_bg.png?v=1754446127&width=1200",
+      "review_date": "2026-10-03",
+      "bytes": 810627,
+      "sha256": "c9e7ce6c9908052070ade01ad85d1217ab201b394008edc25eb8b065e84c61d4",
+      "hosting": "external publisher URL; recorded bytes used only for browser layout validation",
+      "rights": "Publisher rights retained; not relicensed by this repository"
+    }
+  ]
+}

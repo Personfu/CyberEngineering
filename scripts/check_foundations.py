@@ -30,6 +30,8 @@ def heading_ids(text):
 def check_links():
     pages = list((ROOT / "foundations").rglob("*.md"))
     pages.append(ROOT / "intelligence/CHURCH-FORGE.md")
+    pages.extend((ROOT / "community").glob("*.md"))
+    pages.append(ROOT / "DELIVERY_STATUS.md")
     for page in pages:
         for match in re.finditer(r"\[[^\]]*\]\(([^)]+)\)", page.read_text()):
             target = urllib.parse.urlsplit(match.group(1))
@@ -65,18 +67,19 @@ def validate():
     catalog = load("data/intelligence/forge_catalog.json")
     rows = catalog["repositories"]
     sources = {s["id"]: s for s in catalog["sources"]}
-    if catalog["count"] != 33 or len(rows) != 33 or len({x["repository_path"] for x in rows}) != 33:
+    if catalog["count"] != len(rows) or len({x["repository_path"] for x in rows}) != len(rows):
         raise ValueError("Forge catalog coverage")
     if sources[catalog["primary_source_id"]]["url"] != "https://git.churchofmalware.org/explore/repos":
         raise ValueError("Wrong user-selected primary source")
-    for source_id, expected in [("FG01", 20), ("FG02", 15)]:
+    for source_id, source in sources.items():
+        expected = source["visible_records_reviewed"]
         if sum(source_id in row["source_ids"] for row in rows) != expected:
             raise ValueError("Listing/source coverage does not reconcile")
     for row in rows:
         if not set(row["source_ids"]).issubset(sources) or row["integration_status"] != "REFERENCE ONLY":
             raise ValueError("Unbound source or unsupported integration claim")
     check_links()
-    print("Validated 20 core tool entries, eight synthetic events, integrity bytes, 33 forge metadata records and local links.")
+    print("Validated 20 core tool entries, eight synthetic events, integrity bytes, source-bound forge metadata records and local links.")
 
 
 def smoke():

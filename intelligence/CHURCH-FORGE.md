@@ -2,13 +2,13 @@
 
 **Primary source:** [Explore repositories](https://git.churchofmalware.org/explore/repos), the URL selected by the user. **Reviewed:** 2026-10-03. **Evidence:** public publisher metadata.
 
-The reviewed first Explore page displays 20 projects. The supplemental [Nightmare_Eclipse namespace](https://git.churchofmalware.org/Nightmare_Eclipse) displays 15; two overlap, yielding 33 distinct records. The primary listing is paginated: this is a bounded source review, not an exhaustive audit of the forge. Root-page access redirected to sign-in; the public listings were readable.
+The reviewed first two Explore pages display 40 projects. The supplemental [Nightmare_Eclipse namespace](https://git.churchofmalware.org/Nightmare_Eclipse) displays 15; five overlap, yielding 50 distinct records. The primary listing is paginated: this is a bounded source review, not an exhaustive audit of the forge. Root-page access redirected to sign-in; the public listings were readable.
 
 [Machine-readable catalog and source receipts](../data/intelligence/forge_catalog.json) · [Existing entity cards](README.md) · [Beginner tool guide](../foundations/TOOLS.md)
 
 ## Visible repository metadata
 
-Categories are short analyst summaries of publisher descriptions. A missing or vague description remains insufficient information. The displayed update time is publisher metadata, not a release date, vulnerability discovery date or verified patch status. FG01 is Explore; FG02 is the namespace listing.
+Categories are short analyst summaries of publisher descriptions. A missing or vague description remains insufficient information. The displayed update time is publisher metadata, not a release date, vulnerability discovery date or verified patch status. FG01 is Explore page 1; FG02 is the namespace listing; FG03 is [Explore page 2](https://git.churchofmalware.org/explore/repos?page=2). Page 3 retrieval was unavailable, so later pagination remains uncovered.
 
 | Repository namespace/path | Description category | Displayed update (UTC) | Source |
 |---|---|---|---|
@@ -32,9 +32,9 @@ Categories are short analyst summaries of publisher descriptions. A missing or v
 | `JYenn/Misery` | Credential-theft claim | 2026-09-14T23:17:04Z | FG01 |
 | `ek0mssavi0r/swizBOT` | Adversarial framework | 2026-09-12T01:32:35Z | FG01 |
 | `mastercodeon/TMOG-License-Patcher` | License-bypass claim | 2026-09-09T11:56:35Z | FG01 |
-| `Nightmare_Eclipse/FalconFlank` | Endpoint-security claim | 2026-09-03T04:07:08Z | FG02 |
-| `Nightmare_Eclipse/PrettyPrague` | Endpoint-security claim | 2026-08-30T16:50:09Z | FG02 |
-| `Nightmare_Eclipse/HardBreacher` | Endpoint-security claim | 2026-08-29T03:02:15Z | FG02 |
+| `Nightmare_Eclipse/FalconFlank` | Endpoint-security claim | 2026-09-03T04:07:08Z | FG02, FG03 |
+| `Nightmare_Eclipse/PrettyPrague` | Endpoint-security claim | 2026-08-30T16:50:09Z | FG02, FG03 |
+| `Nightmare_Eclipse/HardBreacher` | Endpoint-security claim | 2026-08-29T03:02:15Z | FG02, FG03 |
 | `Nightmare_Eclipse/ShieldBreak` | Endpoint-security claim | 2026-08-11T19:49:32Z | FG02 |
 | `Nightmare_Eclipse/LegacyHive` | Insufficient description | 2026-07-14T17:43:51Z | FG02 |
 | `Nightmare_Eclipse/GreatXML` | Disk-protection claim | 2026-06-11T01:16:19Z | FG02 |
@@ -45,6 +45,23 @@ Categories are short analyst summaries of publisher descriptions. A missing or v
 | `Nightmare_Eclipse/MiniPlasma` | Vulnerability claim | 2026-06-10T01:22:06Z | FG02 |
 | `Nightmare_Eclipse/RedSun` | Vulnerability claim; insufficient detail | 2026-06-10T01:20:52Z | FG02 |
 | `Nightmare_Eclipse/RoguePlanet` | Endpoint-security claim | 2026-06-09T23:22:01Z | FG02 |
+| `ek0mssavi0r/noPROXY_c2s` | Command-and-control claim | 2026-09-09T05:40:56Z | FG03 |
+| `ek0mssavi0r/rogue` | Adversarial framework | 2026-09-09T05:24:55Z | FG03 |
+| `ek0mssavi0r/kas` | Insufficient description | 2026-09-09T05:06:51Z | FG03 |
+| `mastercodeon/TubeFlow` | Browser extension | 2026-09-08T19:55:19Z | FG03 |
+| `ek0mssavi0r/Centipede` | Self-replication claim | 2026-09-08T19:52:56Z | FG03 |
+| `K3ysTr0K3R/modbus-scanner` | Insufficient description | 2026-09-08T00:34:34Z | FG03 |
+| `mastercodeon/google-ai-overview-toggle` | Browser extension | 2026-09-06T19:53:37Z | FG03 |
+| `proxydom/ieaxi-uac-bypass` | Privilege-escalation claim | 2026-09-05T13:07:22Z | FG03 |
+| `n0mad1k/juan-a-see` | Insufficient description | 2026-09-01T15:44:49Z | FG03 |
+| `Diablo_Rain/Medusa_Hair` | Adversarial research claim | 2026-09-01T06:10:48Z | FG03 |
+| `Knollbyte/Dreadripper` | Self-replication claim | 2026-09-01T04:30:37Z | FG03 |
+| `thanatos/Leetify` | Radio-observation claim | 2026-09-01T02:16:21Z | FG03 |
+| `leviathan/VIGIL` | Insufficient description | 2026-08-31T18:43:14Z | FG03 |
+| `leviathan/SKELETONKEY` | Insufficient description | 2026-08-31T18:43:10Z | FG03 |
+| `Diablo_Rain/Project_Addison-x-Syn_OS` | Insufficient description | 2026-08-24T20:51:10Z | FG03 |
+| `tototo31/CoM-PGP-Key-Collection` | Public-key collection claim | 2026-08-22T16:12:16Z | FG03 |
+| `k3nundrum/Misery` | Credential-theft claim | 2026-08-21T07:46:48Z | FG03 |
 
 ## What this source establishes
 

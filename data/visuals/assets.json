@@ -1,0 +1,53 @@
+{
+  "review_date": "2026-10-03",
+  "assets": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Flipper_Zero.jpg",
+      "bytes": 297725,
+      "sha256": "21534d96bd5ff28b7eaf6f5c8a23a5c224488d3e655e22af26c03dccb095d6d2",
+      "sha1": "dc88a046a009f4a1b7dab913204aac8f1b2dc0fa",
+      "title": "Flipper Zero photograph",
+      "credit": "Turbospok",
+      "publication_date": "2022-05-27",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Flipper_Zero.jpg",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "review_date": "2026-10-03",
+      "hosting": "local_original",
+      "modifications": "Unmodified image bytes; responsive scaling without cropping",
+      "path": "site/photos/flipper-zero.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/PM3-Trans.png",
+      "bytes": 166897,
+      "sha256": "8f11027aa56cbf68aa8fe31d65cfffa86cf49c98e806ec7915381559a971556c",
+      "sha1": "0cc3f4deeaad5db1a26528e99c4d06c000946341",
+      "title": "Proxmark3 legacy hardware photograph",
+      "credit": "Proxmark.com; Commons uploader Coldheader",
+      "publication_date": "2021-04-01",
+      "source_url": "https://commons.wikimedia.org/wiki/File:PM3-Trans.png",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "review_date": "2026-10-03",
+      "hosting": "local_original",
+      "modifications": "Unmodified image bytes; responsive scaling without cropping",
+      "path": "site/photos/proxmark3.png"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Proxmark_help.png",
+      "bytes": 352663,
+      "sha256": "203092cf28368902c8eae696ee5f4315089ba6de6f0c80568ed688f178fa48ea",
+      "sha1": "89c11f162ad6feefc462b1d04a1d5583ec696100",
+      "title": "Proxmark3 RDV4 help-screen screenshot",
+      "credit": "Turbospok",
+      "publication_date": "2021-09-16",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Proxmark_help.png",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "review_date": "2026-10-03",
+      "hosting": "local_original",
+      "modifications": "Unmodified image bytes; responsive scaling without cropping",
+      "path": "site/photos/proxmark-help.png"
+    }
+  ]
+}

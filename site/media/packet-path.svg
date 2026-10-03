@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" role="img">
+<title>READ A PACKET</title>
+<rect width="800" height="340" fill="#111622"/>
+<text x="30" y="42" fill="#f6f0e7" font-family="monospace" font-size="20">READ A PACKET</text>
+<text x="30" y="68" fill="#9ca8b7" font-family="monospace" font-size="12">CONCEPTUAL DIAGRAM · NO HARDWARE MEASUREMENTS</text>
+<rect x="30" y="105" width="170" height="75" rx="8" fill="#192332" stroke="#ff5c85"/>
+<text x="42" y="137" fill="#ff5c85" font-family="monospace" font-size="12">01</text>
+<text x="42" y="160" fill="#f6f0e7" font-family="sans-serif" font-size="13">Packet bytes</text>
+<path d="M204 143h12m-5-5 5 5-5 5" fill="none" stroke="#9ca8b7"/>
+<rect x="220" y="105" width="170" height="75" rx="8" fill="#192332" stroke="#57e1e8"/>
+<text x="232" y="137" fill="#57e1e8" font-family="monospace" font-size="12">02</text>
+<text x="232" y="160" fill="#f6f0e7" font-family="sans-serif" font-size="13">Dissector</text>
+<path d="M394 143h12m-5-5 5 5-5 5" fill="none" stroke="#9ca8b7"/>
+<rect x="410" y="105" width="170" height="75" rx="8" fill="#192332" stroke="#b89aff"/>
+<text x="422" y="137" fill="#b89aff" font-family="monospace" font-size="12">03</text>
+<text x="422" y="160" fill="#f6f0e7" font-family="sans-serif" font-size="13">Protocol fields</text>
+<path d="M584 143h12m-5-5 5 5-5 5" fill="none" stroke="#9ca8b7"/>
+<rect x="600" y="105" width="170" height="75" rx="8" fill="#192332" stroke="#e6b96c"/>
+<text x="612" y="137" fill="#e6b96c" font-family="monospace" font-size="12">04</text>
+<text x="612" y="160" fill="#f6f0e7" font-family="sans-serif" font-size="13">Context + limits</text>
+</svg>

@@ -8,7 +8,7 @@ Run from the repository root:
 python3 scripts/check_foundations.py --smoke
 ```
 
-The validator checks twenty ordered core tool entries, the eight-event synthetic fixture and its declared counts, the file-integrity reference, the 33-record public metadata catalog, source/coverage reconciliation and local Markdown links/heading anchors. The smoke starts a temporary server bound to `127.0.0.1` on an ephemeral port, verifies ordinary 200/404 responses, verifies curl's successful transfer and `--fail` exit code 22, and closes the server.
+The validator checks twenty ordered core tool entries, the eight-event synthetic fixture and its declared counts, the file-integrity reference, the 50-record public metadata catalog, source/coverage reconciliation and local Markdown links/heading anchors. The smoke starts a temporary server bound to `127.0.0.1` on an ephemeral port, verifies ordinary 200/404 responses, verifies curl's successful transfer and `--fail` exit code 22, and closes the server.
 
 The existing atlas, research, assessment, experiment, figure and unit checks remain separate requirements in [the CI workflow](../.github/workflows/atlas.yml). Workflow results are recorded in [GitHub Actions](https://github.com/Personfu/CyberEngineering/actions/workflows/atlas.yml).
 
