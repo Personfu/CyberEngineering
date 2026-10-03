@@ -2,6 +2,8 @@
 
 # Project HELIOS · Cyber Mission Atlas
 
+**New to IT or red/blue-team work? Start with [MERCURY Foundations](foundations/README.md): everyday IT, Kali orientation, twenty core tools, manual-page navigation, six local labs and three actual publisher screenshots.** The [Church of Malware public forge review](intelligence/CHURCH-FORGE.md) uses the user-selected Explore listing and a bounded 33-record metadata catalog.
+
 **150 distinct, testable cyberengineering research missions across 15 domains.**
 
 **Graduate research extension: 180 total missions.** All 150 originals are preserved, with 30 new NASA-inspired proposals, 15 domain models, 45 graduate challenges, 11 applicable resource contracts, six executable reference experiments, seven data figures and a pinned CISA metadata snapshot. Start in the [Research Flightbook](research/README.md). These remain proposals and bounded reference mechanics; field effectiveness has not been established. This is a GitHub-native engineering atlas: detailed proposals, models, evaluation criteria, visuals, and primary-source references. It is a research portfolio, not a deployed defense product. Every mission is written for owned, synthetic, or explicitly authorized systems.

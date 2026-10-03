@@ -1,0 +1,1 @@
+MERCURY fixture: this is a harmless training document.

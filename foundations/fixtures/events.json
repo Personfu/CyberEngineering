@@ -1,0 +1,70 @@
+{
+  "evidence_class": "synthetic",
+  "provenance": "Author-generated classroom fixture; not actual authentication logs",
+  "events": [
+    {
+      "sequence": 1,
+      "time": "2026-01-01T12:00:00Z",
+      "event": "sign_in",
+      "result": "denied",
+      "actor": "fictional-learner",
+      "host": "mercury-lab"
+    },
+    {
+      "sequence": 2,
+      "time": "2026-01-01T12:01:00Z",
+      "event": "sign_in",
+      "result": "denied",
+      "actor": "fictional-learner",
+      "host": "mercury-lab"
+    },
+    {
+      "sequence": 3,
+      "time": "2026-01-01T12:02:00Z",
+      "event": "sign_in",
+      "result": "denied",
+      "actor": "fictional-learner",
+      "host": "mercury-lab"
+    },
+    {
+      "sequence": 4,
+      "time": "2026-01-01T12:03:00Z",
+      "event": "sign_in",
+      "result": "allowed",
+      "actor": "fictional-learner",
+      "host": "mercury-lab"
+    },
+    {
+      "sequence": 5,
+      "time": "2026-01-01T12:04:00Z",
+      "event": "health_check",
+      "result": "ok",
+      "actor": "fictional-learner",
+      "host": "mercury-lab"
+    },
+    {
+      "sequence": 6,
+      "time": "2026-01-01T12:05:00Z",
+      "event": "sensor_gap",
+      "result": "unknown",
+      "actor": "fictional-learner",
+      "host": "mercury-lab"
+    },
+    {
+      "sequence": 7,
+      "time": "2026-01-01T12:06:00Z",
+      "event": "maintenance",
+      "result": "ok",
+      "actor": "fictional-learner",
+      "host": "mercury-lab"
+    },
+    {
+      "sequence": 8,
+      "time": "2026-01-01T12:07:00Z",
+      "event": "backup_check",
+      "result": "ok",
+      "actor": "fictional-learner",
+      "host": "mercury-lab"
+    }
+  ]
+}

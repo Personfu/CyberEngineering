@@ -20,7 +20,7 @@ def render():
  if len({m['title'].casefold() for m in items})!=150:raise ValueError('duplicate module title')
  out={};index=['# HELIOS Red-Team Assessment Flightbook','',
  '150 distinct modules progress from fundamentals to graduate assessment research. This companion track preserves the original 150 missions and the 30 frontier proposals. The RT identifiers denote assessment modules, not an extra 150 completed products.','',
- '[Engagement and evaluation protocol](PROTOCOL.md) · [Graduate research](../research/README.md) · [Public intelligence cards](../intelligence/README.md) · [Applicable datasets](../research/RESOURCES.md)','',
+ '[Beginner IT, Kali and tool tutorials](../foundations/README.md) · [Engagement and evaluation protocol](PROTOCOL.md) · [Graduate research](../research/README.md) · [Public intelligence cards](../intelligence/README.md) · [Applicable datasets](../research/RESOURCES.md)','',
  '| Phase | NASA orbit | Modules | Focus |','|---|---|---|---|']
  for p in x['phases']:index.append(f"| {p['number']} | {p['orbit']} | RT{(p['number']-1)*25+1:03d}–RT{p['number']*25:03d} | {p['title']} |")
  for p in x['phases']:
@@ -83,6 +83,7 @@ Deliver the concrete artifact named above, a typed fixture contract, a baseline,
   out[R/f'intelligence/profiles/{p["slug"]}.md']=card
   ledger.append(f"| [{p['display_name']}](profiles/{p['slug']}.md) | {p['entity_type']} | {', '.join(p['claim_ids'])} |")
  ledger+=['','## Provenance limits','', 'The six-source registry records first-party investigation reporting, official vulnerability/catalog metadata, a joint government advisory, an FBI statement and a self-published homepage. Eleven narrow claims retain their source and limitation. Historical report conditions are not current endpoint state. Community membership, nonprofit registration, real identities, complete malware capability and intrusion attribution were not independently established.','', 'The four homepage handles are documented only as public bylines or attributions; they are not labeled threat actors. The Nightmare-Eclipse and Church of Malware cards remain distinct and do not assert a verified membership relationship.']
+ ledger += ['', '[Public forge source review: user-selected Explore listing and 33 bounded metadata records](CHURCH-FORGE.md) · [Beginner tool explanations and actual screenshots](../foundations/README.md)']
  out[R/'intelligence/README.md']='\n'.join(ledger)+'\n'
  return out
 

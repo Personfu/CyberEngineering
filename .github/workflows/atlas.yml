@@ -27,3 +27,6 @@ jobs:
           python -m experiments.benchmark --check
           python scripts/build_research_visuals.py --check
           python -m unittest discover -s tests -v
+
+      - name: Check beginner tool guides, source catalog, and local HTTP tutorial
+        run: python scripts/check_foundations.py --smoke

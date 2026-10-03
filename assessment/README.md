@@ -2,7 +2,7 @@
 
 150 distinct modules progress from fundamentals to graduate assessment research. This companion track preserves the original 150 missions and the 30 frontier proposals. The RT identifiers denote assessment modules, not an extra 150 completed products.
 
-[Engagement and evaluation protocol](PROTOCOL.md) · [Graduate research](../research/README.md) · [Public intelligence cards](../intelligence/README.md) · [Applicable datasets](../research/RESOURCES.md)
+[Beginner IT, Kali and tool tutorials](../foundations/README.md) · [Engagement and evaluation protocol](PROTOCOL.md) · [Graduate research](../research/README.md) · [Public intelligence cards](../intelligence/README.md) · [Applicable datasets](../research/RESOURCES.md)
 
 | Phase | NASA orbit | Modules | Focus |
 |---|---|---|---|
