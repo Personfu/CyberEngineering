@@ -55,6 +55,8 @@ jobs:
         with:
           persist-credentials: false
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - name: Build static NIGHTSHIFT site
         run: python scripts/build_site.py
       - uses: actions/upload-pages-artifact@v3
