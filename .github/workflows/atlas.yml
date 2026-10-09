@@ -1,4 +1,4 @@
-name: Atlas integrity
+name: Atlas integrity and NIGHTSHIFT Pages
 
 on:
   push:
@@ -6,6 +6,8 @@ on:
 
 permissions:
   contents: read
+  pages: write
+  id-token: write
 
 jobs:
   validate:
@@ -38,3 +40,25 @@ jobs:
         run: |
           python scripts/build_site.py --check
           python scripts/check_site.py
+
+  deploy:
+    name: Publish NIGHTSHIFT
+    needs: validate
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/configure-pages@v5
+      - name: Build static NIGHTSHIFT site
+        run: python scripts/build_site.py
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

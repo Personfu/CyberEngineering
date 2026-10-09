@@ -31,6 +31,8 @@ The build uses Python's standard library. Generated JSON, pages and figures are 
 
 ## Hosting and verification
 
-The site can be hosted as static files, including under a repository subpath. All internal navigation and data requests use relative URLs. This commit supplies the files; enabling GitHub Pages in repository settings is a separate hosting step and is not implied by publishing this source directory.
+The site is published automatically to [Personfu/CyberEngineering GitHub Pages](https://personfu.github.io/CyberEngineering/) after a successful push to `main`. The workflow validates the atlas, research extension, foundations, community receipts, and static site before deploying `site/` as the Pages artifact. Pull requests run the same validation but do not deploy.
+
+The site can also be hosted manually as static files, including under a repository subpath. All internal navigation and data requests use relative URLs.
 
 Run `python scripts/build_site.py --check` and `python scripts/check_site.py` for deterministic outputs, all document links, catalog coverage and HTML references. See `VALIDATION.md` for actual browser results and screenshots once captured.

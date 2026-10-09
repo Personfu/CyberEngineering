@@ -20,6 +20,10 @@
   <a href="INDEX.md"><strong>Browse all missions</strong></a>
 </p>
 
+<p align="center">
+  <a href="https://personfu.github.io/CyberEngineering/"><strong>Launch NIGHTSHIFT on GitHub Pages ↗</strong></a>
+</p>
+
 > **A research portfolio, not a deployed defense product.** Every exercise and proposal is scoped to owned, synthetic, or explicitly authorized systems. The work documents models, methods, and evaluation plans; it does not claim field effectiveness.
 
 ---
@@ -195,7 +199,7 @@ Choose a system area, then drill into ten linked proposals. Mission numbers are 
 
 ## Run the custom portal locally
 
-NIGHTSHIFT is a static site with no analytics, live hardware connection, or remote tool execution. Its notes, theme preference, and bookmarks stay in the current browser through local storage.
+NIGHTSHIFT is a static site with no analytics, live hardware connection, or remote tool execution. It is published automatically to [GitHub Pages](https://personfu.github.io/CyberEngineering/) from `main`. Its notes, theme preference, and bookmarks stay in the current browser through local storage.
 
 ```bash
 python scripts/build_site.py
