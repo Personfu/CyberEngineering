@@ -41,9 +41,9 @@ def shell(key, title, body):
 def build():
     files={}
     def put(path, content): files[ROOT/path]=content if isinstance(content,bytes) else content.encode()
-    ideas=json.loads((ROOT/'data/ideas.json').read_text())['ideas']
-    community=json.loads((ROOT/'data/community/catalog.json').read_text())
-    talks=json.loads((ROOT/'data/conferences/defcon.json').read_text())
+    ideas=json.loads((ROOT/'data/ideas.json').read_text(encoding='utf-8'))['ideas']
+    community=json.loads((ROOT/'data/community/catalog.json').read_text(encoding='utf-8'))
+    talks=json.loads((ROOT/'data/conferences/defcon.json').read_text(encoding='utf-8'))
     sources={s['id']:s['url'] for s in community['sources']}
     diagrams={
       'team-loop':('RED / BLUE / PURPLE', ['Question a control','Observe evidence','Compare outcomes','Improve + retest']),
@@ -59,6 +59,8 @@ def build():
       'talk-coverage':('CONFERENCE COVERAGE', ['Schedule metadata','Session identity','Media availability','Content review']),
     }
     for name,(title,labels) in diagrams.items():put(Path('site/media')/(name+'.svg'),svg(title,labels))
+    put(Path('site/media/helios-system-model.svg'),(ROOT/'assets/helios-system-model.svg').read_bytes())
+    put(Path('site/media/helios-trust-chain.svg'),(ROOT/'assets/helios-trust-chain.svg').read_bytes())
     put(Path('site/media/avatar.svg'),'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#111622"/><circle cx="32" cy="32" r="18" fill="none" stroke="#57e1e8" stroke-width="3"/><ellipse cx="32" cy="32" rx="28" ry="9" transform="rotate(-27 32 32)" fill="none" stroke="#ff5c85" stroke-width="3"/></svg>\n')
     for p in sorted((ROOT/'research/assets').glob('*.svg')):put(Path('site/media/research')/p.name,p.read_bytes())
     # Local fixture is transparently synthetic and fully reproducible.
@@ -69,14 +71,14 @@ def build():
     put(Path('data/hardware/timing.csv'),out.getvalue())
     docs={}
     for folder in ['foundations','hardware','conferences','community','research','assessment','intelligence','atlas']:
-        for p in sorted((ROOT/folder).rglob('*.md')):docs[p.relative_to(ROOT).as_posix()]=p.read_text()
-    docs['DELIVERY_STATUS.md']=(ROOT/'DELIVERY_STATUS.md').read_text()
-    docs['SOURCES.md']=(ROOT/'SOURCES.md').read_text()
-    docs['site/IMAGE-CREDITS.md']=(ROOT/'site/IMAGE-CREDITS.md').read_text()
+        for p in sorted((ROOT/folder).rglob('*.md')):docs[p.relative_to(ROOT).as_posix()]=p.read_text(encoding='utf-8')
+    docs['DELIVERY_STATUS.md']=(ROOT/'DELIVERY_STATUS.md').read_text(encoding='utf-8')
+    docs['SOURCES.md']=(ROOT/'SOURCES.md').read_text(encoding='utf-8')
+    docs['site/IMAGE-CREDITS.md']=(ROOT/'site/IMAGE-CREDITS.md').read_text(encoding='utf-8')
     put(Path('site/data/documents.json'),json.dumps(docs,ensure_ascii=False,separators=(',',':'))+'\n')
     missionlist=[dict(id=x['id'],title=x['title'],theme=x['theme'],thesis=x['thesis'],doc=f'research/missions/{x["id"]}.md') for x in ideas]
     for p in sorted((ROOT/'research/frontier').glob('*.md')):
-        s=p.read_text();title=s.splitlines()[0].lstrip('# ');missionlist.append(dict(id=p.stem,title=title,theme='Frontier / NASA-inspired proposals',thesis='Graduate research proposal; implementation and validation remain future work.',doc='research/frontier/'+p.name))
+        s=p.read_text(encoding='utf-8');title=s.splitlines()[0].lstrip('# ');missionlist.append(dict(id=p.stem,title=title,theme='Frontier / NASA-inspired proposals',thesis='Graduate research proposal; implementation and validation remain future work.',doc='research/frontier/'+p.name))
     assert len(missionlist)==180
     put(Path('site/data/missions.json'),json.dumps(missionlist,ensure_ascii=False,separators=(',',':'))+'\n')
     put(Path('site/data/talks.json'),json.dumps(talks,ensure_ascii=False,separators=(',',':'))+'\n')
@@ -105,7 +107,7 @@ def build():
     learn+=panel('A local HTTP tutorial','<p>From the repository root, start the supplied harmless web fixture. Open a second terminal to inspect its response.</p><pre><code>python -m http.server 8765 --bind 127.0.0.1 --directory foundations/fixtures/web\ncurl --noproxy \'*\' --include http://127.0.0.1:8765/health.json</code></pre><p><strong>Read the output:</strong> HTTP status, Content-Type and JSON body describe different parts of the result. Stop the server with Ctrl+C. Use '+doc('foundations/LABS.md','the full lab')+' to compare HTTP errors and transport errors.</p>')
     learn+=panel('Read the manual',figure('manual-map','Four manual-reading checkpoints.')+doc('foundations/MANUALS.md','Man sections, synopsis notation, pager shortcuts and tool-specific help →'))
     pages['learn']=('IT + team concepts',learn)
-    raw=(ROOT/'foundations/TOOLS.md').read_text();toolcards=[]
+    raw=(ROOT/'foundations/TOOLS.md').read_text(encoding='utf-8');toolcards=[]
     for m in re.finditer(r'^### (\d+) · ([^\n]+)\n\n(.+?)(?=\n\n|\Z)',raw,re.M|re.S):
         title=m[2];body=m[3];what=re.search(r'\*\*Does:\*\* (.*?)(?=\*\*How:)',body,re.S);how=re.search(r'\*\*How:\*\* (.*?)(?=\*\*Read:)',body,re.S)
         toolcards.append(card(title,(what[1].strip() if what else '')+' How: '+(how[1].strip() if how else ''),doc('foundations/TOOLS.md','Evidence limits + official reference →'),kind='CORE TOOL '+m[1]))
@@ -137,6 +139,7 @@ def build():
     for title,url,source in screenshots:gallery+=f'<figure class="wide-figure"><img class="publisher-image" src="{e(url)}" alt="{e(title)}: actual publisher screenshot" loading="lazy" referrerpolicy="no-referrer"><figcaption>{e(title)} · Publisher image; rights remain with publisher. <a href="{source}">Documentation ↗</a> · '+doc('foundations/SCREENSHOTS.md','Reading guide + hash receipts')+'</figcaption></figure>'
     pages['gallery']=('Visual log',panel('The photo + screen albums','<p class="lead">Actual hardware. Actual interfaces.</p><p>Credited hardware photographs, publisher product images and software screen captures. '+doc('site/IMAGE-CREDITS.md','Sources, licenses and image receipts')+'.</p>')+panel('Hardware album',photo('photos/flipper-zero.jpg','Flipper Zero photograph','Turbospok · CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:Flipper_Zero.jpg')+album)+panel('Proxmark manual in the wild',photo('photos/proxmark-help.png','Proxmark3 RDV4 help / 2021 interface','Turbospok · CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:Proxmark_help.png','screen')+'<p>Read command groups and the help hint first. This is a historical screenshot, not a recipe or a claim about your installed version.</p>')+panel('Data + interface gallery','<p>Seven reproducible research figures and three publisher tool screenshots. Synthetic results and external assets are labeled.</p>')+gallery+panel('Diagram collection','<div class="diagram-grid">'+''.join(figure(n,t+' · conceptual') for n,(t,_) in diagrams.items())+'</div>'))
     pages['reader']=('Document reader',panel('Document room','<p id="reader-status" role="status">Loading the selected repository document…</p><a id="source-link" href="'+REPO+'README.md">Canonical source on GitHub ↗</a><article id="document" class="prose"></article><noscript>Enable JavaScript or use the canonical repository documents.</noscript>'))
+    pages['gallery']=(pages['gallery'][0],panel('HELIOS systems digital twin',figure('helios-system-model','Original systems digital twin: hardware, telemetry, control, evidence and recovery.')+'<p>A Blender/Fusion-style isometric reference model for the relationships this atlas studies. It is an original concept render, not manufacturer CAD or a deployed system.</p>')+panel('HELIOS chain of trust',figure('helios-trust-chain','Original chain-of-trust model: silicon, firmware, identity, telemetry, evidence and recovery.')+'<p>Use this reference to distinguish a component, a claim, its evidence, and the tested path to recovery.</p>')+pages['gallery'][1])
     for key,(title,body) in pages.items():put(Path('site')/(key+'.html'),shell(key,title,body))
     put(Path('site/.nojekyll'),'')
     return files

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title description">
+  <title id="title">HELIOS chain of trust</title>
+  <desc id="description">An original isometric reference model showing silicon, firmware, identity, telemetry, and recovery as a layered, verifiable chain of trust.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#091321"/><stop offset=".58" stop-color="#182344"/><stop offset="1" stop-color="#351b3f"/></linearGradient>
+    <linearGradient id="slab" x2="0" y2="1"><stop stop-color="#34577c"/><stop offset="1" stop-color="#132744"/></linearGradient>
+    <linearGradient id="side" x2="1" y2="1"><stop stop-color="#152b49"/><stop offset="1" stop-color="#091526"/></linearGradient>
+    <linearGradient id="mint" x2="1" y2="1"><stop stop-color="#b4fff0"/><stop offset="1" stop-color="#38c2ce"/></linearGradient>
+    <linearGradient id="violet" x2="1" y2="1"><stop stop-color="#e8c2ff"/><stop offset="1" stop-color="#8e66e8"/></linearGradient>
+    <linearGradient id="coral" x2="1" y2="1"><stop stop-color="#ffc3d5"/><stop offset="1" stop-color="#ed6d99"/></linearGradient>
+    <linearGradient id="gold" x2="1" y2="1"><stop stop-color="#fff1b6"/><stop offset="1" stop-color="#e6a744"/></linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#90c7e6" stroke-opacity=".09"/></pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="shadow" x="-30%" y="-30%" width="180%" height="200%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#02050d" flood-opacity=".78"/></filter>
+  </defs>
+
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/><rect width="1600" height="900" rx="28" fill="url(#grid)"/>
+  <g font-family="Arial, Helvetica, sans-serif"><text x="80" y="88" fill="#9afff1" font-size="21" font-weight="700" letter-spacing="7">HELIOS / CHAIN OF TRUST</text><text x="80" y="128" fill="#bdcce6" font-size="18" letter-spacing="2">ENGINEER THE LINKS. MEASURE THE GAPS. PRESERVE THE PATH BACK.</text><path d="M80 154H1520" stroke="#87f7eb" stroke-opacity=".35"/></g>
+
+  <g fill="none" stroke-linecap="round" filter="url(#glow)">
+    <path d="M820 235V650" stroke="#8ffff3" stroke-width="5" stroke-dasharray="10 13" stroke-opacity=".65"/>
+    <path d="M820 285L1120 450" stroke="#e5b4ff" stroke-width="4" stroke-dasharray="8 11" stroke-opacity=".7"/>
+    <path d="M820 450L1120 607" stroke="#ffafd0" stroke-width="4" stroke-dasharray="8 11" stroke-opacity=".7"/>
+    <path d="M820 607L1120 738" stroke="#ffe0a0" stroke-width="4" stroke-dasharray="8 11" stroke-opacity=".7"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <path d="M533 657L820 508 1107 657 820 807Z" fill="url(#slab)" stroke="#72eee3" stroke-width="3"/>
+    <path d="M533 657V711L820 861V807Z" fill="#0e1f36" stroke="#3b6681" stroke-width="2"/>
+    <path d="M1107 657V711L820 861V807Z" fill="#182c48" stroke="#3b6681" stroke-width="2"/>
+    <path d="M579 656L820 531 1061 656 820 782Z" fill="#101e35" stroke="#72eee3" stroke-opacity=".75"/>
+    <g stroke="#80fff2" stroke-width="3" stroke-opacity=".75"><path d="M666 656H974"/><path d="M702 636H938"/><path d="M739 617H901"/><path d="M776 598H864"/></g>
+  </g>
+
+  <g filter="url(#shadow)">
+    <path d="M583 511L820 388 1057 511 820 635Z" fill="url(#slab)" stroke="#c5a3ff" stroke-width="3"/>
+    <path d="M583 511V553L820 678V635Z" fill="#1e1b3c" stroke="#645681" stroke-width="2"/>
+    <path d="M1057 511V553L820 678V635Z" fill="#2d244f" stroke="#645681" stroke-width="2"/>
+    <path d="M624 509L820 407 1016 509 820 611Z" fill="#1c1b3a" stroke="#d1b6ff" stroke-opacity=".75"/>
+    <path d="M735 511L786 461H854L905 511L854 560H786Z" fill="none" stroke="#debfff" stroke-width="5"/>
+    <circle cx="820" cy="511" r="22" fill="url(#violet)"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <path d="M630 374L820 275 1010 374 820 474Z" fill="url(#slab)" stroke="#ff9cc1" stroke-width="3"/>
+    <path d="M630 374V413L820 512V474Z" fill="#351b39" stroke="#80516f" stroke-width="2"/>
+    <path d="M1010 374V413L820 512V474Z" fill="#432242" stroke="#80516f" stroke-width="2"/>
+    <path d="M664 373L820 292 976 373 820 455Z" fill="#311a34" stroke="#ffb1cf" stroke-opacity=".75"/>
+    <path d="M751 382C751 342 789 324 820 350C851 324 889 342 889 382V405H751Z" fill="none" stroke="#ffc3dc" stroke-width="5"/>
+    <circle cx="820" cy="387" r="12" fill="url(#coral)"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <path d="M675 251L820 176 965 251 820 327Z" fill="url(#slab)" stroke="#ffe19c" stroke-width="3"/>
+    <path d="M675 251V285L820 361V327Z" fill="#332719" stroke="#846b40" stroke-width="2"/>
+    <path d="M965 251V285L820 361V327Z" fill="#42331c" stroke="#846b40" stroke-width="2"/>
+    <path d="M702 250L820 189 938 250 820 312Z" fill="#302819" stroke="#ffe8b4" stroke-opacity=".75"/>
+    <g fill="#ffe6a6"><circle cx="772" cy="249" r="7"/><circle cx="796" cy="237" r="7"/><circle cx="820" cy="225" r="7"/><circle cx="844" cy="237" r="7"/><circle cx="868" cy="249" r="7"/><circle cx="796" cy="261" r="7"/><circle cx="820" cy="273" r="7"/><circle cx="844" cy="261" r="7"/></g>
+  </g>
+
+  <g filter="url(#shadow)" font-family="Arial, Helvetica, sans-serif">
+    <path d="M1046 379L1239 479 1095 554 902 454Z" fill="#132943" stroke="#bd9cff" stroke-width="2"/>
+    <path d="M1046 379V458L1095 554V475Z" fill="#0c1930" stroke="#5d547c" stroke-width="2"/>
+    <path d="M1239 479V558L1095 633V554Z" fill="#1d2445" stroke="#5d547c" stroke-width="2"/>
+    <text x="1052" y="452" fill="#d9c4ff" font-size="17" font-weight="700" letter-spacing="2" transform="rotate(27 1052 452)">EVIDENCE</text>
+    <path d="M1082 478L1145 511L1106 530L1043 497Z" fill="none" stroke="#d8bbff" stroke-width="3"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g><path d="M460 211H659L706 235" fill="none" stroke="#ffd979" stroke-width="2"/><rect x="130" y="167" width="334" height="91" rx="12" fill="#2b2631" stroke="#d9a246"/><text x="158" y="202" fill="#ffe4a1" font-size="16" font-weight="700" letter-spacing="3">01 / SILICON</text><text x="158" y="231" fill="#c7b48c" font-size="15">Parts, layout, power, interfaces</text></g>
+    <g><path d="M440 339H619L657 361" fill="none" stroke="#ff8fbd" stroke-width="2"/><rect x="130" y="294" width="314" height="91" rx="12" fill="#352035" stroke="#d9679d"/><text x="158" y="329" fill="#ffc1d8" font-size="16" font-weight="700" letter-spacing="3">02 / FIRMWARE</text><text x="158" y="358" fill="#d5adcb" font-size="15">Verified version + recovery path</text></g>
+    <g><path d="M442 478H572L612 493" fill="none" stroke="#d0b5ff" stroke-width="2"/><rect x="130" y="432" width="316" height="91" rx="12" fill="#272342" stroke="#9877df"/><text x="158" y="467" fill="#e1d2ff" font-size="16" font-weight="700" letter-spacing="3">03 / IDENTITY</text><text x="158" y="496" fill="#c1b5dc" font-size="15">Authority, consent, key custody</text></g>
+    <g><path d="M440 619H522L571 636" fill="none" stroke="#75f0e3" stroke-width="2"/><rect x="130" y="574" width="314" height="91" rx="12" fill="#102d3b" stroke="#43c9c0"/><text x="158" y="609" fill="#a6fff4" font-size="16" font-weight="700" letter-spacing="3">04 / TELEMETRY</text><text x="158" y="638" fill="#a4d0cf" font-size="15">Observed state + declared gaps</text></g>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="1170" y="681" width="300" height="111" rx="14" fill="#2d2230" stroke="#e0a64b"/>
+    <text x="1200" y="719" fill="#ffe5a7" font-size="16" font-weight="700" letter-spacing="3">05 / RECOVERY</text>
+    <text x="1200" y="748" fill="#d5bf9a" font-size="15">Signed rollback. Tested restore.</text>
+    <text x="1200" y="772" fill="#b79c7c" font-size="13">Evidence survives the incident.</text>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif"><text x="80" y="845" fill="#9eb5d2" font-size="14" letter-spacing="2">ORIGINAL CONCEPT MODEL / TRUST IS A TRACEABLE CHAIN, NOT A PRODUCT LABEL</text><text x="1520" y="845" fill="#9afff1" font-size="14" text-anchor="end" letter-spacing="2">SILICON → FIRMWARE → IDENTITY → TELEMETRY → RECOVERY</text></g>
+</svg>

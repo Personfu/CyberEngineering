@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title description">
+  <title id="title">HELIOS systems digital twin</title>
+  <desc id="description">An original isometric concept render showing hardware, telemetry, evidence, controls, and recovery as connected layers of a cyberengineering system.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop stop-color="#071323"/>
+      <stop offset=".52" stop-color="#101d37"/>
+      <stop offset="1" stop-color="#221433"/>
+    </linearGradient>
+    <linearGradient id="deck" x2="0" y2="1">
+      <stop stop-color="#1f3960"/>
+      <stop offset="1" stop-color="#0b1629"/>
+    </linearGradient>
+    <linearGradient id="panel" x2="1" y2="1">
+      <stop stop-color="#243f67"/>
+      <stop offset="1" stop-color="#12223d"/>
+    </linearGradient>
+    <linearGradient id="cyan" x2="1" y2="1">
+      <stop stop-color="#86fff1"/>
+      <stop offset="1" stop-color="#21a9cf"/>
+    </linearGradient>
+    <linearGradient id="pink" x2="1" y2="1">
+      <stop stop-color="#ffb0d0"/>
+      <stop offset="1" stop-color="#c94f9c"/>
+    </linearGradient>
+    <linearGradient id="amber" x2="1" y2="1">
+      <stop stop-color="#ffe1a2"/>
+      <stop offset="1" stop-color="#db8d34"/>
+    </linearGradient>
+    <radialGradient id="core">
+      <stop stop-color="#f9feff"/>
+      <stop offset=".19" stop-color="#95fff0"/>
+      <stop offset=".55" stop-color="#258bc0"/>
+      <stop offset="1" stop-color="#172447"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#78b4d2" stroke-opacity=".11"/>
+    </pattern>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow" x="-30%" y="-30%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#010611" flood-opacity=".85"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" rx="28" fill="url(#background)"/>
+  <rect width="1600" height="1000" rx="28" fill="url(#grid)"/>
+  <g opacity=".48">
+    <circle cx="118" cy="144" r="2" fill="#a7e7ff"/><circle cx="255" cy="74" r="1.5" fill="#a7e7ff"/>
+    <circle cx="422" cy="177" r="2" fill="#a7e7ff"/><circle cx="611" cy="85" r="1" fill="#a7e7ff"/>
+    <circle cx="788" cy="136" r="2" fill="#a7e7ff"/><circle cx="1018" cy="71" r="1.5" fill="#a7e7ff"/>
+    <circle cx="1306" cy="142" r="2" fill="#a7e7ff"/><circle cx="1503" cy="89" r="1.5" fill="#a7e7ff"/>
+    <circle cx="145" cy="879" r="1.5" fill="#a7e7ff"/><circle cx="384" cy="931" r="2" fill="#a7e7ff"/>
+    <circle cx="1128" cy="912" r="1.5" fill="#a7e7ff"/><circle cx="1458" cy="844" r="2" fill="#a7e7ff"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="88" y="104" fill="#83fff2" font-size="22" font-weight="700" letter-spacing="7">HELIOS / SYSTEMS DIGITAL TWIN</text>
+    <text x="88" y="148" fill="#b3c8e5" font-size="19" letter-spacing="2">A VISUAL MODEL FOR MEASURING, EXPLAINING, AND RECOVERING COMPLEX SYSTEMS</text>
+    <path d="M88 177H1512" stroke="#67e5df" stroke-opacity=".38"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <path d="M268 639L800 361 1332 639 800 919Z" fill="url(#deck)" stroke="#79dbef" stroke-opacity=".72" stroke-width="3"/>
+    <path d="M268 639L800 919V956L268 676Z" fill="#0a1427" stroke="#355577" stroke-width="2"/>
+    <path d="M1332 639L800 919V956L1332 676Z" fill="#12213a" stroke="#355577" stroke-width="2"/>
+    <path d="M344 638L800 400 1256 638 800 876Z" fill="#101f39" stroke="#6cd8e8" stroke-opacity=".46" stroke-width="2"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round">
+    <path d="M455 650L726 509" stroke="#2dd4d0" stroke-width="6" stroke-opacity=".34"/>
+    <path d="M1150 650L878 509" stroke="#ff76ae" stroke-width="6" stroke-opacity=".34"/>
+    <path d="M799 816V535" stroke="#ffd47b" stroke-width="6" stroke-opacity=".34"/>
+    <path d="M547 699L798 829 1052 699" stroke="#8ce9ff" stroke-width="2" stroke-opacity=".38"/>
+  </g>
+
+  <g filter="url(#glow)">
+    <circle cx="800" cy="585" r="104" fill="#39c9df" opacity=".11"/>
+    <circle cx="800" cy="585" r="79" fill="url(#core)" stroke="#c0fff8" stroke-width="3"/>
+    <circle cx="800" cy="585" r="51" fill="none" stroke="#e0fffc" stroke-opacity=".8" stroke-width="2"/>
+    <path d="M745 585H855M800 530V640" stroke="#e3fffb" stroke-width="3" stroke-opacity=".82"/>
+    <circle cx="800" cy="585" r="12" fill="#fff7d0"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <path d="M393 580L549 499 690 572 531 656Z" fill="url(#panel)" stroke="#6bf0e6" stroke-width="3"/>
+    <path d="M393 580V679L531 752V656Z" fill="#10223b" stroke="#426885" stroke-width="2"/>
+    <path d="M531 656L690 572V667L531 752Z" fill="#0b172a" stroke="#426885" stroke-width="2"/>
+    <path d="M430 581L546 521 653 576 534 636Z" fill="#0b1528" stroke="#4ce5dc" stroke-opacity=".8"/>
+    <rect x="469" y="551" width="68" height="41" rx="5" fill="#1b4d68" stroke="#83fff3" transform="rotate(-27 469 551)"/>
+    <path d="M415 606L471 637M442 590L498 621M576 544L639 577M556 555L618 588" stroke="#86fff1" stroke-width="3" stroke-opacity=".7"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <path d="M908 572L1054 498 1205 580 1051 659Z" fill="url(#panel)" stroke="#ff85b7" stroke-width="3"/>
+    <path d="M908 572V669L1051 746V659Z" fill="#22203c" stroke="#6e557e" stroke-width="2"/>
+    <path d="M1051 659L1205 580V675L1051 746Z" fill="#19142e" stroke="#6e557e" stroke-width="2"/>
+    <path d="M940 573L1057 514 1172 577 1054 635Z" fill="#19192f" stroke="#ff8fbd" stroke-opacity=".8"/>
+    <path d="M970 580C1000 529 1047 618 1074 556S1124 572 1153 547" fill="none" stroke="#ff90c3" stroke-width="4"/>
+    <circle cx="978" cy="579" r="7" fill="#ffe0ee"/><circle cx="1074" cy="556" r="7" fill="#ffe0ee"/><circle cx="1153" cy="547" r="7" fill="#ffe0ee"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <path d="M648 757L800 677 953 757 800 839Z" fill="url(#panel)" stroke="#ffd681" stroke-width="3"/>
+    <path d="M648 757V823L800 905V839Z" fill="#2b2230" stroke="#796243" stroke-width="2"/>
+    <path d="M800 839L953 757V823L800 905Z" fill="#211927" stroke="#796243" stroke-width="2"/>
+    <path d="M691 758L800 701 910 758 800 816Z" fill="#242033" stroke="#ffd681" stroke-opacity=".8"/>
+    <path d="M725 777H875M748 754H852" stroke="#ffe2a9" stroke-width="3"/>
+    <circle cx="800" cy="758" r="18" fill="none" stroke="#ffe8bb" stroke-width="3"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round">
+    <path d="M690 572C727 534 746 543 758 553" stroke="url(#cyan)" stroke-width="5"/>
+    <path d="M910 571C875 535 855 544 843 554" stroke="url(#pink)" stroke-width="5"/>
+    <path d="M800 664V678" stroke="url(#amber)" stroke-width="5"/>
+    <circle cx="743" cy="553" r="6" fill="#93fff4"/><circle cx="857" cy="553" r="6" fill="#ffc0dc"/><circle cx="800" cy="676" r="6" fill="#ffe8b4"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g>
+      <path d="M315 432H508L546 492" fill="none" stroke="#76f6e9" stroke-width="2"/>
+      <rect x="126" y="357" width="220" height="101" rx="12" fill="#0d2037" stroke="#4dd8d3" stroke-opacity=".8"/>
+      <text x="151" y="394" fill="#7dfff1" font-size="16" font-weight="700" letter-spacing="3">HARDWARE</text>
+      <text x="151" y="423" fill="#b7cce5" font-size="15">Interfaces + firmware</text>
+      <text x="151" y="445" fill="#859dbb" font-size="13">Known state / version / limits</text>
+    </g>
+    <g>
+      <path d="M1286 432H1094L1054 492" fill="none" stroke="#ff88b8" stroke-width="2"/>
+      <rect x="1254" y="357" width="220" height="101" rx="12" fill="#241832" stroke="#e878ae" stroke-opacity=".8"/>
+      <text x="1278" y="394" fill="#ffa5ca" font-size="16" font-weight="700" letter-spacing="3">TELEMETRY</text>
+      <text x="1278" y="423" fill="#d8bed6" font-size="15">Signals + observations</text>
+      <text x="1278" y="445" fill="#b796b4" font-size="13">Coverage / loss / uncertainty</text>
+    </g>
+    <g>
+      <path d="M800 941V868" fill="none" stroke="#ffd57c" stroke-width="2"/>
+      <rect x="634" y="935" width="332" height="45" rx="12" fill="#2b2030" stroke="#e5ad52" stroke-opacity=".8"/>
+      <text x="800" y="964" fill="#ffe3a8" font-size="16" font-weight="700" letter-spacing="3" text-anchor="middle">EVIDENCE / DECISION / RECOVERY</text>
+    </g>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="562" y="255" width="476" height="80" rx="14" fill="#142641" stroke="#6ae9e4" stroke-opacity=".66"/>
+    <text x="800" y="286" fill="#a4fff4" font-size="15" font-weight="700" letter-spacing="4" text-anchor="middle">CONTROL CORE</text>
+    <text x="800" y="314" fill="#bfd2eb" font-size="17" text-anchor="middle">Model dependencies. Declare confidence. Choose a bounded response.</text>
+    <path d="M800 335V490" stroke="#84fff3" stroke-width="2" stroke-dasharray="7 8" stroke-opacity=".7"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="88" y="911" fill="#88a9c8" font-size="15" letter-spacing="2">CONCEPT MODEL / NOT MANUFACTURER CAD / NOT A DEPLOYED SYSTEM</text>
+    <text x="1512" y="911" fill="#83fff2" font-size="15" text-anchor="end" letter-spacing="2">OBSERVE → MODEL → TEST → DECIDE → REVISE</text>
+  </g>
+</svg>

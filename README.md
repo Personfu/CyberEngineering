@@ -1,28 +1,150 @@
-![Project HELIOS · Cyber Mission Atlas](assets/cover.svg)
+<p align="center">
+  <a href="site/README.md">
+    <img src="assets/cover.svg" alt="Project HELIOS: an advanced cyberengineering mission atlas" width="100%">
+  </a>
+</p>
 
-# Project HELIOS · Cyber Mission Atlas
+<h1 align="center">PROJECT HELIOS</h1>
+<p align="center">
+  <strong>A visual, evidence-aware cyberengineering atlas.</strong><br>
+  Learn the systems behind secure software, trustworthy hardware, resilient networks, and responsible security research.
+</p>
 
-**NIGHTSHIFT: [the connected cyberpunk learning site](site/README.md).** A MySpace-inspired profile with IT/team concepts, searchable tool and mission rooms, a seven-entry hardware bench, DEF CON metadata, community credits and a visual gallery. [Actual browser screenshot](site/screenshots/profile-desktop.png) · [Hardware guides](hardware/README.md) · [Conference coverage](conferences/README.md). Source files are published here; GitHub Pages hosting is not enabled by this commit.
+<p align="center">
+  <a href="foundations/README.md"><strong>Start learning</strong></a>
+  &nbsp;&bull;&nbsp;
+  <a href="site/README.md"><strong>Open NIGHTSHIFT</strong></a>
+  &nbsp;&bull;&nbsp;
+  <a href="research/README.md"><strong>Explore research</strong></a>
+  &nbsp;&bull;&nbsp;
+  <a href="INDEX.md"><strong>Browse all missions</strong></a>
+</p>
 
-**New to IT or red/blue-team work? Start with [MERCURY Foundations](foundations/README.md): everyday IT, Kali orientation, twenty core tools, manual-page navigation, six local labs and three actual publisher screenshots.** The [Church of Malware public forge review](intelligence/CHURCH-FORGE.md) uses the user-selected Explore listing and a bounded 50-record metadata catalog.
+> **A research portfolio, not a deployed defense product.** Every exercise and proposal is scoped to owned, synthetic, or explicitly authorized systems. The work documents models, methods, and evaluation plans; it does not claim field effectiveness.
 
-**150 distinct, testable cyberengineering research missions across 15 domains.**
+---
 
-[Delivery and remaining-work register](DELIVERY_STATUS.md) · [ORION community/source directory](community/README.md) · [ProtoPirate public credits](community/PROTOPIRATE.md)
+## Mission control
 
-**Graduate research extension: 180 total missions.** All 150 originals are preserved, with 30 new NASA-inspired proposals, 15 domain models, 45 graduate challenges, 11 applicable resource contracts, six executable reference experiments, seven data figures and a pinned CISA metadata snapshot. Start in the [Research Flightbook](research/README.md). These remain proposals and bounded reference mechanics; field effectiveness has not been established. This is a GitHub-native engineering atlas: detailed proposals, models, evaluation criteria, visuals, and primary-source references. It is a research portfolio, not a deployed defense product. Every mission is written for owned, synthetic, or explicitly authorized systems.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="site/README.md"><img src="site/screenshots/profile-desktop.png" alt="NIGHTSHIFT interactive cyberengineering portal" width="100%"></a>
+      <h3><a href="site/README.md">NIGHTSHIFT: interactive learning portal</a></h3>
+      <p>A custom static web experience with a visual profile, searchable missions and tools, a local field notebook, hardware models, conference coverage, and a diagram gallery.</p>
+      <p><a href="site/README.md"><strong>Open the portal guide &rarr;</strong></a></p>
+    </td>
+    <td width="50%" valign="top">
+      <a href="hardware/README.md"><img src="site/screenshots/hardware-desktop.png" alt="Hardware learning bench with device photographs and conceptual models" width="100%"></a>
+      <h3><a href="hardware/README.md">VOYAGER: hardware learning bench</a></h3>
+      <p>Real hardware photographs sit beside conceptual architectures for device trust, RF work, firmware recovery, and reproducible bench measurements.</p>
+      <p><a href="hardware/README.md"><strong>Visit the hardware bench &rarr;</strong></a></p>
+    </td>
+  </tr>
+</table>
 
-| Portfolio | Evidence | Delivery |
+## Inside the lab
+
+<table>
+  <tr>
+    <td width="33.33%" valign="top">
+      <a href="hardware/README.md"><img src="site/photos/flipper-zero.jpg" alt="Flipper Zero hardware photograph" width="100%"></a>
+      <h3><a href="hardware/README.md">Physical interfaces</a></h3>
+      <p>Use real device imagery as a starting point for questions about interfaces, signals, firmware boundaries, and evidence limits.</p>
+      <p><a href="hardware/README.md"><strong>Study the hardware model &rarr;</strong></a></p>
+    </td>
+    <td width="33.33%" valign="top">
+      <a href="hardware/README.md"><img src="site/photos/proxmark3.png" alt="Proxmark3 research hardware photograph" width="100%"></a>
+      <h3><a href="hardware/README.md">Signals to evidence</a></h3>
+      <p>See how radio and RFID research is framed as authorized, reproducible observation rather than a collection of unexplained commands.</p>
+      <p><a href="hardware/README.md"><strong>Open the bench protocol &rarr;</strong></a></p>
+    </td>
+    <td width="33.33%" valign="top">
+      <a href="site/reader.html?doc=foundations/TOOLS.md"><img src="site/screenshots/tool-guide.png" alt="NIGHTSHIFT interactive tool field guide" width="100%"></a>
+      <h3><a href="site/reader.html?doc=foundations/TOOLS.md">Tools with a purpose</a></h3>
+      <p>Every field-guide entry explains its input, transformation, output, operating limit, and the manual or primary source behind it.</p>
+      <p><a href="foundations/TOOLS.md"><strong>Read the tool field guide &rarr;</strong></a></p>
+    </td>
+  </tr>
+</table>
+
+<sub>Hardware photographs are credited in the <a href="site/IMAGE-CREDITS.md">image ledger</a>. They illustrate supported learning concepts; the repository does not provide unauthorized device-operation instructions.</sub>
+
+## Your flight path
+
+```text
+01  FOUNDATION      Build vocabulary, inspect local systems, and learn to read manuals.
+        |
+02  OBSERVATION     Understand packets, devices, logs, and the limits of each measurement.
+        |
+03  ENGINEERING     Model trust, provenance, recovery, identity, and resilient operations.
+        |
+04  EVALUATION      Define a falsifier, measure a result, record uncertainty, and stop safely.
+        |
+05  RESEARCH        Connect a bounded mission to its evidence, sources, and graduate challenge.
+```
+
+| Flight phase | What you will be able to explain | Launch point |
+| --- | --- | --- |
+| `01 FOUNDATION` | The difference between an interface, protocol, service, process, packet, and claim | [MERCURY Foundations](foundations/README.md) |
+| `02 OBSERVATION` | What a tool or device actually measures, and what it cannot establish | [Tool field guide](foundations/TOOLS.md) |
+| `03 ENGINEERING` | How security constraints are designed into software, hardware, and operations | [Mission Systems & Architecture](atlas/01-mission-systems-and-architecture.md) |
+| `04 EVALUATION` | How to turn a concept into an authorized, falsifiable experiment | [Research method](editorial/RESEARCH_METHOD.md) |
+| `05 RESEARCH` | How advanced missions connect to models, resources, and open challenges | [Research Flightbook](research/README.md) |
+
+| Begin with a question | Click through |
+| --- | --- |
+| **I am new to IT or security.** Learn the vocabulary, local HTTP, teams, tools, manuals, and six safe labs. | [MERCURY Foundations](foundations/README.md) |
+| **I want to understand a device trust model.** Follow physical systems from PCB design through firmware recovery and provenance. | [Hardware & firmware trust](atlas/03-pcb-hardware-and-firmware-trust.md) |
+| **I need an advanced research problem.** Use a falsifiable proposal with its data plan, guardrails, and evaluation criteria. | [Research Flightbook](research/README.md) |
+| **I want a guided assessment progression.** Move from core concepts through authorized assessment engineering and graduate exercises. | [Assessment Flightbook](assessment/README.md) |
+| **I want the complete map.** Browse every original mission in permanent reading order. | [150-mission index](INDEX.md) |
+
+## See the engineering, not just the claims
+
+<p align="center">
+  <a href="site/gallery.html"><img src="assets/helios-system-model.svg" alt="HELIOS systems digital twin: hardware, telemetry, controls, evidence, and recovery shown as connected layers" width="100%"></a>
+</p>
+
+<p align="center"><strong>HELIOS Systems Digital Twin</strong> &mdash; a Blender/Fusion-style reference model for the connected engineering layers in this atlas. <a href="site/gallery.html">Open the visual log &rarr;</a></p>
+
+<p align="center">
+  <a href="site/gallery.html"><img src="assets/helios-trust-chain.svg" alt="HELIOS chain of trust: silicon, firmware, identity, telemetry, evidence, and recovery shown as connected layers" width="100%"></a>
+</p>
+
+<p align="center"><strong>HELIOS Chain of Trust</strong> &mdash; a 3D engineering reference that makes every trust claim traceable from silicon to recovery. <a href="hardware/README.md">Open the hardware bench &rarr;</a></p>
+
+<p align="center">
+  <a href="site/gallery.html"><img src="assets/constellation.svg" alt="Constellation model connecting 15 cyberengineering domains" width="92%"></a>
+</p>
+
+<p align="center"><em>Click the model to open the visual gallery.</em></p>
+
+The atlas connects evidence, uncertainty, dependencies, and decision-making instead of treating cybersecurity as a disconnected tool list:
+
+```mermaid
+flowchart LR
+    A["Observe<br>systems, signals, and constraints"] --> B["Model<br>evidence, dependencies, and uncertainty"]
+    B --> C["Test<br>on owned, synthetic, or authorized systems"]
+    C --> D["Decide<br>with safety limits and measurable outcomes"]
+    D -. revise with new evidence .-> B
+```
+
+**Explore the visual models:** [network observability](site/media/packet-path.svg) | [supply-chain provenance](site/media/provenance.svg) | [firmware trust](site/media/research/firmware.svg) | [recovery engineering](site/media/research/recovery.svg) | [full gallery](site/gallery.html)
+
+## The atlas at a glance
+
+| Portfolio | What it contains | Proof-oriented approach |
 | :--- | :--- | :--- |
-| **15 domains × 10 missions** in fixed reading order | A mechanism, data plan, falsifier, and guardrail for every idea | Markdown chapters, a machine-readable catalog, diagrams, and validation checks |
+| **15 cyberengineering domains** | Architecture, formal assurance, hardware, provenance, networks, forensics, identity, cloud, AI, OT, RF, people, resilience, authorized exposure, and measurement | Every idea includes a mechanism, data plan, falsifier, and guardrail |
+| **150 original mission proposals** | Ten permanently numbered missions per domain | [Open the indexed map](INDEX.md) |
+| **180 research dossiers** | The original missions plus thirty NASA-inspired proposals, domain models, resource contracts, and graduate challenges | [Open the Research Flightbook](research/README.md) |
+| **150 assessment modules** | A basic-to-advanced path for authorized red/blue-team assessment engineering | [Open the Assessment Flightbook](assessment/README.md) |
+| **Custom learning software** | Search, filtering, bookmarks, browser-local notes, responsive layouts, and a document reader | [Explore NIGHTSHIFT](site/README.md) |
 
-![The 150-mission constellation: 15 domains with 10 concepts each](assets/constellation.svg)
+## Pick an orbit
 
-## Choose an orbit
-
-The numbers are permanent identifiers. Read straight through for a full survey, or enter at the domain closest to your system. Each chapter combines its own design map with ten individually cited proposals.
-
-Want every title and thesis at once? Open the [complete 150-mission index](INDEX.md); every row links directly to its full proposal.
+Choose a system area, then drill into ten linked proposals. Mission numbers are permanent, so the atlas can be read linearly or entered from the domain closest to your work.
 
 <!-- ATLAS_INDEX_START -->
 | Orbit | Domain | Missions |
@@ -44,50 +166,48 @@ Want every title and thesis at once? Open the [complete 150-mission index](INDEX
 | 15 | [Measurement, governance, and futures](atlas/15-measurement-governance-futures.md) | 141–150 |
 <!-- ATLAS_INDEX_END -->
 
-The [machine-readable catalog](data/ideas.json) carries the same order, titles, summaries, chapter paths, and source URLs. The [research method](editorial/RESEARCH_METHOD.md) defines what evidence would be required to move an idea from concept to field pilot. The [source ledger](SOURCES.md) records official publications and their scopes. The [input boundary](editorial/INPUT_BOUNDARY.md) explains how the supplied local materials were handled without publishing evidence or running programs from them.
+## High-value routes
 
-## How the missions fit together
-
-```mermaid
-flowchart LR
-    A["01–05: Architecture, code, devices, provenance, networks"] --> E["Evidence: source, time, coverage, uncertainty"]
-    B["06–10: Forensics, identity, cloud, AI, cyberphysical"] --> E
-    C["11–15: Space, people, recovery, exposure, measurement"] --> E
-    E --> M["Mission model: dependencies and safety constraints"]
-    M --> D["Decision: approval, rollback, measured outcome"]
-    D -. new evidence .-> E
-```
-
-The [system architecture](editorial/SYSTEM_ARCHITECTURE.md) develops this into six integrated campaigns: trustworthy devices, evidence-aware analysis, mission-aware networks, privacy-preserving identity, safe remote operations, and measured human judgment. These campaigns suggest combinations of ideas; they do not imply that the systems have been built.
-
-## Ambitious starting points
-
-| If your mission needs… | Start with | First credible result |
+| If you need to... | Start here | First credible result |
 | --- | --- | --- |
-| A defensible answer to “what fails next?” | **001 Function-First Risk Atlas**, **003 Blast-Radius Digital Twin**, **121 Mission-Weighted Recovery Order** | An owned service dependency model that predicts held-out incident consequences better than an asset-only baseline. |
-| A board that visibly carries its trust model | **021 Trust-Visible PCB**, **029 CAD-to-Fab Provenance Chain**, **023 Atomic Firmware Lifeboat** | A bench prototype whose layout review, fabrication lineage, and interrupted-update recovery are all testable. |
-| Incident conclusions with honest uncertainty | **051 Memory Snapshot Confidence Map**, **057 Negative-Evidence Logic**, **081 Evidence-Bound Security Assistant** | A synthetic case where analysts can distinguish observed facts from unobservable gaps and unsupported inference. |
-| Safer low-power or intermittent operations | **095 Island-Mode Mission Test**, **103 CubeSat Update Survival Model**, **110 Remote Evidence Courier** | An emulator/bench exercise measuring essential-function survival, rollback, and signed evidence delivery under link loss. |
-| Privacy that can be engineered and measured | **066 Private Correlation Token**, **070 Data-Minimization Twin**, **144 Counterfactual Defense Study** | An approved data-flow experiment that quantifies utility retained versus identifiable information collected. |
-| A way to measure cyber value over years | **141 Cyber Quality Unit**, **145 Capability Maturity Evidence Graph**, **150 Cyber Mission Observatory** | A versioned outcome definition and longitudinal evidence pipeline, with stated limits on causal interpretation. |
+| Model what fails next | [Function-First Risk Atlas](research/missions/001.md) and [Blast-Radius Digital Twin](research/missions/003.md) | An owned-service dependency model that predicts held-out incident consequences better than an asset-only baseline |
+| Make hardware trust visible | [Trust-Visible PCB](research/missions/021.md) and [CAD-to-Fab Provenance Chain](research/missions/029.md) | A bench prototype with testable layout review, fabrication lineage, and interrupted-update recovery |
+| Communicate uncertainty honestly | [Memory Snapshot Confidence Map](research/missions/051.md) and [Evidence-Bound Security Assistant](research/missions/081.md) | A synthetic case that distinguishes observed facts, unobservable gaps, and unsupported inference |
+| Design for isolation or link loss | [Island-Mode Mission Test](research/missions/095.md) and [CubeSat Update Survival Model](research/missions/103.md) | An emulator or bench exercise measuring essential-function survival, rollback, and signed evidence delivery |
+| Engineer measurable privacy | [Private Correlation Token](research/missions/066.md) and [Data-Minimization Twin](research/missions/070.md) | An approved data-flow experiment that quantifies retained utility against collected identity data |
 
-## Editorial and safety contract
+## Evidence, safety, and reproducibility
 
-- **Proposal, not result.** Each mission states what to build and how to disprove it. Citations ground design constraints; they are not evidence of achieved performance.
-- **Authority is explicit.** Tests use lab, owned, synthetic, or permissioned environments. RF, OT, spacecraft, and external exposure studies require domain review before active trials.
-- **Data stays controlled.** Raw packet captures, memory dumps, logs, executables, OSINT material, and personal records from the source packet are absent from this public repository.
-- **Failure matters.** Every evaluation should record false alarms, missing observations, operational cost, privacy impact, and a stop condition as appropriate.
+- **Proposal, not result.** Citations ground design constraints; they are not evidence of achieved performance.
+- **Authority is explicit.** RF, OT, spacecraft, and external-exposure studies require review before active trials.
+- **Data stays controlled.** The repository excludes raw captures, memory dumps, executables, OSINT material, and personal records.
+- **Failure matters.** Evaluations record false alarms, missing observations, operational cost, privacy impact, and stop conditions.
 
-For the editorial scoring standard, see the [quality rubric](editorial/QUALITY_RUBRIC.md). To verify the catalog and regenerated visuals with standard Python:
+| Need the details? | Link |
+| --- | --- |
+| Research method and evidence threshold | [Editorial research method](editorial/RESEARCH_METHOD.md) |
+| System campaign model | [System architecture](editorial/SYSTEM_ARCHITECTURE.md) |
+| Source scope and provenance | [Source ledger](SOURCES.md) |
+| Contribution standards | [Contributing guide](CONTRIBUTING.md) |
+| Delivery register | [Delivery status](DELIVERY_STATUS.md) |
+| Community and public-source directory | [ORION directory](community/README.md) |
+| Bounded public intelligence research | [Public Intelligence desk](intelligence/README.md) |
 
-```text
-python scripts/build_atlas.py --check
+## Run the custom portal locally
+
+NIGHTSHIFT is a static site with no analytics, live hardware connection, or remote tool execution. Its notes, theme preference, and bookmarks stay in the current browser through local storage.
+
+```bash
+python scripts/build_site.py
+python -m http.server 3000 --bind 127.0.0.1 --directory site
 ```
 
-To propose a new mission or strengthen an existing one, follow [CONTRIBUTING.md](CONTRIBUTING.md). The atlas is independent research documentation and does not claim NASA, NIST, CISA, or other agency endorsement.
+Then open [http://127.0.0.1:3000](http://127.0.0.1:3000). Use HTTP rather than `file://` so the local catalogs and document reader can load.
 
-## Red-team assessment and public intelligence
+Validate the atlas and portal with:
 
-The [150-module Assessment Flightbook](assessment/README.md) progresses from basic cybersecurity to authorized assessment engineering, adversary-informed detection, mission exercises and graduate research. It connects to the preserved mission dossiers and offline models rather than adding disconnected products. Modules are proposals; they do not add another 150 implemented tools.
-
-The [Public Intelligence desk](intelligence/README.md) documents Nightmare-Eclipse, Church of Malware, two government-described activity clusters and four public homepage bylines through a six-source, eleven-claim ledger. It distinguishes research personas, communities, bylines and intrusion attribution. No real identities or criminal roles are inferred from handles.
+```bash
+python scripts/build_atlas.py --check
+python scripts/build_site.py --check
+python scripts/check_site.py
+```
