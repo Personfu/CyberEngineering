@@ -38,6 +38,7 @@ jobs:
 
       - name: Check static learning site, catalog coverage and document references
         run: |
+          python scripts/build_site.py
           python scripts/build_site.py --check
           python scripts/check_site.py
 
