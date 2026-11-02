@@ -10,6 +10,8 @@ import io
 import json
 import re
 from pathlib import Path
+import build_reviews
+import build_labs
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'site'
@@ -32,7 +34,7 @@ def svg(title, labels, mode='path'):
         if i%4<3 and i<len(labels)-1: parts += [f'<path d="M{x+174} {y+38}h12m-5-5 5 5-5 5" fill="none" stroke="#9ca8b7"/>']
     parts+=['</svg>'];return '\n'.join(parts)+'\n'
 
-NAV=[('index','Profile'),('learn','IT + teams'),('tools','Tool room'),('hardware','Hardware'),('missions','Missions'),('talks','DEF CON'),('community','Credits'),('gallery','Visuals')]
+NAV=[('index','Profile'),('reviews','Reviews'),('labs','Workbench'),('learn','IT + teams'),('tools','Tool room'),('hardware','Hardware'),('missions','Missions'),('talks','DEF CON'),('community','Credits'),('gallery','Visuals')]
 def shell(key, title, body):
     nav=''.join(f'<a href="{k}.html" {"aria-current=page" if k==key else ""}>{e(v)}</a>' for k,v in NAV)
     rail=f'''<aside class="rail"><div class="profile-label">MY PROFILE / NIGHTSHIFT</div><a class="avatar" href="hardware.html" aria-label="Explore the hardware bench"><img src="photos/flipper-zero.jpg" alt="Flipper Zero photograph by Turbospok, CC BY-SA 4.0"></a><div class="avatar-credit">Turbospok · CC BY-SA 4.0 · {doc('site/IMAGE-CREDITS.md','credit')}</div><h2>NIGHTSHIFT</h2><p class="handle">@cyberengineering</p><p class="status"><span></span> CURRENTLY: LEARNING THE STACK</p><blockquote>Packets, hardware,<br>and notes from the bench.</blockquote><dl><dt>Home orbit</dt><dd>Project HELIOS</dd><dt>Current track</dt><dd>IT → red / blue → research</dd><dt>Source review</dt><dd>03 OCT 2026</dd></dl><div class="rail-links">{doc('foundations/KALI.md','Kali orientation')}{doc('foundations/MANUALS.md','Read the manual')}{doc('DELIVERY_STATUS.md','Delivery + known gaps')}<a href="community.html">Community credit wall</a><a href="https://github.com/Personfu/CyberEngineering">GitHub repository ↗</a></div><p class="fine">Personal learning notes stay on this browser.</p></aside>'''
@@ -41,6 +43,8 @@ def shell(key, title, body):
 def build():
     files={}
     def put(path, content): files[ROOT/path]=content if isinstance(content,bytes) else content.encode()
+    review_files={**build_reviews.generated_files(),**build_labs.generated_files()}
+    for path, content in review_files.items():put(path,content)
     ideas=json.loads((ROOT/'data/ideas.json').read_text(encoding='utf-8'))['ideas']
     community=json.loads((ROOT/'data/community/catalog.json').read_text(encoding='utf-8'))
     talks=json.loads((ROOT/'data/conferences/defcon.json').read_text(encoding='utf-8'))
@@ -70,12 +74,14 @@ def build():
             for r in range(10):w.writerow([g,f,r+1,f'{base+f*.2+((r*7)%9-4)*.15:.2f}','synthetic_arithmetic_not_hardware'])
     put(Path('data/hardware/timing.csv'),out.getvalue())
     docs={}
-    for folder in ['foundations','hardware','conferences','community','research','assessment','intelligence','atlas']:
+    for folder in ['foundations','hardware','conferences','community','research','assessment','intelligence','atlas','labs']:
         for p in sorted((ROOT/folder).rglob('*.md')):docs[p.relative_to(ROOT).as_posix()]=p.read_text(encoding='utf-8')
     docs['DELIVERY_STATUS.md']=(ROOT/'DELIVERY_STATUS.md').read_text(encoding='utf-8')
     docs['SOURCES.md']=(ROOT/'SOURCES.md').read_text(encoding='utf-8')
     docs['site/IMAGE-CREDITS.md']=(ROOT/'site/IMAGE-CREDITS.md').read_text(encoding='utf-8')
-    put(Path('site/data/documents.json'),json.dumps(docs,ensure_ascii=False,separators=(',',':'))+'\n')
+    for path,content in review_files.items():
+        if path.suffix=='.md' and path.parts[0] in {'hardware','labs'}:docs[path.as_posix()]=content
+    put(Path('site/data/documents.json'),json.dumps(docs,ensure_ascii=False,separators=(',',':'),sort_keys=True)+'\n')
     missionlist=[dict(id=x['id'],title=x['title'],theme=x['theme'],thesis=x['thesis'],doc=f'research/missions/{x["id"]}.md') for x in ideas]
     for p in sorted((ROOT/'research/frontier').glob('*.md')):
         s=p.read_text(encoding='utf-8');title=s.splitlines()[0].lstrip('# ');missionlist.append(dict(id=p.stem,title=title,theme='Frontier / NASA-inspired proposals',thesis='Graduate research proposal; implementation and validation remain future work.',doc='research/frontier/'+p.name))
@@ -140,6 +146,15 @@ def build():
     pages['gallery']=('Visual log',panel('The photo + screen albums','<p class="lead">Actual hardware. Actual interfaces.</p><p>Credited hardware photographs, publisher product images and software screen captures. '+doc('site/IMAGE-CREDITS.md','Sources, licenses and image receipts')+'.</p>')+panel('Hardware album',photo('photos/flipper-zero.jpg','Flipper Zero photograph','Turbospok · CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:Flipper_Zero.jpg')+album)+panel('Proxmark manual in the wild',photo('photos/proxmark-help.png','Proxmark3 RDV4 help / 2021 interface','Turbospok · CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:Proxmark_help.png','screen')+'<p>Read command groups and the help hint first. This is a historical screenshot, not a recipe or a claim about your installed version.</p>')+panel('Data + interface gallery','<p>Seven reproducible research figures and three publisher tool screenshots. Synthetic results and external assets are labeled.</p>')+gallery+panel('Diagram collection','<div class="diagram-grid">'+''.join(figure(n,t+' · conceptual') for n,(t,_) in diagrams.items())+'</div>'))
     pages['reader']=('Document reader',panel('Document room','<p id="reader-status" role="status">Loading the selected repository document…</p><a id="source-link" href="'+REPO+'README.md">Canonical source on GitHub ↗</a><article id="document" class="prose"></article><noscript>Enable JavaScript or use the canonical repository documents.</noscript>'))
     pages['gallery']=(pages['gallery'][0],panel('HELIOS systems digital twin',figure('helios-system-model','Original systems digital twin: hardware, telemetry, control, evidence and recovery.')+'<p>A Blender/Fusion-style isometric reference model for the relationships this atlas studies. It is an original concept render, not manufacturer CAD or a deployed system.</p>')+panel('HELIOS chain of trust',figure('helios-trust-chain','Original chain-of-trust model: silicon, firmware, identity, telemetry, evidence and recovery.')+'<p>Use this reference to distinguish a component, a claim, its evidence, and the tested path to recovery.</p>')+pages['gallery'][1])
+    review_catalog,review_sources=build_reviews.load()
+    review_count=len(review_catalog['entries'])
+    review_panel=panel('The engineering workbench',f'<p class="lead">{review_count} researched reviews. Full documentation. Practical exercises.</p><p>Compare product features, read original recommendations and work through firmware, protocols, evidence and recovery. Every review binds its findings to primary documents.</p><a class="button" href="reviews.html">Research the tools →</a> <a class="button ghost" href="labs.html">Open the workbench →</a>','RESEARCH / BUILD / VERIFY')
+    pages['index']=(pages['index'][0],review_panel+pages['index'][1])
+    for room in ['tools','hardware']:
+        pages[room]=(pages[room][0],review_panel+pages[room][1])
+    pages['labs']=('Practical workbench',build_labs.content(panel))
+    pages['reviews']=('Tool reviews & hardware guides',build_reviews.content())
+    put(Path('site/data/reviews.json'),json.dumps({'entries':review_catalog['entries']},ensure_ascii=False,separators=(',',':'),sort_keys=True)+'\n')
     for key,(title,body) in pages.items():put(Path('site')/(key+'.html'),shell(key,title,body))
     put(Path('site/.nojekyll'),'')
     return files

@@ -1,0 +1,8 @@
+App(
+    appid="nightshift_hello",
+    name="Nightshift Hello",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="nightshift_hello_app",
+    stack_size=1024,
+    fap_category="Tools",
+)

@@ -1,0 +1,6 @@
+[
+  {"pin": 18, "signal": "SPI_SCK", "owner": "display"},
+  {"pin": 18, "signal": "SPI_SCK", "owner": "storage"},
+  {"pin": 5, "signal": "DISPLAY_CS", "owner": "display"},
+  {"pin": 4, "signal": "STORAGE_CS", "owner": "storage"}
+]

@@ -28,6 +28,138 @@
 
 ---
 
+<!-- TOOL_REVIEWS_START -->
+## Research, tools & practical engineering
+
+**69 independently researched reviews · 65 primary documents · full product pages, firmware routes, walkthroughs and runnable labs.**
+
+[Review and compare tools](site/reviews.html) · [Practical workbench](site/labs.html) · [Flashing and recovery](labs/FLASHING.md) · [Scripts and tests](labs/SCRIPTS.md) · [Source ledger](hardware/PRIMARY-SOURCES.md)
+
+Each review contains cited features, our original assessment, choose/skip guidance, compatibility limits and alternatives. Walkthroughs connect tools to concrete tasks and expected results. The existing 150 missions, 180 research dossiers and 150 assessment modules remain intact.
+
+### Bench & physical
+
+| Product / workflow | Documentation and review |
+| --- | --- |
+| [FaultyCat v2.x hardware](hardware/reviews/faultycat.md) | A specialist electromagnetic/voltage fault-research tool with explicit hardware and firmware scope limits. |
+| [FNIRSI LCR-ST2](hardware/reviews/lcr-st2.md) | A tweezer/Kelvin-capable component meter with selectable frequency and excitation rather than one universal accuracy figure. |
+
+### Boards & firmware
+
+| Product / workflow | Documentation and review |
+| --- | --- |
+| [ESP32-P4X-C5-Function-EV-Board](hardware/reviews/esp32-p4-c5-ev.md) | A two-chip multimedia development platform: P4 application processing paired with a C5 wireless module. |
+| [ESP32-S31-Function-CoreBoard-1](hardware/reviews/esp32-s31-coreboard.md) | An Espressif development-board candidate for connected audio/AIoT prototyping, not a generic substitute for every ESP32. |
+| [M5Stack Cardputer](hardware/reviews/cardputer.md) | A physical-keyboard embedded handheld with a model-specific input implementation. |
+| [M5Stack Cardputer ADV](hardware/reviews/cardputer-adv.md) | A physical-keyboard embedded handheld with a model-specific input implementation. |
+| [M5Stack Core2 (documented original model)](hardware/reviews/m5-core2.md) | A compact modular touchscreen controller whose original specification should not be silently applied to later revisions. |
+| [M5Stack M5Paper (original model)](hardware/reviews/m5paper-original.md) | An original ESP32 e-paper terminal for information that benefits from persistence rather than rapid animation. |
+| [M5Stack PaperS3](hardware/reviews/papers3.md) | A thin touch e-paper terminal with S3 resources and a revision-specific charging caveat. |
+| [M5Stack Stamp-C5](hardware/reviews/stamp-c5.md) | A compact dual-band wireless module with a much smaller memory configuration than some C5 boards. |
+| [M5Stack StickS3](hardware/reviews/sticks3.md) | A compact S3 controller with an audio/IR feature set whose power and interface constraints matter. |
+| [M5Stack Tab5](hardware/reviews/tab5.md) | A touch-centric ESP32-P4 terminal with unusually broad built-in interfaces. |
+| [Seeed XIAO ESP32-C5](hardware/reviews/xiao-c5.md) | A small dual-band Wi-Fi board with a different architecture and pin map from XIAO S3. |
+| [Seeed XIAO ESP32-S3](hardware/reviews/xiao-s3.md) | A model-specific choice within Seeed’s small ESP32-S3 board family. |
+| [Seeed XIAO ESP32-S3 Plus](hardware/reviews/xiao-s3-plus.md) | A model-specific choice within Seeed’s small ESP32-S3 board family. |
+| [Seeed XIAO ESP32-S3 Sense](hardware/reviews/xiao-s3-sense.md) | A model-specific choice within Seeed’s small ESP32-S3 board family. |
+
+### Cyberdecks & compute
+
+| Product / workflow | Documentation and review |
+| --- | --- |
+| [ClockworkPi uConsole](hardware/reviews/uconsole.md) | A modular handheld whose exact core and operating-system image matter more than the shared enclosure name. |
+| [HackberryPi CM5](hardware/reviews/hackberry-cm5.md) | A genuine Linux handheld built around CM5, with a useful keyboard and real expansion tradeoffs. |
+| [Raspberry Pi 500](hardware/reviews/pi500.md) | A keyboard-integrated Linux workstation for a fixed bench, not a battery-powered pocket terminal. |
+| [Raspberry Pi 500+](hardware/reviews/pi500-plus.md) | A keyboard-integrated Linux workstation for a fixed bench, not a battery-powered pocket terminal. |
+| [Tanmatsu](hardware/reviews/tanmatsu.md) | An embedded terminal with a substantial display and keyboard, rather than a conventional Linux laptop. |
+
+### Detection & privacy
+
+| Product / workflow | Documentation and review |
+| --- | --- |
+| [nyanBOX](hardware/reviews/nyanbox.md) | A packaged ESP32/nRF24 wireless toolkit whose device-detection claims need their own validation. |
+
+### Firmware & workflows
+
+| Product / workflow | Documentation and review |
+| --- | --- |
+| [Armbian Build Framework](hardware/reviews/armbian.md) | A board-specific Linux image framework that is often more important than an SBC’s headline processor. |
+| [Bruce](hardware/reviews/bruce.md) | A broad ESP32 firmware ecosystem with an explicit board/peripheral compatibility table. |
+| [Cifertech ESP32-DIV](hardware/reviews/esp32-div.md) | A touchscreen multi-interface ESP32-S3 project whose broad functions depend on a complete hardware build. |
+| [ESP32 Marauder](hardware/reviews/marauder.md) | A Wi-Fi/Bluetooth firmware and hardware ecosystem with explicit module-level hardware distinctions. |
+| [GhostESP Revival](hardware/reviews/ghostesp.md) | An ESP-IDF-native platform with capture export, multiple front ends and an application ecosystem. |
+| [HaleHound-CYD](hardware/reviews/halehound.md) | A touchscreen-focused CYD firmware whose expansion and power requirements are central to the build. |
+| [Launcher (M5Stick-Launcher lineage)](hardware/reviews/launcher.md) | A firmware/partition manager that changes the ownership workflow rather than adding a new radio. |
+| [Meshtastic firmware](hardware/reviews/meshtastic.md) | The software ecosystem behind many of the nodes, not a specification for one enclosure. |
+| [POOM platform](hardware/reviews/poom.md) | An ESP-IDF application platform with maker, capture and interaction domains. |
+| [Porkchop for Cardputer](hardware/reviews/porkchop.md) | A keyboard-oriented firmware whose memory budget and optional C5 coprocessor materially shape capabilities. |
+| [RaspyJack](hardware/reviews/raspyjack.md) | A Raspberry Pi/Linux toolkit with local controls and web interfaces, not an ESP32 firmware image. |
+
+### LoRa & navigation
+
+| Product / workflow | Documentation and review |
+| --- | --- |
+| [Elecrow ThinkNode M1](hardware/reviews/thinknode-m1.md) | A model-specific mesh-node choice with a documented integration target. |
+| [Elecrow ThinkNode M2](hardware/reviews/thinknode-m2.md) | A model-specific mesh-node choice with a documented integration target. |
+| [Elecrow ThinkNode M3](hardware/reviews/thinknode-m3.md) | A model-specific mesh-node choice with a documented integration target. |
+| [Elecrow ThinkNode M4](hardware/reviews/thinknode-m4.md) | A model-specific mesh-node choice with a documented integration target. |
+| [Elecrow ThinkNode M5](hardware/reviews/thinknode-m5.md) | A model-specific mesh-node choice with a documented integration target. |
+| [Elecrow ThinkNode M6](hardware/reviews/thinknode-m6.md) | A model-specific mesh-node choice with a documented integration target. |
+| [Elecrow ThinkNode M7](hardware/reviews/thinknode-m7.md) | A model-specific mesh-node choice with a documented integration target. |
+| [Elecrow ThinkNode M9](hardware/reviews/thinknode-m9.md) | A model-specific mesh-node choice with a documented integration target. |
+| [Heltec Mesh Node T096](hardware/reviews/heltec-t096.md) | An individually documented nRF52840/SX1262 node configuration. |
+| [Heltec Mesh Node T1](hardware/reviews/heltec-t1.md) | An individually documented nRF52840/SX1262 node configuration. |
+| [Heltec Mesh Node T114](hardware/reviews/heltec-t114.md) | An individually documented nRF52840/SX1262 node configuration. |
+| [Heltec WiFi LoRa 32 V4](hardware/reviews/heltec-v4.md) | A development-board mesh node whose exact V4 variant is critical. |
+| [Heltec WiFi LoRa 32 V4-R8](hardware/reviews/heltec-v4-r8.md) | A development-board mesh node whose exact V4 variant is critical. |
+| [Meshnology N37](hardware/reviews/meshnology-n37.md) | A packaged Wio Tracker L1-based node whose bill of materials is the useful buying distinction. |
+| [Meshnology N39](hardware/reviews/meshnology-n39.md) | A Heltec WiFi LoRa 32 V4 package that needs careful base-board and revision verification. |
+| [Seeed SenseCAP Solar Node P1](hardware/reviews/sensecap-p1.md) | A fixed outdoor solar node, with an important P1 versus P1 Pro package distinction. |
+| [Seeed SenseCAP Solar Node P1 Pro](hardware/reviews/sensecap-p1-pro.md) | A fixed outdoor solar node, with an important P1 versus P1 Pro package distinction. |
+| [Seeed Wio Tracker L1](hardware/reviews/wio-l1.md) | A distinct package in the nRF52840/SX1262 Wio Tracker L1 family. |
+| [Seeed Wio Tracker L1 E-Ink](hardware/reviews/wio-l1-eink.md) | A distinct package in the nRF52840/SX1262 Wio Tracker L1 family. |
+| [Seeed Wio Tracker L1 Lite](hardware/reviews/wio-l1-lite.md) | A distinct package in the nRF52840/SX1262 Wio Tracker L1 family. |
+| [Seeed Wio Tracker L1 Pro](hardware/reviews/wio-l1-pro.md) | A distinct package in the nRF52840/SX1262 Wio Tracker L1 family. |
+
+### RF accessories
+
+| Product / workflow | Documentation and review |
+| --- | --- |
+| [PINGEQUA Hydra RF 424 Cap](hardware/reviews/hydra-rf-424.md) | A 433 MHz-oriented dual-radio expansion specifically for Cardputer ADV. |
+| [PINGEQUA Hydra RF 824 Pro](hardware/reviews/hydra-rf-824.md) | A 868 MHz-oriented Cardputer ADV expansion, distinct from the 433 MHz Cap variant. |
+| [PINGEQUA Hydra RF 924 Pro](hardware/reviews/hydra-rf-924.md) | A 915 MHz-oriented Cardputer ADV expansion, distinct from the 433 MHz Cap variant. |
+
+### RFID & interfaces
+
+| Product / workflow | Documentation and review |
+| --- | --- |
+| [Chameleon Lite](hardware/reviews/chameleon-lite.md) | A distinct Chameleon hardware version, reviewed separately from the Ultra. |
+| [Chameleon Ultra](hardware/reviews/chameleon-ultra.md) | A dedicated RFID research/emulation candidate with several documented client choices. |
+| [Chameleon Ultra Devkit](hardware/reviews/chameleon-devkit.md) | A distinct Chameleon hardware version, reviewed separately from the Ultra. |
+| [Flipper Zero](hardware/reviews/flipper-zero.md) | A compact interface-learning platform with a documented firmware and external-application development workflow. |
+| [KIISU SMOL](hardware/reviews/kiisu-smol.md) | A modular STM32WB55 platform with published schematics and a deliberately limited scope of open CAD material. |
+| [Monstatek M1](hardware/reviews/monstatek-m1.md) | A multi-interface device with a documented STM32H5 architecture and an unusually important validation register. |
+| [Proxmark3 RDV4](hardware/reviews/proxmark3-rdv4.md) | The more conservative host-driven RFID choice when reproducible analysis matters more than the newest silicon. |
+| [Proxmark5](hardware/reviews/proxmark5.md) | An advanced RFID platform whose current software maturity makes it a developer purchase, not an automatic RDV4 upgrade. |
+
+### SDR & signals
+
+| Product / workflow | Documentation and review |
+| --- | --- |
+| [HackRF One](hardware/reviews/hackrf-one.md) | A broad-frequency SDR for experimentation, with explicit conversion and input-power limits. |
+| [PortaPack H4M with Mayhem](hardware/reviews/portapack-h4m.md) | An on-device SDR interface whose usefulness depends on exact hardware and upstream firmware compatibility. |
+
+### Wireless assessment
+
+| Product / workflow | Documentation and review |
+| --- | --- |
+| [Cifertech nRFBox](hardware/reviews/nrfbox.md) | An ESP32/nRF24 toolkit whose own reliability table and power caveats deserve more attention than its feature count. |
+| [JCMK ESP32 Dual Band Wardriver](hardware/reviews/dualband-wardriver.md) | A documented C5 survey/logging platform with meaningful board-variant and clean-install/update distinctions. |
+
+[Research coverage](hardware/RESEARCH-COVERAGE.md) · [Review method](hardware/REVIEW-METHOD.md)
+
+<!-- TOOL_REVIEWS_END -->
+
 ## Mission control
 
 <table>
