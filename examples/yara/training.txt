@@ -1,0 +1,2 @@
+NIGHTSHIFT-TRAINING-ONLY
+This fictional classroom text is intentionally matched by a demonstration rule.

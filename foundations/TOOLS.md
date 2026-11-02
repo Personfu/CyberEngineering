@@ -2,6 +2,8 @@
 
 For each tool, ask: **What input does it use? What transformation or measurement does it perform? What output can it justify?** These twenty core entries cover both everyday IT and security work. Availability and syntax depend on installed versions; the links point to inspected project or publisher documentation. [Source ledger](SOURCES.md).
 
+For product-specific features and recommendations, open the [independent review library](../site/reviews.html). For walkthroughs, examples, custom scripts and tests, use the [practical workbench](../labs/README.md). These twenty numbered tool explanations remain the foundation track.
+
 ## Local IT and protocol basics
 
 ### 01 · ip

@@ -1,5 +1,21 @@
 # NIGHTSHIFT · Executed validation
 
+## Research and workbench expansion · 2026-11-02
+
+Executed in the managed environment using Python 3.12.14, Node 24.19.0, Playwright 1.62.1 and the installed Chromium. The generated site has **11 pages**, **510 reader documents**, **69 individually researched reviews**, **65 retrieved primary references**, **24 exercises** and **nine long-form walkthroughs**. The prior imported video directory has been removed.
+
+- **49 unit tests passed.** New checks cover source/feature binding, model distinctions, HTML escaping, document completeness, artifact changes, board/chip/type mismatch, example-only flash refusal, loopback and redirect boundaries, real local HTTP 200/404, malformed BLE/UF2, pin conflicts, missing timestamps, nonfinite numeric inputs and power assumptions.
+- Atlas, research, assessment, deterministic experiments, research visuals, foundations HTTP smoke, community receipts and site integrity checks passed. The build and its consistency check pass with sorted document JSON keys.
+- The Playwright suite passed at 1440 × 1080 and 390 × 844 with no page errors. It exercised feature search, combined filters/empty states, sort/shuffle, comparison limits/clearing, cited product manuals, lab search/equipment filters, lesson rendering, ten mobile navigation routes, mobile comparison containment and existing notes/bookmarks/reader/theme behavior.
+- The CLI inventory, hash verification, message analysis, BLE decode, pin-map and power examples were run. The authored C example compiled with warnings treated as errors and printed `observed=3`. OpenSSL SHA-256 matched the Python/fixture-manifest digest.
+- Local gallery images decoded. External publisher images must either decode or show the existing explicit source-link fallback; their continued remote availability is not claimed.
+
+Physical flashes, RF trials, battery/runtime measurements, instrument calibration and hardware recovery were **not executed**. The Flipper example requires its matching SDK/device workflow. YARA and TShark are optional tools and were not installed or claimed as executed. Documentation/specifications and proposed physical exercises are not represented as measured product results.
+
+Browser screenshots for this run were saved under `/tmp/nightshift-screenshots`; they are local verification artifacts rather than replacements for the historical committed captures below. Website deployment is separate from these local checks.
+
+## Previous validation · 2026-10-03
+
 Reviewed and executed on **2026-10-03**. These are checks of this static learning site and its fixture content, not proof of hardware behavior, vulnerability exploitation or field effectiveness.
 
 ## Actual browser checks

@@ -1,0 +1,7 @@
+{
+  "cardputer": {"chip": "esp32s3", "note": "Original Cardputer; verify keyboard and firmware target separately."},
+  "cardputer-adv": {"chip": "esp32s3", "note": "ADV keyboard and 18-pin expansion are not the original board."},
+  "tab5": {"chip": "esp32p4", "note": "Main application processor only; do not treat the C6 radio as the same target."},
+  "xiao-s3": {"chip": "esp32s3", "note": "Sense/Plus peripherals and partition requirements still differ."},
+  "xiao-c5": {"chip": "esp32c5", "note": "Use the C5 board target and publisher-specified merged image."}
+}

@@ -1,0 +1,556 @@
+{
+  "labs": [
+    {
+      "id": "WB01",
+      "title": "Record a bench inventory",
+      "category": "Reproducibility",
+      "mode": "Offline fixture",
+      "level": "Foundation",
+      "guide": "labs/guides/esp32-firmware.md",
+      "goal": "Separate host/tool evidence from an assumed board identity.",
+      "inputs": "Python 3.12; no attached device required.",
+      "steps": [
+        "Run the read-only inventory.",
+        "Inspect the serial candidates, if any.",
+        "Write the actual board identification as unknown until verified separately."
+      ],
+      "commands": [
+        "python -m labtools.benchkit inventory"
+      ],
+      "expected": "JSON identifies the Python/platform and candidate paths; devices_opened is false. An empty candidate list is a valid observation.",
+      "failures": "A path is not a model. A USB data cable, boot mode, OS permission or absent device can explain no candidates.",
+      "source_ids": [
+        "esptool-docs"
+      ]
+    },
+    {
+      "id": "WB02",
+      "title": "Verify firmware bytes",
+      "category": "Supply chain",
+      "mode": "Offline fixture",
+      "level": "Foundation",
+      "guide": "labs/guides/esp32-firmware.md",
+      "goal": "Match an artifact to a separately recorded expected SHA-256.",
+      "inputs": "The synthetic example manifest and text fixture; neither is firmware.",
+      "steps": [
+        "Read the fixture manifest and identify its expected digest.",
+        "Run the helper with that exact digest.",
+        "Change one digest character and confirm refusal."
+      ],
+      "commands": [],
+      "expected": "A correct digest returns verified=true and the byte count. The altered digest returns exit 1.",
+      "failures": "Do not replace an expected digest with the observed value after a mismatch; a hash match alone does not authenticate a publisher.",
+      "source_ids": [
+        "esptool-docs",
+        "openssl-dgst"
+      ]
+    },
+    {
+      "id": "WB03",
+      "title": "Refuse an invalid flash plan",
+      "category": "Firmware",
+      "mode": "Offline fixture",
+      "level": "Foundation",
+      "guide": "labs/guides/esp32-firmware.md",
+      "goal": "Demonstrate that metadata and example-only checks occur before any hardware action.",
+      "inputs": "Example-only manifest; a port string is an explicit plan input, not an opened device.",
+      "steps": [
+        "Read board/chip/kind/offset fields.",
+        "Run the example-only plan request.",
+        "Inspect the rejection and confirm that no command was executed."
+      ],
+      "commands": [
+        "python -m labtools.benchkit flash-plan labs/fixtures/example-manifest.json --board cardputer --port /dev/ttyACM0"
+      ],
+      "expected": "Exit 1 explains that the example fixture cannot produce a board-write plan.",
+      "failures": "An app-only/OTA image, wrong board or wrong chip must not be silently accepted. Real plans remain dry runs.",
+      "source_ids": [
+        "esptool-docs"
+      ]
+    },
+    {
+      "id": "WB04",
+      "title": "Inspect a UF2 structure",
+      "category": "Firmware",
+      "mode": "Offline fixture",
+      "level": "Foundation",
+      "guide": "labs/guides/esp32-firmware.md",
+      "goal": "Distinguish a valid block structure from authenticated, board-compatible firmware.",
+      "inputs": "A UF2 obtained from an official source, or the synthetic block constructed by the parser tests.",
+      "steps": [
+        "Check whole 512-byte blocks.",
+        "Inspect magic values and complete sequence.",
+        "Keep structural validity separate from family compatibility and signatures."
+      ],
+      "commands": [
+        "python -m unittest discover -s tests -p test_benchkit.py -v"
+      ],
+      "expected": "Tests accept a deliberately constructed complete block and reject corrupted/truncated sequences.",
+      "failures": "No UF2 from this exercise is reported as flashed or bootable; do not write synthetic parser fixtures to hardware.",
+      "source_ids": [
+        "uf2-spec"
+      ]
+    },
+    {
+      "id": "WB05",
+      "title": "Find pin-map conflicts",
+      "category": "Hardware integration",
+      "mode": "Offline fixture",
+      "level": "Foundation",
+      "guide": "labs/guides/assurance.md",
+      "goal": "Separate a legitimate shared signal from conflicting functions assigned to one pin.",
+      "inputs": "Two authored JSON net fixtures.",
+      "steps": [
+        "Run the shared-clock fixture.",
+        "Run the conflicting chip-select fixture.",
+        "Explain which checks still require a schematic and electrical review."
+      ],
+      "commands": [
+        "python -m labtools.benchkit pincheck labs/fixtures/pins-good.json",
+        "python -m labtools.benchkit pincheck labs/fixtures/pins-conflict.json"
+      ],
+      "expected": "First fixture succeeds with three unique pins; second fails on pin 5.",
+      "failures": "Equal net names do not validate voltage, current, timing or bus arbitration.",
+      "source_ids": [
+        "halehound",
+        "pingequa"
+      ]
+    },
+    {
+      "id": "WB06",
+      "title": "Read a local HTTP response",
+      "category": "Network observability",
+      "mode": "Offline fixture",
+      "level": "Foundation",
+      "guide": "labs/guides/local-network.md",
+      "goal": "Distinguish HTTP 200, HTTP 404 and a transport failure.",
+      "inputs": "Python local server and the harmless health fixture.",
+      "steps": [
+        "Start the loopback fixture server.",
+        "Request health.json and a missing path.",
+        "Stop your server and repeat to observe a connection error."
+      ],
+      "commands": [
+        "python -m http.server 8765 --bind 127.0.0.1 --directory labs/fixtures"
+      ],
+      "expected": "The full guide supplies second-terminal requests. Expect 200/404 while running, then connection failure after stopping.",
+      "failures": "Do not claim a 404 is a connection failure. The helper rejects external targets and redirects.",
+      "source_ids": [
+        "zap-passive",
+        "wireshark-tshark"
+      ]
+    },
+    {
+      "id": "WB07",
+      "title": "Decode a fictional BLE advertisement",
+      "category": "Protocols",
+      "mode": "Offline fixture",
+      "level": "Foundation",
+      "guide": "labs/guides/evidence-analysis.md",
+      "goal": "Inspect length/type/value fields without inferring a device identity.",
+      "inputs": "Hex bytes containing Flags and the fictional local name LAB1.",
+      "steps": [
+        "Decode the supplied bytes.",
+        "Identify the length, type and payload separately.",
+        "Run the truncated example and retain its error."
+      ],
+      "commands": [
+        "python -m labtools.benchkit ble-decode 02010605094c414231",
+        "python -m labtools.benchkit ble-decode 0509ff"
+      ],
+      "expected": "The first yields two fields including LAB1; the second fails as truncated.",
+      "failures": "A local name can be chosen by a device. No camera, operator or vendor identity follows from this decode.",
+      "source_ids": [
+        "nrfbox",
+        "nyanbox"
+      ]
+    },
+    {
+      "id": "WB08",
+      "title": "Measure message delivery",
+      "category": "Communication systems",
+      "mode": "Offline fixture",
+      "level": "Foundation",
+      "guide": "labs/guides/mesh-node.md",
+      "goal": "Keep missing observations separate from observed latency.",
+      "inputs": "Ten fictional message rows, with synchronized fixture timestamps.",
+      "steps": [
+        "Count sent and observed rows.",
+        "Compute delivery and latency for observed rows only.",
+        "Explain what missing data and clock disagreement would change."
+      ],
+      "commands": [
+        "python -m labtools.benchkit telemetry labs/fixtures/messages.csv"
+      ],
+      "expected": "10 sent, 8 observed, 2 missing, delivery fraction 0.8, median latency 60 ms.",
+      "failures": "No radio range or product comparison follows from this synthetic dataset. Duplicate sequences and receive-before-send inputs fail.",
+      "source_ids": [
+        "meshtastic"
+      ]
+    },
+    {
+      "id": "WB09",
+      "title": "Calculate an energy budget",
+      "category": "Power engineering",
+      "mode": "Offline fixture",
+      "level": "Foundation",
+      "guide": "labs/guides/mesh-node.md",
+      "goal": "Turn explicit duty/current assumptions into a planning estimate.",
+      "inputs": "Battery-side active/idle currents at one consistent voltage.",
+      "steps": [
+        "Write the assumed workload fractions.",
+        "Run the weighted-current calculation.",
+        "Vary one assumption and record the sensitivity."
+      ],
+      "commands": [
+        "python -m labtools.benchkit power --capacity-mah 1200 --active-ma 80 --idle-ma 5 --duty 0.1"
+      ],
+      "expected": "12.5 mA average and 76.8 estimated hours using 80% usable capacity.",
+      "failures": "This excludes aging, temperature and nonlinear discharge. It is not a measured runtime claim for a named node.",
+      "source_ids": [
+        "mesh-solar",
+        "mesh-wio"
+      ]
+    },
+    {
+      "id": "WB10",
+      "title": "Build an exact ESP32 target",
+      "category": "Embedded development",
+      "mode": "Physical device",
+      "level": "Applied",
+      "guide": "labs/guides/esp32-firmware.md",
+      "goal": "Match MCU, display, keyboard, partitions and peripherals to a supported build.",
+      "inputs": "An owned board and its exact current manual/release.",
+      "steps": [
+        "Inventory the complete target.",
+        "Build using the project-pinned SDK/environment.",
+        "Follow the official install/recovery route and test one desired function."
+      ],
+      "commands": [],
+      "expected": "Record a real build result, installed version and functional observation. Hardware execution is not claimed by this repository.",
+      "failures": "A matching chip alone does not establish matching carrier pins or a valid artifact layout.",
+      "source_ids": [
+        "official-cardputer",
+        "official-cardputer-adv",
+        "esptool-docs"
+      ]
+    },
+    {
+      "id": "WB11",
+      "title": "Write a Flipper external app",
+      "category": "Application development",
+      "mode": "Physical device",
+      "level": "Applied",
+      "guide": "labs/guides/flipper-development.md",
+      "goal": "Build a harmless logging application and understand FAP API/RAM constraints.",
+      "inputs": "Pinned official firmware SDK and examples/flipper_hello.",
+      "steps": [
+        "Copy the authored app into applications_user.",
+        "Build with fbt using the exact SDK.",
+        "On an owned device, follow the official launch path and inspect the startup log."
+      ],
+      "commands": [],
+      "expected": "A FAP build and actual log are separate evidence. The example has not been physically run here.",
+      "failures": "External app code consumes RAM and requires compatible API metadata; a filename is insufficient.",
+      "source_ids": [
+        "flipper-apps",
+        "flipper"
+      ]
+    },
+    {
+      "id": "WB12",
+      "title": "Set up a role-specific mesh node",
+      "category": "Off-grid systems",
+      "mode": "Physical device",
+      "level": "Applied",
+      "guide": "labs/guides/mesh-node.md",
+      "goal": "Choose tracker, keyboard node, solar node or PoE gateway by its actual role.",
+      "inputs": "Owned model-specific node(s), correct regional RF hardware and current target image.",
+      "steps": [
+        "Record role and exact board.",
+        "Set the documented region/firmware target.",
+        "Run a controlled stationary baseline before changing placement."
+      ],
+      "commands": [],
+      "expected": "Retain model/configuration, delivery counts, missing messages and power conditions.",
+      "failures": "M1/M5, V4/V4-R8 and OLED/e-paper targets are not interchangeable.",
+      "source_ids": [
+        "mesh-thinknode",
+        "mesh-heltec",
+        "mesh-wio"
+      ]
+    },
+    {
+      "id": "WB13",
+      "title": "Build an owned RFID fixture",
+      "category": "RFID and evidence",
+      "mode": "Physical device",
+      "level": "Applied",
+      "guide": "labs/guides/rfid-bench.md",
+      "goal": "Separate model capability, implemented mode and repeated observation.",
+      "inputs": "Owned reference reader/tags and a supported PM3/Chameleon setup.",
+      "steps": [
+        "Choose reader versus emulator role.",
+        "Record client/firmware and mode support.",
+        "Repeat a bounded identification/response fixture and retain negative cases."
+      ],
+      "commands": [],
+      "expected": "A versioned compatibility record and reference-fixture observations, not a general access-control conclusion.",
+      "failures": "Proxmark5 maturity and Chameleon Lite reader limitations are documented separately.",
+      "source_ids": [
+        "proxmark",
+        "chameleon-hardware",
+        "chameleon-whitepaper"
+      ]
+    },
+    {
+      "id": "WB14",
+      "title": "Budget an SDR receive path",
+      "category": "RF engineering",
+      "mode": "Physical device",
+      "level": "Applied",
+      "guide": "labs/guides/sdr-bench.md",
+      "goal": "Record sample/gain settings and a safe input-level budget before interpreting data.",
+      "inputs": "Owned SDR and a known controlled reference input.",
+      "steps": [
+        "Identify half/full duplex and conversion resolution.",
+        "Calculate the input path and attenuation from the exact manual.",
+        "Record a short receive-only baseline and inspect clipping."
+      ],
+      "commands": [],
+      "expected": "Keep raw samples, settings, input assumptions and negative cases.",
+      "failures": "An uncalibrated spectrum display is not a calibrated power measurement or a device identity.",
+      "source_ids": [
+        "hackrf-one",
+        "mayhem"
+      ]
+    },
+    {
+      "id": "WB15",
+      "title": "Recover a Linux handheld",
+      "category": "Linux and resilience",
+      "mode": "Physical device",
+      "level": "Applied",
+      "guide": "labs/guides/linux-cyberdeck.md",
+      "goal": "Prove a complete carrier/image/peripheral combination and a separate recovery medium.",
+      "inputs": "Exact owned compute module/carrier, official image and known-good removable medium.",
+      "steps": [
+        "Record the whole machine.",
+        "Verify the image and explicitly identify target storage.",
+        "Boot, test the needed peripherals, then boot the independent recovery medium."
+      ],
+      "commands": [],
+      "expected": "Record image/kernel, keyboard/display/storage checks and a real restoration observation.",
+      "failures": "No guessed disk-write command is supplied. A shared enclosure does not imply a shared image.",
+      "source_ids": [
+        "clockwork",
+        "hackberry",
+        "armbian"
+      ]
+    },
+    {
+      "id": "WB16",
+      "title": "Write a harmless YARA rule",
+      "category": "Detection engineering",
+      "mode": "Optional tool",
+      "level": "Applied",
+      "guide": "labs/guides/evidence-analysis.md",
+      "goal": "Explain a match using authored marker text and a negative fixture.",
+      "inputs": "YARA CLI plus the original training rule/text.",
+      "steps": [
+        "Read the file-size and marker conditions.",
+        "Run the positive text fixture and negative health JSON.",
+        "Change the fixture and explain the result without assigning malware identity."
+      ],
+      "commands": [
+        "yara examples/yara/nightshift.yar examples/yara/training.txt",
+        "yara examples/yara/nightshift.yar labs/fixtures/health.json"
+      ],
+      "expected": "Only the authored training text should match. Requires the optional YARA CLI.",
+      "failures": "A rule match proves its condition, not malware attribution; this is not a real malware dataset.",
+      "source_ids": [
+        "yara-rules"
+      ]
+    },
+    {
+      "id": "WB17",
+      "title": "Inspect a binary you wrote",
+      "category": "Reverse engineering",
+      "mode": "Optional tool",
+      "level": "Applied",
+      "guide": "labs/guides/evidence-analysis.md",
+      "goal": "Connect source, compiled behavior and decompiler reconstruction.",
+      "inputs": "C compiler; optional Ghidra; examples/benign_counter.c.",
+      "steps": [
+        "Build a debug version into /tmp.",
+        "Run it and record output.",
+        "Inspect main/loop in Ghidra and compare an optimized build."
+      ],
+      "commands": [
+        "cc -O0 -g examples/benign_counter.c -o /tmp/nightshift-counter",
+        "/tmp/nightshift-counter"
+      ],
+      "expected": "The executable prints observed=3. Ghidra interaction is an optional manual exercise.",
+      "failures": "Do not download unknown executables or call decompiled text the original source.",
+      "source_ids": [
+        "ghidra-start"
+      ]
+    },
+    {
+      "id": "WB18",
+      "title": "Cross-check a cryptographic digest",
+      "category": "Evidence integrity",
+      "mode": "Optional tool",
+      "level": "Applied",
+      "guide": "labs/guides/evidence-analysis.md",
+      "goal": "Compare two implementations on the same harmless bytes.",
+      "inputs": "OpenSSL CLI and the authored text fixture.",
+      "steps": [
+        "Calculate SHA-256 with OpenSSL.",
+        "Compare with the manifest and Python helper.",
+        "Change a copy and explain the mismatch."
+      ],
+      "commands": [
+        "openssl dgst -sha256 labs/fixtures/example.bin"
+      ],
+      "expected": "The digest matches the fixture manifest exactly; changed bytes do not.",
+      "failures": "Integrity and source authentication are different claims.",
+      "source_ids": [
+        "openssl-dgst"
+      ]
+    },
+    {
+      "id": "WB19",
+      "title": "Observe a local web application passively",
+      "category": "Application security",
+      "mode": "Optional tool",
+      "level": "Applied",
+      "guide": "labs/guides/local-network.md",
+      "goal": "Pair a request/response with a passive finding without generating attack traffic.",
+      "inputs": "Owned local fixture and disposable browser profile; optional Burp or ZAP.",
+      "steps": [
+        "Start the fixture.",
+        "Observe one request with active actions disabled.",
+        "Trace any passive alert to the exact message/rule and discuss false positives."
+      ],
+      "commands": [],
+      "expected": "A bounded local request/response record; no scanner/exploitation result is claimed.",
+      "failures": "Interception, passive history and active scanning are different actions. Avoid unrelated personal sessions.",
+      "source_ids": [
+        "zap-passive"
+      ]
+    },
+    {
+      "id": "WB20",
+      "title": "Read protocol evidence offline",
+      "category": "Network forensics",
+      "mode": "Optional tool",
+      "level": "Applied",
+      "guide": "labs/guides/local-network.md",
+      "goal": "Trace a decoded field back to stored bytes and capture context.",
+      "inputs": "TShark/Wireshark and a harmless saved capture you own.",
+      "steps": [
+        "Record capture provenance.",
+        "Identify the packet bytes for one decoded field.",
+        "Compare a display filter with the original packet population."
+      ],
+      "commands": [],
+      "expected": "A source/field/byte explanation and explicit observation limits.",
+      "failures": "A filter cannot recover traffic missing from the capture; encrypted payloads remain unavailable without authorized keys.",
+      "source_ids": [
+        "wireshark-tshark"
+      ]
+    },
+    {
+      "id": "WB21",
+      "title": "Model an update state machine",
+      "category": "Formal assurance",
+      "mode": "Offline fixture",
+      "level": "Foundation",
+      "guide": "labs/guides/assurance.md",
+      "goal": "Define transitions that exclude unverified or mismatched artifacts.",
+      "inputs": "Paper/state diagram and the helper validation tests.",
+      "steps": [
+        "Define known_good/downloaded/verified/staged/booted/recovered states.",
+        "Write invariants for staging and recovery.",
+        "Use parser/manifest negative cases as examples, not a proof of the whole bootloader."
+      ],
+      "commands": [
+        "python -m unittest discover -s tests -p test_benchkit.py -v"
+      ],
+      "expected": "The software invariants are exercised; the physical bootloader remains a separate system.",
+      "failures": "A finite test suite is not exhaustive formal verification.",
+      "source_ids": [
+        "esptool-docs",
+        "uf2-spec"
+      ]
+    },
+    {
+      "id": "WB22",
+      "title": "Review hardware/software provenance",
+      "category": "Hardware trust",
+      "mode": "Offline fixture",
+      "level": "Foundation",
+      "guide": "labs/guides/assurance.md",
+      "goal": "Distinguish physical revision, firmware artifact and source-document identity.",
+      "inputs": "One reviewed product page and its primary-source receipt.",
+      "steps": [
+        "Read a source-linked feature.",
+        "Record document URL/retrieval/digest and whether it is manufacturer or maintainer evidence.",
+        "Distinguish a stated rating, roadmap item and measured result."
+      ],
+      "commands": [],
+      "expected": "An inspectable feature/source/version table.",
+      "failures": "A downloaded document being hashed does not authenticate every claim inside it.",
+      "source_ids": [
+        "proxmark",
+        "m1-known-issues"
+      ]
+    },
+    {
+      "id": "WB23",
+      "title": "Design a detector negative control",
+      "category": "Privacy and inference",
+      "mode": "Physical device",
+      "level": "Applied",
+      "guide": "labs/guides/evidence-analysis.md",
+      "goal": "Test whether a detector label follows evidence or a loose identifier heuristic.",
+      "inputs": "Owned labeled positive/negative reference devices; minimized non-sensitive logs.",
+      "steps": [
+        "Define the actual observable input.",
+        "Blind fixture labels and count errors.",
+        "Change identifiers/conditions and record false positives and missed detections."
+      ],
+      "commands": [],
+      "expected": "A bounded confusion matrix with unobservable cases, not an assumption about nearby people.",
+      "failures": "A BLE name/OUI or RSSI is not a camera/operator identity or precise location.",
+      "source_ids": [
+        "nyanbox",
+        "ghostesp"
+      ]
+    },
+    {
+      "id": "WB24",
+      "title": "Test the recovery path",
+      "category": "Response and resilience",
+      "mode": "Physical device",
+      "level": "Applied",
+      "guide": "labs/guides/assurance.md",
+      "goal": "Demonstrate restoration rather than only normal startup.",
+      "inputs": "Owned noncritical fixture and a model-appropriate recovery mechanism.",
+      "steps": [
+        "Preserve a known-good configuration/artifact.",
+        "Make a reversible noncritical change.",
+        "Restore, repeat the same functional observation and retain both receipts."
+      ],
+      "commands": [],
+      "expected": "An actual restoration result under recorded conditions; hardware execution remains unclaimed until performed.",
+      "failures": "Do not rely on the overwritten image as the only recovery path or erase unknown storage.",
+      "source_ids": [
+        "clockwork",
+        "flipper",
+        "armbian"
+      ]
+    }
+  ]
+}

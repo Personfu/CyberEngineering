@@ -1,0 +1,365 @@
+{
+  "updated_on": "2026-11-02",
+  "pending": [
+    {
+      "name": "ANENG 622B",
+      "reason": "Exact manual, protection and measurement specifications required."
+    },
+    {
+      "name": "Arduino Uno Q",
+      "reason": "Exact official hardware and software-support documentation required."
+    },
+    {
+      "name": "Awok Dual C5 Mini",
+      "reason": "Exact board, power and firmware support documentation required."
+    },
+    {
+      "name": "Awok Dual Touch",
+      "reason": "Distinct host; do not reuse Dual C5 or third-party firmware specifications."
+    },
+    {
+      "name": "BLE Shark Nano",
+      "reason": "Primary chipset, firmware and supported-interface documentation required."
+    },
+    {
+      "name": "Biscuit Crumb",
+      "reason": "Exact primary hardware, detection inputs and validation evidence required."
+    },
+    {
+      "name": "Biscuit Pro",
+      "reason": "Primary hardware and firmware documentation required; creator detection claims are insufficient."
+    },
+    {
+      "name": "Biscuit Ultra",
+      "reason": "Separate product-specific primary documentation required."
+    },
+    {
+      "name": "C5 Wardriver",
+      "reason": "Radio module identified upstream; exact logging/GNSS hardware still needs primary documentation."
+    },
+    {
+      "name": "CAN Commander",
+      "reason": "Primary isolation, bus-interface and host-tool documentation required."
+    },
+    {
+      "name": "Carbon Computers Pi Edge",
+      "reason": "Separate product-specific hardware and image documentation required."
+    },
+    {
+      "name": "Carbon Computers Pi Flux",
+      "reason": "Exact bill of materials, image support and power documentation required."
+    },
+    {
+      "name": "Carbon Computers uConsole upgrades",
+      "reason": "Upgrade-specific electrical/mechanical documentation required; base uConsole docs are not enough."
+    },
+    {
+      "name": "Cardputer Card Converter",
+      "reason": "Accessory-specific pinout and host-revision support required."
+    },
+    {
+      "name": "Cardputer PalPack",
+      "reason": "Accessory-specific schematic and compatibility required."
+    },
+    {
+      "name": "Cerberus by 463n7",
+      "reason": "Primary board documentation not located in accessible repositories."
+    },
+    {
+      "name": "ChimeraBLE",
+      "reason": "Primary firmware/hardware identity and documented interface support required."
+    },
+    {
+      "name": "CircuitMess MakerPhone 2.0",
+      "reason": "Primary kit, cellular-module and firmware documentation required."
+    },
+    {
+      "name": "Covert Instruments Pick Pocket set",
+      "reason": "Exact product contents and manufacturer documentation required."
+    },
+    {
+      "name": "Covert Instruments Reaper Breakout Card",
+      "reason": "Exact product and training use documentation required."
+    },
+    {
+      "name": "DIY Biscuit",
+      "reason": "Primary build and firmware source identity required."
+    },
+    {
+      "name": "DN Key Pro",
+      "reason": "Primary hardware/security architecture required."
+    },
+    {
+      "name": "DRONEMAPPER",
+      "reason": "Primary input/protocol and software architecture evidence required."
+    },
+    {
+      "name": "Dragon Detector",
+      "reason": "Exact board, sensor and firmware documentation required."
+    },
+    {
+      "name": "DualBand Wardriver v2",
+      "reason": "Exact maker hardware and firmware documentation required."
+    },
+    {
+      "name": "Evil Duck by Cifertech",
+      "reason": "Exact primary project and hardware revision required."
+    },
+    {
+      "name": "FANTTIK T1 MAX",
+      "reason": "Manufacturer thermal/power/consumable documentation required."
+    },
+    {
+      "name": "FNIRSI LCR-ST1",
+      "reason": "Model manual and measurement specifications required."
+    },
+    {
+      "name": "Flock Noir",
+      "reason": "Primary sensor/detection design and validation evidence required."
+    },
+    {
+      "name": "HID Automation Node",
+      "reason": "Exact maker firmware, hardware and app documentation required."
+    },
+    {
+      "name": "HackRF Pro",
+      "reason": "Exact vendor identity and hardware documentation required; HackRF One specifications cannot be reused."
+    },
+    {
+      "name": "Hacker Gadgets 21700/NVMe upgrade",
+      "reason": "Exact compatible host revisions and electrical documentation required."
+    },
+    {
+      "name": "Hacker Gadgets AIO HAT",
+      "reason": "Accessory-specific host and power specification required."
+    },
+    {
+      "name": "Hamlet",
+      "reason": "Separate port-specific documentation required; Porkchop does not establish compatibility."
+    },
+    {
+      "name": "High Boy",
+      "reason": "Primary hardware identity and current hardware documentation not established by a simulator reference."
+    },
+    {
+      "name": "Interrupt cyberdeck",
+      "reason": "Primary hardware and software documentation required."
+    },
+    {
+      "name": "JustCallMeKoko BFFB v2",
+      "reason": "Radio module identified upstream; full accessory-specific interfaces still need verification."
+    },
+    {
+      "name": "KIISU V4b",
+      "reason": "Separate model-specific documentation required."
+    },
+    {
+      "name": "Key-Horse",
+      "reason": "Exact maintained project and platform required."
+    },
+    {
+      "name": "LILYGO T-LoRa Pager",
+      "reason": "Exact vendor board manual required; a firmware compatibility mention is insufficient."
+    },
+    {
+      "name": "M5Stack Faces 3",
+      "reason": "Current manufacturer manual required; do not substitute the archived original Faces kit."
+    },
+    {
+      "name": "M5Stack LLM8850",
+      "reason": "Accelerator/model software documentation required before any performance assessment."
+    },
+    {
+      "name": "M5Stack Paper Color",
+      "reason": "Current manufacturer manual required; distinct from the original M5Paper."
+    },
+    {
+      "name": "M5Stack Paper Mono",
+      "reason": "Current manufacturer manual required; the model-specific page still needs retrieval/verification."
+    },
+    {
+      "name": "M5Stack ST25R3916 NFC module",
+      "reason": "Module-specific power, antenna and library documentation required."
+    },
+    {
+      "name": "M5Stack StopWatch",
+      "reason": "Product-specific manufacturer specification required."
+    },
+    {
+      "name": "Marauder Mini C5",
+      "reason": "Exact product revision must be reconciled with current Mini v3 naming."
+    },
+    {
+      "name": "Marauder v8",
+      "reason": "Radio module identified upstream; board-specific manual needed for an independent hardware review."
+    },
+    {
+      "name": "Midwest Gadgets NFC field visualizers",
+      "reason": "Exact models and documented measurement meaning required."
+    },
+    {
+      "name": "Midwest Gadgets NFC repeaters",
+      "reason": "Exact interface and electrical design documentation required."
+    },
+    {
+      "name": "Midwest Gadgets card field detector",
+      "reason": "Exact product and sensor documentation required."
+    },
+    {
+      "name": "MonsterC5 firmware",
+      "reason": "Exact firmware identity and compatible boards required."
+    },
+    {
+      "name": "N32 Plus",
+      "reason": "Primary board and firmware identity required."
+    },
+    {
+      "name": "NeoMac MK III",
+      "reason": "Primary system architecture and software-support documentation required."
+    },
+    {
+      "name": "Openterface Keymod",
+      "reason": "Primary architecture, client compatibility and host permissions documentation required."
+    },
+    {
+      "name": "Orange Pi 4 Pro",
+      "reason": "Exact vendor board manual and supported-image evidence required."
+    },
+    {
+      "name": "Orange Pi 6 Plus",
+      "reason": "Exact vendor board manual and supported-image evidence required."
+    },
+    {
+      "name": "Orange Pi CM5",
+      "reason": "Exact vendor board manual and supported-image evidence required."
+    },
+    {
+      "name": "Orange Pi R2S",
+      "reason": "Exact vendor board manual and network-interface documentation required."
+    },
+    {
+      "name": "Orange Pi Zero 3W",
+      "reason": "Exact vendor board manual and supported-image evidence required."
+    },
+    {
+      "name": "PACKLOCK 200K practice fixture",
+      "reason": "Exact lock model and manufacturer mechanical specification required."
+    },
+    {
+      "name": "Panchetta",
+      "reason": "Separate port-specific documentation required; Porkchop does not establish compatibility."
+    },
+    {
+      "name": "Pi Terminal",
+      "reason": "Unambiguous maker/model identity required before a review."
+    },
+    {
+      "name": "Pimoroni Badger2350",
+      "reason": "Model-specific manufacturer documentation required."
+    },
+    {
+      "name": "Pimoroni Tufty2350",
+      "reason": "Model-specific manufacturer documentation required."
+    },
+    {
+      "name": "PlugMate Plug OS",
+      "reason": "Primary storage/security architecture required; a security label is insufficient."
+    },
+    {
+      "name": "PortaPack H4R",
+      "reason": "Model-specific primary hardware documentation required; H4M review does not establish H4R compatibility."
+    },
+    {
+      "name": "PortaRF",
+      "reason": "Exact primary project/hardware identity remains unresolved."
+    },
+    {
+      "name": "Quectel LC29H breakout",
+      "reason": "Breakout-specific pinout/variant and GNSS manual required."
+    },
+    {
+      "name": "Rabbit Labs Cobra Commander",
+      "reason": "Exact accessory and firmware documentation required."
+    },
+    {
+      "name": "Rabbit Labs Poltergeist",
+      "reason": "Exact accessory and supported host revision required."
+    },
+    {
+      "name": "Rabbit R1 cyberdeck conversion",
+      "reason": "Conversion-specific project documentation required; stock R1 specs would be misleading."
+    },
+    {
+      "name": "Radxa Cubie A7Z",
+      "reason": "Model-specific primary documentation required; repository landing page is insufficient."
+    },
+    {
+      "name": "Ragnar HuginnESP",
+      "reason": "Exact primary project identity required; do not merge with unrelated Ragnar software."
+    },
+    {
+      "name": "Ragnar Rusense",
+      "reason": "Exact primary detection inputs and validation evidence required."
+    },
+    {
+      "name": "Seeed reComputer RK3576",
+      "reason": "Retrieved RockChip landing page contains Raspberry Pi-family material; insufficient to support this specific review."
+    },
+    {
+      "name": "Seeed reTerminal Sticky",
+      "reason": "Exact product identity/manual required; generic reTerminal specifications are insufficient."
+    },
+    {
+      "name": "SquachWatch",
+      "reason": "Exact maintained project and board-support evidence required."
+    },
+    {
+      "name": "USB Army Knife",
+      "reason": "Exact primary project and hardware identity required."
+    },
+    {
+      "name": "WDGWARS",
+      "reason": "Primary application/export documentation required."
+    },
+    {
+      "name": "WHIDBoard Pro",
+      "reason": "Exact vendor hardware and firmware documentation required."
+    },
+    {
+      "name": "Wardrive Go",
+      "reason": "Primary application documentation, supported exports and privacy behavior required."
+    },
+    {
+      "name": "Waveshare ESP32-C5 Pico",
+      "reason": "Exact manufacturer product page and schematic required."
+    },
+    {
+      "name": "Waveshare ESP32-C5 Touch LCD 3.5",
+      "reason": "Exact board/revision/display manual required."
+    },
+    {
+      "name": "Waveshare ESP32-C5 Zero",
+      "reason": "Exact manufacturer product page and schematic required."
+    },
+    {
+      "name": "Waveshare ESP32-S3 AMOLED 1.75",
+      "reason": "Exact manufacturer board and display specification required."
+    },
+    {
+      "name": "Waveshare GPM280",
+      "reason": "Model-specific manual required; not interchangeable with PocketTerm35."
+    },
+    {
+      "name": "Waveshare PocketTerm35",
+      "reason": "Compute-module, display and power manual required."
+    },
+    {
+      "name": "Wireless Wizard",
+      "reason": "Exact maintained project and board-support evidence required."
+    },
+    {
+      "name": "ZimaBoard 2",
+      "reason": "Primary specification and OS/expansion compatibility required."
+    }
+  ]
+}

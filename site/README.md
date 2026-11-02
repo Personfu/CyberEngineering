@@ -1,6 +1,6 @@
 # NIGHTSHIFT · Cyberengineering profile
 
-A static, responsive cyberpunk learning site with a MySpace-inspired profile rail, credit wall, field notebook and nine connected page types. All 180 research dossiers and 150 assessment modules remain available through the document reader.
+A static, responsive cyberpunk learning site with a MySpace-inspired profile rail, credit wall, field notebook and eleven connected page types. All 180 research dossiers and 150 assessment modules remain available through the document reader.
 
 From the repository root:
 
@@ -16,6 +16,8 @@ Open `http://127.0.0.1:3000/`. Stop with Ctrl+C. Use HTTP rather than opening HT
 | Page | Function |
 |---|---|
 | `index.html` | Profile, preserved-project counts, linked rooms, browser-local notebook |
+| `reviews.html` | 69 independent primary-source reviews, searchable cited features, full product manuals and comparison |
+| `labs.html` | 24 exercises, nine walkthroughs, firmware/recovery routes and original helper scripts |
 | `learn.html` | IT basics, red/blue/purple concepts, local HTTP tutorial, manual map |
 | `tools.html` | Searchable twenty-tool field guide with purpose and mechanism |
 | `hardware.html` | Seven device/model entries with official resources and conceptual architecture |
@@ -28,6 +30,10 @@ Open `http://127.0.0.1:3000/`. Stop with Ctrl+C. Use HTTP rather than opening HT
 No analytics, geolocation, public comments, remote tool execution or live hardware connection. Notes, theme preference and bookmarks use `localStorage` on the current browser; they do not synchronize between devices. Browser storage can be disabled. The UI reports storage failures.
 
 The build uses Python's standard library. Generated JSON, pages and figures are committed. The document reader uses the vendored **Marked 17.0.5** browser distribution under its MIT license; see `vendor/LICENSE.marked`. The reader permits a restricted set of document markup and removes executable schemes and event attributes. Markdown Mermaid/math source remains readable source text; the gallery provides rendered original diagrams and data figures. Publisher screenshots remain externally hosted and may disappear or change.
+
+The product inputs are `data/reviews/catalog.json` and `data/reviews/sources.json`; the workbench input is `data/labs/catalog.json`. The builder generates individual product pages, lesson pages, the README index, source ledger and catalogs. New documents are served through the existing reader. `labtools/benchkit.py` supplies nine standard-library commands; its flash planner never executes writes. See [the workbench](../labs/README.md), [script reference](../labs/SCRIPTS.md) and [research method](../hardware/REVIEW-METHOD.md).
+
+Product specifications are tied to retrieved primary documents. Original recommendations are distinguished from hands-on measurements. The review library does not republish an imported video directory, thumbnails or transcripts. Remaining product evidence gaps are listed in the research coverage register rather than counted as reviews.
 
 ## Hosting and verification
 

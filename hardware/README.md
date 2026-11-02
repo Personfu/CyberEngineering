@@ -2,6 +2,12 @@
 
 Treat a device as a measurement system: **input → front end → firmware → host interpretation → evidence**. Record the exact model, firmware revision, client version, units, acquisition conditions and uncertainty. The diagrams in the site are conceptual illustrations, not manufacturer engineering drawings or measurements of owned equipment.
 
+## Product research and practical documentation
+
+The [review library](../site/reviews.html) contains independently researched, individual product and firmware reviews with cited specifications, original recommendations, compatibility limits and full documentation pages. The [workbench](../labs/README.md) connects these to firmware/recovery routes, nine walkthroughs, 24 exercises and original helper scripts. Review counts and the complete index are generated in the main README from the source catalog.
+
+Use the [primary-source ledger](PRIMARY-SOURCES.md) to inspect the research and the [coverage register](RESEARCH-COVERAGE.md) to see remaining evidence gaps. Documented manufacturer claims, our analysis, executed software checks and physical-device results are kept distinct. The conceptual bench below remains a starting point for measurement thinking.
+
 ## Choose by the question
 
 | Device | What it does | How it does it | What an observation cannot prove | Primary resource |

@@ -19,6 +19,23 @@ class Links(HTMLParser):
 docs=json.loads((SITE/'data/documents.json').read_text(encoding='utf-8'))
 missions=json.loads((SITE/'data/missions.json').read_text(encoding='utf-8'))
 talks=json.loads((SITE/'data/talks.json').read_text(encoding='utf-8'))
+reviews=json.loads((ROOT/'data/reviews/catalog.json').read_text(encoding='utf-8'))
+review_sources=json.loads((ROOT/'data/reviews/sources.json').read_text(encoding='utf-8'))
+assert json.loads((SITE/'data/reviews.json').read_text())['entries']==reviews['entries']
+assert len({r['id'] for r in reviews['entries']})==len(reviews['entries'])
+source_ids={r['id'] for r in review_sources['sources']}
+assert len(source_ids)==len(review_sources['sources'])
+for review in reviews['entries']:
+    assert set(review['source_ids'])<=source_ids,review['id']
+    assert all(review[k].strip() for k in ['name','category','kind','purpose','assessment','tradeoff','bench_check','basis'])
+review_html=(SITE/'reviews.html').read_text()
+review_links=Links();review_links.feed(review_html)
+assert all('review-'+r['id'] in review_links.ids and r['doc'] in docs for r in reviews['entries'])
+assert 'video-sources' not in review_html and 'creator-library' not in review_html
+assert 'hardware/VIDEO-SOURCES.md' not in docs
+assert 'labs/README.md' in docs
+assert len(json.loads((ROOT/'data/labs/catalog.json').read_text())['labs']) == 24
+assert all(r['url'] in review_html for r in review_sources['sources'])
 assert len(missions)==180
 assert len({m['id'] for m in missions})==180
 for m in missions:assert m['doc'] in docs,m
@@ -60,4 +77,4 @@ for image in visuals['assets']:
     assert len(content)==image['bytes']
     assert image['license']=='CC BY-SA 4.0' and image['source_url'].startswith('https://commons.wikimedia.org/')
 assert 'site/IMAGE-CREDITS.md' in docs
-print(f'Site integrity passed: 9 pages, {len(docs)} documents, 180 missions, 32 source-backed sessions, 60 synthetic timing rows.')
+print(f'Site integrity passed: {len(list(SITE.glob("*.html")))} pages, {len(docs)} documents, 180 missions, 32 source-backed sessions, {len(reviews["entries"])} editorial guides, {len(source_ids)} primary references, 60 synthetic timing rows.')

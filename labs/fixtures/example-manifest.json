@@ -1,0 +1,10 @@
+{
+  "board": "cardputer",
+  "chip": "esp32s3",
+  "kind": "merged-factory",
+  "offset": "0x0",
+  "file": "example.bin",
+  "sha256": "21289cb56c097e56abdc55b326f5b56d2fe96de1d36a2ac68b6863eda602d616",
+  "source_url": "https://github.com/Personfu/CyberEngineering",
+  "example_only": true
+}

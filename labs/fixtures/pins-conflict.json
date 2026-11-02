@@ -1,0 +1,4 @@
+[
+  {"pin": 5, "signal": "DISPLAY_CS"},
+  {"pin": 5, "signal": "RADIO_CS"}
+]
